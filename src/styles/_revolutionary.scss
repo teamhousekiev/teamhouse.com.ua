@@ -1,0 +1,146 @@
+//·Вторая·секция·revolutionary
+.revolutionary {
+  padding-top: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 481px) {
+    padding-top: 48px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 50px;
+  }
+
+  //·Верхняя·подпись
+  &__signature {
+    font-family: $fontMont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: $cap-color;
+
+    @media (min-width: 481px) {
+    }
+    @media (min-width: 992px) {
+    }
+  }
+
+  //·Оглавление
+  &__contents {
+    margin-top: 74px;
+    font: {
+      family: $fontMont;
+      style: normal;
+      weight: bold;
+      size: 26px;
+    }
+    line-height: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $content-color;
+
+    @media (min-width: 481px) {
+      margin-top: 100px;
+      margin-right: 8px;
+      font-size: 42px;
+      transition: 0.6s;
+    }
+    @media (min-width: 481px) {
+      margin-top: 100px;
+      margin-right: 8px;
+      font-size: 33px;
+      transition: 0.6s;
+    }
+
+    @media (min-width: 992px) {
+      margin-top: 77px;
+      font-size: 43px;
+      margin-left: 14px;
+      transition: 0.6s;
+    }
+    @media (min-width: 1199px) {
+      margin-top: 77px;
+      font-size: 54px;
+      margin-left: 14px;
+      transition: 0.6s;
+    }
+  }
+
+  //·Текст
+  &__text {
+    margin-top: 22px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: $text-color;
+    text-align: center;
+
+    @media (min-width: 481px) {
+      margin-top: 20px;
+      font-size: 21px;
+      line-height: 32px;
+    }
+    @media (min-width: 992px) {
+      white-space: normal;
+      margin-top: 40px;
+      font-size: 21px;
+      line-height: 32px;
+      max-width: 82%;
+      letter-spacing: 1px;
+    }
+  }
+
+  //·Блок·кнопок
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 31px;
+
+    @media (min-width: 481px) {
+      margin-top: 36px;
+    }
+    @media (min-width: 992px) {
+      margin-top: 23px;
+      margin-bottom: 49px;
+    }
+  }
+}
+
+.item-revolutionary {
+  @include revolutionary-container;
+
+  &__container {
+    @include revolutionary__wrapper-icon;
+  }
+  //·Иконка
+  &__icon {
+    @include wrapper_icom_image;
+  }
+  //·Текст
+  &__link {
+    @include wrapper_icon_item-text;
+  }
+  //·Число
+  &__number {
+    display: flex;
+    justify-content: center;
+    background-color: $background-color;
+    align-items: center;
+    font-family: $fontLato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 11px;
+    line-height: 16px;
+    color: $content-color;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+//·Контейнер·кнопок
