@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iak1p10/step-project-forkio.git"
+    "url": "git+https:"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iak1p10/step-project-forkio/issues"
+    "url": "https://"
   },
-  "homepage": "https://github.com/iak1p10/step-project-forkio#readme",
+  "homepage": "",
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "del": "^6.0.0",
@@ -28,7 +28,10 @@
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-minify": "^3.1.0",
-    "gulp-sass": "^4.1.0",
-    "node-sass": "^5.0.0"
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.72.0"
   }
 }

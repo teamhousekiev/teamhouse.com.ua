@@ -4,3 +4,14 @@
 node_modules
 package-lock.json
 debug.log
+
+*.vscode/settings.json
+desktop.ini
+docs/css/style-min.css
+docs/js/script-min.js
+gulp-tasks/*.js
+gulpfile.js
+index.html
+package.json
+src/**/*.js
+src/**/*.scss
