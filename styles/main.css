@@ -355,7 +355,7 @@ body {
   font-weight: 700;
   display: inline-block;
   padding: 20px 18px;
-  background-color: #18cfab;
+  background-color: rgb(139, 79, 19);;
   box-shadow: 0 -5px #f7f8e8;
   border-radius: 5px;
   font-size: 15px;
@@ -374,7 +374,7 @@ body {
 .section-2_link-2 {
   margin-left: 25px;
   padding: 20px 16px 20px 15px;
-  background-color: #00cbf6;
+  background-color: rgb(139, 79, 19);
 }
 
 .section-2_link:hover {
@@ -401,7 +401,7 @@ body {
   align-items: center;
   justify-content: center;
   width: -webkit-calc(100%);
-  background-color: #1c2a33;
+  background-color: rgb(139, 79, 19);;
   padding-left: 4px;
   padding-top: 1px;
 }
@@ -412,7 +412,7 @@ body {
   align-items: center;
   justify-content: center;
   width: -webkit-calc(100%);
-  background: #18cfab;
+  background: rgb(90, 106, 57);
   padding-top: 14px;
   padding-left: 4px;
 }
@@ -423,7 +423,7 @@ body {
   align-items: center;
   justify-content: center;
   width: -webkit-calc(100%);
-  background: #1c2a33;
+  background: rgb(139, 79, 19);;
   padding-top: 2px;
 }
 
@@ -433,7 +433,7 @@ body {
   align-items: center;
   justify-content: center;
   width: -webkit-calc(100%);
-  background: #18cfab;
+  background: rgb(90, 106, 57);
   padding-top: 12px;
 }
 
@@ -443,7 +443,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #18cfab;
+  color: white;
 }
 
 .advantages_text-1 {
@@ -499,7 +499,7 @@ body {
   left: 82px;
   width: 75px;
   height: 1.5px;
-  background-color: #18cfab;
+  background-color: rgb(139, 79, 19);;
 }
 
 .service__item__text::before {
@@ -511,7 +511,7 @@ body {
   left: 70px;
   width: 75px;
   height: 1.5px;
-  background-color: #18cfab;
+  background-color: rgb(139, 79, 19);;
 }
 
 .wrapper__tabs {
@@ -535,13 +535,13 @@ body {
 }
 
 .tabs-nav__item:hover {
-  box-shadow: inset 0 0 0 2px #18cfab;
+  box-shadow: inset 0 0 0 2px rgb(139, 79, 19);;
 }
 
 .tabs-nav__item.is-active {
   position: relative;
-  border: 2px solid #18cfab;
-  background-color: #18cfab;
+  border: 2px solid rgb(139, 79, 19);
+  background-color: rgb(139, 79, 19);
 }
 
 .tabs-nav__item.is-active::after {
@@ -551,7 +551,7 @@ body {
   left: 80px;
   bottom: -30px;
   border: 15px solid transparent;
-  border-top: 15px solid #18cfab;
+  border-top: 15px solid rgb(139, 79, 19);;
 }
 
 .is-active > h3 {
@@ -1106,7 +1106,7 @@ body {
 }
 
 .footer-green {
-  color: #18cfab;
+  color: rgb(188, 213, 138);
 }
 
 .section-6 {
