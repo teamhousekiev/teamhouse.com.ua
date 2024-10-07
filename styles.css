@@ -1647,7 +1647,9 @@ footer a {
     max-width: 60%;
 }
 
-
+body {
+    user-select: none; /* Запретить выделение текста */
+}
 
 
 

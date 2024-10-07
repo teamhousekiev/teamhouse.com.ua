@@ -189,3 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const footer = document.getElementById('footer');
     footer.scrollIntoView({ behavior: 'smooth' });
 }
+
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
