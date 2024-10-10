@@ -193,3 +193,38 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener('contextmenu', function(e) {
   e.preventDefault();
 });
+
+// Инициализация переменных
+let startX; // Начальная позиция касания
+let currentTranslateX = 0; // Текущая позиция для перемещения
+const items = document.querySelector('.items'); // Контейнер с элементами
+const itemsArray = document.querySelectorAll('.item'); // Все элементы
+const itemWidth = itemsArray[0].offsetWidth; // Ширина одного элемента
+
+// Обработчик события начала касания
+items.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX; // Запоминаем начальную позицию
+});
+
+// Обработчик события движения касания
+items.addEventListener('touchmove', (e) => {
+    const moveX = e.touches[0].clientX - startX; // Вычисляем смещение
+    items.style.transform = `translateX(${currentTranslateX + moveX}px)`; // Применяем трансформацию
+});
+
+// Обработчик события завершения касания
+items.addEventListener('touchend', (e) => {
+    const moveX = e.changedTouches[0].clientX - startX; // Вычисляем окончательное смещение
+    if (moveX > 50) {
+        // Свайп вправо
+        currentTranslateX += itemWidth; // Двигаем вправо
+    } else if (moveX < -50) {
+        // Свайп влево
+        currentTranslateX -= itemWidth; // Двигаем влево
+    }
+
+    // Ограничиваем текущую позицию
+    currentTranslateX = Math.max(Math.min(currentTranslateX, 0), -itemWidth * (itemsArray.length - 1));
+    items.style.transition = 'transform 0.3s ease'; // Плавный переход
+    items.style.transform = `translateX(${currentTranslateX}px)`; // Применяем финальную трансформацию
+});

@@ -1,47 +1,184 @@
 @import url('https://fonts.cdnfonts.com/css/hubot-sans');
-*{ box-sizing: border-box; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; scroll-behavior: smooth;}
-html, body { height: 100%; }
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+html, body {
+    height: 100%;
+}
 
-html::-webkit-scrollbar { display: none; }
-html { -ms-overflow-style: none; scrollbar-width: none; }
+html::-webkit-scrollbar {
+    display: none;
+}
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
 body {
     margin: 0;
     font-family: Untitled Sans, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
-    background: #05060f linear-gradient(0deg,rgba(216,236,248,.06),rgba(152,192,239,.06));
-
+    background: #05060f linear-gradient(0deg, rgba(216,236,248,.06), rgba(152,192,239,.06));
     font-size: max(calc(var(--_size) * 0.03), 10px);
     --_factor: min(600px, 80vh);
     --_size: min(var(--_factor), 80vw);
 }
 
-body.gold .header h2 ,
+/* Медиазапросы для адаптации */
+
+@media (max-width: 767px) {
+    /* Мобильные устройства */
+    body {
+        font-size: 14px; /* Размер шрифта для мобильных */
+        background: #05060f;
+    }
+
+   
+    
+    header {
+        flex-direction: column; /* Переключает на вертикальное расположение элементов */
+        align-items: center; /* Центрирует элементы по горизонтали */
+    }
+
+    .imgHeader {
+        position: relative; /* Сменяет позиционирование */
+        bottom: auto; /* Сбрасывает нижнее значение для корректного отображения */
+        margin: 0; /* Убирает отступы */
+    }
+    .header > div.mid-spot {
+        display: none;
+    }
+    .contact-btn {
+    display: block;
+    }
+    
+    h2 {
+        font-size: 1.5em; /* Меньший размер шрифта для заголовков */
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .content-section {
+        padding: 10em 1em; /* Меньше отступов */
+        text-align: center;
+    }
+    .accent-lines {
+        pointer-events: none;
+        position: absolute; top: 0; left: 0; right: 0;
+        width: 100%; height: 100vh;
+        z-index: -2;
+        --accent-lines-clr: rgba(186, 215, 247, .18);
+    }
+
+    .content-section {
+        padding: 5em 1em; /* Меньше отступов */
+        text-align: center;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Планшеты */
+    body {
+        font-size: 16px;
+        background: #05060f;
+    }
+
+    .header {
+        padding: 2em;
+        justify-content: space-between;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .content-section {
+        padding: 12em 2em;
+    }
+
+   .aboutUsWrapper{
+    max-width: 100%;
+   }
+   .aboutUsText{
+    font-size: 20px;
+   }
+   .wrapper{
+    height: 0vh;
+   }
+}
+
+@media (min-width: 1025px) {
+    
+    /* Десктопы */
+    body {
+        font-size: max(calc(var(--_size) * 0.03), 18px);
+    }
+
+    .header {
+        padding: 3em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    .content-section {
+        padding: 16em 4em;
+    }
+
+    .mountains > div {
+        width: 20em;
+        height: 20em;
+    }
+}
+
+
+/* Стили для класса "gold" остаются, но с адаптацией */
+body.gold .header h2,
 body.gold p,
 body.gold > * > * :not(.contact-btn) {
     filter: invert(1) brightness(4.7);
 }
-body.gold .header h2 a{
+
+body.gold .header h2 a {
     filter: hue-rotate(0deg);
 }
+
 body.gold canvas {
     filter: drop-shadow(2em 4em 0px #d8bd10) drop-shadow(-8em -14em 0px #d8bd10);
 }
+
 body.gold .header .spotlight {
     filter: invert(1) brightness(4.7) opacity(0.5);
 }
+
 body.gold .mountains > div {
-    box-shadow: 
-    -1em -0.2em 0.4em -1.1em #c2ccff,
-    inset 0em 0em 0em 2px #d8a910,
-    inset 0.2em 0.3em 0.2em -0.2em #c2ccff,
-    inset 10.2em 10.3em 2em -10em #d4e6ff2f;
+    box-shadow:
+        -1em -0.2em 0.4em -1.1em #c2ccff,
+        inset 0em 0em 0em 2px #d8a910,
+        inset 0.2em 0.3em 0.2em -0.2em #c2ccff,
+        inset 10.2em 10.3em 2em -10em #d4e6ff2f;
 }
 
 body.gold .content-section,
-body.gold .content-section ::before,
-body.gold .content-section ::after{
+body.gold .content-section::before,
+body.gold .content-section::after {
     filter: invert(1) brightness(4.4) opacity(1);
 }
+/* лллл */
 
 h2 {
     font-family: 'Hubot-Sans', sans-serif;
@@ -77,13 +214,9 @@ h2 a {
     height: auto; /* Сохраняет пропорции */
     max-height: 100px; /* Устанавливает максимальную высоту */
 }
-/* .header > :nth-child(1) {
-    font-size: 1em;
-    position: absolute; left: 0; right: 29em; bottom: 0.05em;margin: 0.2em auto;
-    width: fit-content;
-} */
+
 .header > :nth-child(2) {
-    position: absolute; left: 0; right: 0; margin: 0 auto;
+    position: absolute;  right: 0; margin: 0 auto;
     width: fit-content;
 }
 .header > h2{
@@ -524,7 +657,7 @@ p {
     }
 }
 
-/* .mountains {
+ /* .mountains {
     position: absolute; left: 0; right: 0; top: 31em; margin: auto;
     width: 100%; height: 10em;
     pointer-events: none;
@@ -536,8 +669,8 @@ p {
     background: linear-gradient(90deg, #121521 0%, transparent 50%);
     background: linear-gradient(0deg, #121521 80%, transparent 90%);
     z-index: 2;
-}
-.mountains > div {
+} */
+/* .mountains > div {
     box-shadow: 
     -1em -0.2em 0.4em -1.1em #c2ccff,
     inset 0em 0em 0em 2px #c2ccff,
@@ -581,12 +714,12 @@ p {
     position: absolute;
     left: 0; top: 0;
     border-bottom-right-radius: 100%;
-} */
+}  */
 
 .hero-spacer {
     height: 40em;
     pointer-events: none;
-}
+} 
 
 .content-section {
     position: relative;
@@ -594,7 +727,6 @@ p {
     color: #fff;
     width: 100%;
     text-align: center;
-    padding: 16em 0 12em 0;
     overflow: hidden;
 }
 
@@ -699,16 +831,17 @@ body{
     perspective: calc(var(--index) * 35);
 }
 
-.item{
+.item {
     width: calc(var(--index) * 3);
     height: calc(var(--index) * 12);
     background-color: #222;
     background-size: cover;
     background-position: center;
     cursor: pointer;
-    filter: grayscale(1) brightness(.5);
+    filter: grayscale(1) brightness(0.5);
     transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
     will-change: transform, filter, rotateY, width;
+    flex-shrink: 0; /* Предотвращает сжатие элемента */
 }
 
 .item::before, .item::after{
@@ -723,11 +856,10 @@ body{
     left: calc(var(--index) * -1);
 }
 
-.items .item:hover{
+.items .item:hover {
     filter: inherit;
     transform: translateZ(calc(var(--index) * 10));
 }
-
 /*Right*/
 
 .items .item:hover + *{
@@ -1643,9 +1775,11 @@ footer a {
     font-size: 20px;
     align-items: center;
 }
+
 .aboutUsWrapper{
     max-width: 60%;
 }
+
 
 body {
     user-select: none; /* Запретить выделение текста */
