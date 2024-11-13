@@ -24,12 +24,12 @@
            height="45vh"
            >
             <!-- <div class="mid-spot"></div> -->
+            
          
             <button class="contact-btn" onclick="scrollToFooter()">
               <span class="glow"></span>
               <span class="contact-btn-content">Contact Us</span>
           </button>
-          
             <div class="spotlight">
               <div></div>
               <div></div>
@@ -37,10 +37,8 @@
             </div>
           </div>
     </header>
-
     <main>
-        <canvas id="particleCanvas"></canvas>
-          
+        <canvas id="particleCanvas"></canvas>       
         <div class="accent-lines">
             <div>
               <div></div>
@@ -56,28 +54,17 @@
               <div></div>
             </div>
         </div>
-
         <div class="heroSubP">
             <p>17 років досвіду</p>
         </div>
-
         <div class="hero">
             <div class="heroT">
               <h2>ТІМ ХАУС</h2>
               <h2>ТІМ ХАУС</h2>
             </div>
         </div>
-
         <p class="heroP">Надійний партнер  <br>у сфері будівництва та реставрації</p>
-
-        <!-- <div class="mountains">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div> -->
-
         <div class="hero-spacer"></div>
-          
         <div class="content-section">
             <div class="content-acc">
               <div></div>
@@ -87,23 +74,33 @@
             <h3 class="title" id="garanty">Вибір ТІМ ХАУС<br>це 3 роки гарантії</h3>
             <p class="subp">Ваша впевненість у якості та надійності <br>Гарантуємо швидкість виконання робіт та високу якість</p>
         </div>
-        <section id="aboutUs" class="aboutUsWrapper">
-          <h3 class="ourWork">Про нас</h3>  
-          <h2 class="aboutUsText">ТІМ ХАУС — ваша надійна команда в галузі будівництва та реконструкції. <br/><br/>
-            Ми забезпечуємо високоякісний сервіс і готові підтримати вас у будь-яких потребах, зокрема й у завершенні проектів, якщо це знадобиться.<br/><br/>
-
-            Пропонуємо 3-річну гарантію на виконані роботи та матеріали, що підкреслює нашу відповідальність перед замовниками.<br/><br/>
-            
-            Не гайте часу! Звертайтеся до нас за вигідними умовами та отримайте надійний сервіс. <br/><br/><br/><br/>Напишіть нам у <a href="tg://resolve?domain=TEAMHOUSEKIEV" target="_blank" title="Telegram" style="color: rgb(9, 6, 218);">Telegram</a></h2> для швидкої консультації. 
-            З повагою,
-            Тим Хаус</h2>
+        <section id="aboutUs" class="aboutUsWrapper ">
+          <h3 class="ourWork text-with-wave">Про нас</h3>  
+          <div class="aboutUsTextContainer">
+            <p><span class="marker"></span>ТІМ ХАУС — ваша надійна команда в галузі будівництва та реконструкції.</p>
+            <p><span class="marker"></span>Ми забезпечуємо високоякісний сервіс і готові підтримати вас у будь-яких потребах, зокрема й у завершенні проектів, якщо це знадобиться.</p>
+            <p><span class="marker"></span>Пропонуємо 3-річну гарантію на виконані роботи та матеріали, що підкреслює нашу відповідальність перед замовниками.</p>
+            <p><span class="marker"></span>Не гайте часу! Звертайтеся до нас за вигідними умовами та отримайте надійний сервіс.</p>
+            <p><span class="marker"></span>Напишіть нам у  для швидкої консультації. З повагою, Тим Хаус.</p>
+            <a href="tg://resolve?domain=TEAMHOUSEKIEV" target="_blank" class="telegramButton">
+              <span class="telegram-icon"></span> Написать в Telegram
+          </a>
+          
+        </div>
+        
+        <!-- Мячик -->
+        <div class="ball"></div>   
         </section>
-        <div class="wrapper" id="ourWork">
-            <h3 class="ourWork">НАШІ РОБОТИ</h3>          
+    <section id="galleryOurWork" class="galleryOurWork">
+      <h3 class="ourWorkMaintext text-with-wave">НАШІ РОБОТИ</h3>   
+        <div id="mobile-gallery" style="display: none;">
+          <!-- Контейнер для мобильной галереи, сюда подгрузится содержимое из мобильного файла -->
+        </div>
+        <div class="wrapperGalleryPC" id="ourWork">      
             <div class="items">
               <div class="item" tabindex="0" style="background-image: url('img/work/dom_bankira_small.jpg')"></div>
-              <div class="item" tabindex="0" style="background-image: url('img/work/02_Dinamo.jpg')"></div>
               <div class="item" tabindex="0" style="background-image: url('img/work/Greenhells.jpg')"></div>
+              <div class="item" tabindex="0" style="background-image: url('img/work/02_Dinamo.jpg')"></div>
               <div class="item" tabindex="0" style="background-image: url('img/work/Ogragdenie Dinamo.jpg')"></div>
               <div class="item" tabindex="0" style="background-image: url('img/work/Banya_Small.jpg')"></div>
               <div class="item" tabindex="0" style="background-image: url('img/work/chernig-001_Small.jpg')"></div>
@@ -114,6 +111,7 @@
               <div class="item" tabindex="0" style="background-image: url('img/work/banya_doneck_small.jpg')"></div>
           </div>
     </div> 
+  </section>
 <section class="ourServiceWrapper" id="ourService">
   <h3 class="wave-text">НАШІ ПОСЛУГИ</h3>
   <div class="container max-w-5xl mx-auto px-8">
@@ -251,10 +249,8 @@
       </a>
     </div>
   </div>
-</section>
-    
-    
-    <section>
+</section> 
+    <section class="sectionOurTeam">
         <span>Команда</span>
         <h2>яка працює для вас</h2>
         <p>Ваша опора на наш багаторічний досвід: гарантія стабільного результату та бездоганна репутація, підтверджена роками успішної роботи.</p>
@@ -487,7 +483,8 @@
   
    <script> jQuery('#waterdrop').raindrops({color:'#1c1f2f', canvasHeight:150, density: 0.1, frequency: 20});
   </script>
-  
     <script src="/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
 </body>
 </html>

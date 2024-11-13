@@ -228,3 +228,54 @@ items.addEventListener('touchend', (e) => {
     items.style.transition = 'transform 0.3s ease'; // Плавный переход
     items.style.transform = `translateX(${currentTranslateX}px)`; // Применяем финальную трансформацию
 });
+
+// Подгрузка мобильной версии галереи работ
+document.addEventListener("DOMContentLoaded", function () {
+  // Проверка ширины экрана для мобильных устройств
+  if (window.innerWidth <= 768) {
+      // Скрываем галерею для ПК
+      document.getElementById("ourWork").style.display = "none";
+      
+      // Показ мобильной галереи
+      document.getElementById("mobile-gallery").style.display = "block";
+
+      // Подгрузка CSS для мобильной галереи
+      const mobileStyles = document.createElement("link");
+      mobileStyles.rel = "stylesheet";
+      mobileStyles.href = "./swipeGalleryMobile/stylesSwipeGalleryMobile_1.css"; // Укажите правильный путь
+      document.head.appendChild(mobileStyles);
+
+      // Подгрузка HTML-контента для мобильной галереи
+      fetch("./swipeGalleryMobile/indexSwipeGalleryMobile_1.html") // Укажите путь к мобильной галерее
+          .then(response => response.text())
+          .then(html => {
+              document.getElementById("mobile-gallery").innerHTML = html;
+
+              // После загрузки HTML инициализируйте скрипт Flickity
+              const flickityScript = document.createElement("script");
+              flickityScript.src = "./swipeGalleryMobile/scriptSwipeGalleryMobile_1.js"; // Укажите правильный путь
+              document.body.appendChild(flickityScript);
+          })
+          .catch(error => console.error("Ошибка при загрузке галереи:", error));
+  } else {
+      // Если экран не мобильный (ПК), то скрываем мобильную галерею
+      document.getElementById("mobile-gallery").style.display = "none";
+      // Убедимся, что галерея для ПК видна
+      document.getElementById("ourWork").style.display = "block";
+  }
+});
+
+
+// секция о нас
+const aboutUsTextContainer = document.querySelector('.aboutUsTextContainer');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            aboutUsTextContainer.classList.add('animate');
+            observer.unobserve(aboutUsTextContainer); // Отключаем наблюдатель
+        }
+    });
+}, { threshold: 0.1 }); // Анимация начнется, когда 10% контейнера будет видимо
+
+observer.observe(aboutUsTextContainer);

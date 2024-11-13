@@ -1,3 +1,52 @@
+/* Переменные */
+:root {
+    --wave-gradient: linear-gradient(90deg, #87b592, #eed309, #00c6ff, #0072ff);
+    --line-gradient: linear-gradient(to right, transparent, #00c6ff, transparent);
+}
+
+.text-with-wave {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background: var(--wave-gradient);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: wave 10s ease infinite;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #333;
+    position: relative;
+}
+
+.text-with-wave::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    width: 77%;
+    height: 1px;
+    background: var(--line-gradient);
+    animation: line-animation 10s ease infinite;
+    transform: translateX(-50%);
+}
+
+@keyframes wave {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+@keyframes line-animation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+
+
+
+/* Дальше стили и код проекта */
+
 @import url('https://fonts.cdnfonts.com/css/hubot-sans');
 * {
     box-sizing: border-box;
@@ -24,6 +73,9 @@ body {
     font-size: max(calc(var(--_size) * 0.03), 10px);
     --_factor: min(600px, 80vh);
     --_size: min(var(--_factor), 80vw);
+}
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 /* Медиазапросы для адаптации */
@@ -106,13 +158,14 @@ body {
     }
 
    .aboutUsWrapper{
-    max-width: 100%;
+        max-width: 60%;
+        padding: 0vh 0 30vh 0;
    }
+
    .aboutUsText{
-    font-size: 20px;
-   }
-   .wrapper{
-    height: 0vh;
+    font-size: 5vh;
+    margin-top: 5vh;
+    
    }
 }
 
@@ -144,6 +197,7 @@ body {
         height: 20em;
     }
 }
+
 
 
 /* Стили для класса "gold" остаются, но с адаптацией */
@@ -657,65 +711,6 @@ p {
     }
 }
 
- /* .mountains {
-    position: absolute; left: 0; right: 0; top: 31em; margin: auto;
-    width: 100%; height: 10em;
-    pointer-events: none;
-}
-.mountains::before {
-    content: ''; display: block;
-    width: 100%; height: 500%;
-    position: absolute; top: 0%;
-    background: linear-gradient(90deg, #121521 0%, transparent 50%);
-    background: linear-gradient(0deg, #121521 80%, transparent 90%);
-    z-index: 2;
-} */
-/* .mountains > div {
-    box-shadow: 
-    -1em -0.2em 0.4em -1.1em #c2ccff,
-    inset 0em 0em 0em 2px #c2ccff,
-    inset 0.2em 0.3em 0.2em -0.2em #c2ccff,
-    inset 10.2em 10.3em 2em -10em #d4e6ff2f;
-    background: #121521;
-    z-index: 1;
-    filter: brightness(0.8);
-    position: absolute; left: 0; right: 0; margin: auto;
-    width: 20em; height: 20em;
-    rotate: 45deg;
-}
-.mountains > div:nth-child(1) {
-    bottom: -240%; 
-    translate: -6em 2em;
-    animation: mountainload1 2s ease-out 2.4s forwards;
-}
-.mountains > div:nth-child(2) {
-    bottom: -240%;
-    translate: -2em 0em;
-    width: 14em; height: 20em;
-    animation: mountainload2 2s ease-out 2.2s forwards;
-}
-.mountains > div:nth-child(3) {
-    bottom: -240%; 
-    translate: 6em 3em;
-    animation: mountainload1 2s ease-out 2s forwards;
-}
-@keyframes mountainload1 {
-    0% { bottom: -240%; }
-    100% { bottom: -140%; }
-}
-@keyframes mountainload2 {
-    0% { bottom: -240%; }
-    100% { bottom: -108%; }
-}
-.mountains > div::before {
-    content: ''; display: block;
-    background: repeating-radial-gradient( at 100% 100%, transparent 0%, #c2ccff22 2px, transparent 4px);
-    width: 12em; height: 12em;
-    position: absolute;
-    left: 0; top: 0;
-    border-bottom-right-radius: 100%;
-}  */
-
 .hero-spacer {
     height: 40em;
     pointer-events: none;
@@ -817,7 +812,7 @@ body{
     background-color: #141414;
 }
 
-.wrapper{
+.wrapperGalleryPC{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -825,15 +820,17 @@ body{
     height: 70vh;
 }
 
-.items{
+.items {
     display: flex;
-    gap: 0.4rem;
+    gap: 0.6rem;
     perspective: calc(var(--index) * 35);
+    justify-content: center;
+
 }
 
 .item {
-    width: calc(var(--index) * 3);
-    height: calc(var(--index) * 12);
+    width: calc(var(--index) * 3.8);
+    height: calc(var(--index) * 16);
     background-color: #222;
     background-size: cover;
     background-position: center;
@@ -916,9 +913,7 @@ body{
 	transform: translateZ(calc(var(--index) * 10));
     margin: 0 .45vw;
 }
-.ourWork {
-    padding-bottom: 1em;
-}
+
 
 
 
@@ -967,12 +962,15 @@ ul i {
 ul i:hover {
   color: #f2709c;
 }
+.sectionOurTeam{
+    padding-block: min(20vh, 6rem);   
+}
 
 section {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
-  padding-block: min(20vh, 6rem);
+  
   text-align: center;
   width: calc(min(90rem, 90%));
   margin-inline: auto;
@@ -983,13 +981,14 @@ section h2,
 section h3 {
   letter-spacing: 0.035rem;
 }
+ /* 
 section p {
-  line-height: 1.6;
-  color: #a3a3a3;
-  max-width: 50rem;
-  margin: 0 auto;
-  font-size: clamp(0.9rem, 0.825rem + 0.3vw, 1.2rem);
-}
+   line-height: 1.6;
+    color: #a3a3a3;
+    max-width: 50rem;
+    margin: 0 auto;
+  
+  } */
 section .bg-watermark {
   color: #1f1f1f;
   font-size: clamp(6rem, 1.3333rem + 14.9333vw, 20rem);
@@ -1113,8 +1112,9 @@ section .cards .card:nth-child(3)::before {
   top: -0.375rem;
   left: -0.375rem;
 }
-.ourWork {
+.ourWorkMaintext {
     font-size: 2em;
+    margin: 10vh 0 5vh 0;
 }
 
 
@@ -1772,27 +1772,130 @@ footer a {
 .telegWrapper {
     margin-right: 50px;
 }
-.aboutUsText {
-    font-size: 20px;
-    align-items: center;
-}
-
-.aboutUsWrapper{
-    max-width: 60%;
-}
-
 
 body {
     user-select: none; /* Запретить выделение текста */
 }
 
+/* Подключение свайп галереи применение стилей (подключение в js)*/
+@media only screen and (max-width: 768px) {
+    /* Стили мобильной галереи */
+    #mobile-gallery .ag-container-shops {
+      padding: 2px;
+    }
+    /* Добавьте другие необходимые стили для мобильной версии */
+    galleryOurWork {
+        display: flex;
+        justify-content: center; /* Выравнивание по горизонтали */
+        align-items: center; /* Выравнивание по вертикали */
+        min-height: 100vh; /* Гарантирует, что секция займет минимум всю высоту экрана */
+        /* padding-block: min(20vh, 6rem); */
+        box-sizing: border-box; /* Учитывает отступы в общей ширине */
+        padding:0.5vh 0 0 0;
+    }
+  }
+  galleryOurWork {
+    display: flex;
+    justify-content: center; /* Выравнивание по горизонтали */
+    align-items: center; /* Выравнивание по вертикали */
+    min-height: 100vh; /* Гарантирует, что секция займет минимум всю высоту экрана */
+  
+    box-sizing: border-box; /* Учитывает отступы в общей ширине */
+ 
+}
+  /* Стили для галереи новые  */
+  .aboutUsWrapper{
+    height: 70vh;
+    max-width: 150vh;
+     }
+    
+     .aboutUsTextContainer {
+        font-size: 3.75vh; /* Увеличиваем размер текста на 25% */
+        margin-top: 5vh;
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+        line-height: 1.8; /* Увеличиваем межстрочное расстояние */
+        text-align: center;
+        padding-left: 10px;
+    }
+    
+    /* Стиль текста */
+    .aboutUsTextContainer p {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    }
+    
+    /* Задержка анимации */
+    .aboutUsTextContainer.animate p:nth-child(1) { transition-delay: 0.5s; }
+    .aboutUsTextContainer.animate p:nth-child(2) { transition-delay: 1s; }
+    .aboutUsTextContainer.animate p:nth-child(3) { transition-delay: 1.5s; }
+    .aboutUsTextContainer.animate p:nth-child(4) { transition-delay: 2s; }
+    .aboutUsTextContainer.animate p:nth-child(5) { transition-delay: 2.5s; } /* Добавляем задержку для последнего абзаца */
+    
+    .aboutUsTextContainer.animate p {
+        opacity: 1;
+        transform: translateY(0);
+        margin-top: 3vh;
+    }
+    
+  /* Основной стиль кнопки */
+.telegramButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0088cc; /* Цвет фона */
+    color: white;
+    font-size: 0.85em; /* Уменьшаем размер шрифта в 2 раза */
+    font-weight: bold;
+    padding: 4px 8px; /* Уменьшаем отступы */
+    border-radius: 10px; /* Уменьшаем радиус скругления */
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Скрыта по умолчанию */
+    animation: fadeIn 1s forwards; /* Анимация появления */
+    margin-top: 5vh;
+}
 
+.telegramButton:hover {
+    background-color: #006fa6; /* Темный оттенок при наведении */
+    transform: scale(1.05); /* Увеличение размера при наведении */
+}
 
+.telegramButton:active {
+    transform: scale(0.98); /* Эффект сжатия при нажатии */
+}
 
+/* Иконка Telegram */
+.telegramButton .telegram-icon {
+    width: 12px; /* Уменьшаем размер иконки в 2 раза */
+    height: 12px; /* Уменьшаем размер иконки в 2 раза */
+    margin-right: 4px; /* Уменьшаем отступ между иконкой и текстом */
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Telegram_icon_%282019%29.svg/512px-Telegram_icon_%282019%29.svg.png'); /* Иконка Telegram */
+    background-size: cover;
+    background-position: center;
+}
 
+/* Анимация появления кнопки */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-
-
-
-
-
+/* Мобильная версия */
+@media (max-width: 600px) {
+    .telegramButton {
+        font-size: 0.4em; /* Еще меньше размер шрифта на мобильных */
+        padding: 3px 6px; /* Меньшие отступы */
+    }
+}
