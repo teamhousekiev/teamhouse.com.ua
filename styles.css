@@ -976,14 +976,7 @@ section h2,
 section h3 {
   letter-spacing: 0.035rem;
 }
- /* 
-section p {
-   line-height: 1.6;
-    color: #a3a3a3;
-    max-width: 50rem;
-    margin: 0 auto;
-  
-  } */
+
 section .bg-watermark {
   color: #1f1f1f;
   font-size: clamp(6rem, 1.3333rem + 14.9333vw, 20rem);
@@ -1224,15 +1217,14 @@ section .cards .card:nth-child(3)::before {
   }
   
   @media screen and (max-width: 1199px) {
+   
     .container {
       max-width: 960px;
     }
   }
   
   @media screen and (max-width: 991px) {
-    body {
-      height: 100%;
-    }
+   
     .container {
       max-width: 720px;
       display: block;
@@ -1243,6 +1235,7 @@ section .cards .card:nth-child(3)::before {
   }
   
   @media screen and (max-width: 767px) {
+  
     .container {
       max-width: 520px;
     }
@@ -1258,6 +1251,7 @@ section .cards .card:nth-child(3)::before {
   }
   
   @media screen and (max-width: 575px) {
+ 
     .container {
       max-width: 100%;
     }
@@ -1902,3 +1896,9 @@ body {
         padding: 3px 6px; /* Меньшие отступы */
     }
 }
+
+
+
+
+
+

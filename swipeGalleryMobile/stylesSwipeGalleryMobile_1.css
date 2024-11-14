@@ -3,8 +3,9 @@
     margin: 0 auto;
   }
   
-  body {
+  body html {
     background-color: #000;
+    overflow-x: hidden;
   }
   
   .ag-container-shops {

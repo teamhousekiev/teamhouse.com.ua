@@ -279,3 +279,31 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 }); // Анимация начнется, когда 10% контейнера будет видимо
 
 observer.observe(aboutUsTextContainer);
+
+
+// Удалить потом вычисляем скролл
+/// Функция для отслеживания горизонтального скроллинга
+function trackHorizontalScroll(event) {
+  const scrollLeft = window.scrollX || window.pageXOffset; // Текущее положение горизонтального скролла
+  console.log(`Текущий горизонтальный скролл: ${scrollLeft}px`);
+
+  // Проверка всех элементов на странице, которые могут влиять на горизонтальный скролл
+  const allElements = document.querySelectorAll('*');
+  allElements.forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    if (rect.right > window.innerWidth || rect.left < 0) {
+      console.log(`Элемент с переполнением по горизонтали:`, element);
+      console.log(`Свойства элемента:`);
+      console.log(`Ширина элемента: ${rect.width}px`);
+      console.log(`Позиция элемента: ${rect.left}px`);
+      console.log(`Свойство overflow: ${getComputedStyle(element).overflowX}`);
+      console.log(`Свойство width: ${getComputedStyle(element).width}`);
+      console.log(`Свойство max-width: ${getComputedStyle(element).maxWidth}`);
+      console.log(`Свойство margin-left: ${getComputedStyle(element).marginLeft}`);
+      console.log(`Свойство margin-right: ${getComputedStyle(element).marginRight}`);
+    }
+  });
+}
+
+// Добавление слушателя событий на скролл
+window.addEventListener('scroll', trackHorizontalScroll);
