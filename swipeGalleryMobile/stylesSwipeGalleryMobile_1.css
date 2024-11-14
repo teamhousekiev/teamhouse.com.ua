@@ -1,5 +1,5 @@
+
 .ag-format-container {
-    width: 1142px;
     margin: 0 auto;
   }
   
@@ -156,13 +156,13 @@
   
   @media (min-width: 768px) and (max-width: 979px) {
     .ag-format-container {
-      width: 750px;
+      width: 96%;
     }
   }
   
   @media (min-width: 980px) and (max-width: 1161px) {
     .ag-format-container {
-      width: 960px;
+      width: 96%;
     }
   }
   
