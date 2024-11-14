@@ -280,3 +280,24 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(aboutUsTextContainer);
 
+
+// Скрыть форму на мобильных
+(function () {
+  // Функция для проверки размера экрана
+  function checkScreenSize() {
+    var footer = document.getElementById('footer'); // Получаем элемент с id "footer"
+    
+    // Проверяем ширину экрана
+    if (window.innerWidth <= 767) { // Если ширина экрана <= 767px (мобильные устройства)
+      footer.style.display = 'none'; // Скрыть элемент
+    } else {
+      footer.style.display = 'block'; // Показать элемент
+    }
+  }
+
+  // Проверяем размер экрана при загрузке страницы
+  checkScreenSize();
+
+  // Проверяем размер экрана при изменении размера окна
+  window.addEventListener('resize', checkScreenSize);
+})();
