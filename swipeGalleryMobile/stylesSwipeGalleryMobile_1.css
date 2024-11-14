@@ -46,8 +46,8 @@ body html {
 }
 
 .ag-shop-card_body {
-  height: 404.508px; /* Установлена точная высота */
-  width: 298px; /* Ширина остаётся прежней */
+  height:350px; /* Установлена точная высота */
+  width: 260px; /* Ширина остаётся прежней */
   background-position: 50%;
   background-size: cover;
   overflow: hidden;
