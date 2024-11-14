@@ -1,0 +1,101 @@
+
+/* Подключение шрифтов */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&display=swap");
+
+/* Сброс базовых стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основные стили для страницы */
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Убирает горизонтальный скролл */
+    line-height: 1.6;
+}
+
+/* Контейнер */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+/* Текст */
+p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+/* Кнопки */
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #0088cc;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #006fa6;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        padding: 0 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+    
+    .button {
+        padding: 0.4rem 0.8rem;
+    }
+}
