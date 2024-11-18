@@ -130,6 +130,11 @@ body html {
 .ag-shop-card-footer_arrow {
   max-width: 16px;
 }
+img {
+  max-width: 100%;
+  height: auto; /* Сохраняет пропорции */
+  display: block; /* Убирает лишние отступы */
+}
 
 /* @media only screen and (max-width: 767px) {
   .ag-format-container {
