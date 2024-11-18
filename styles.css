@@ -967,7 +967,7 @@ section {
   font-style: normal;
   
   text-align: center;
-  width: calc(min(90rem, 90%));
+  width: calc(min(100rem, 100%));
   margin-inline: auto;
 }
 section span,

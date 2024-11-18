@@ -10,6 +10,7 @@ body html {
 .ag-container-shops {
   padding: 60px 0;
   overflow: hidden;
+  gap: 20px; /* Задайте расстояние между карточками */
 }
 
 .ag-card-bg {
@@ -46,14 +47,14 @@ body html {
 }
 
 .ag-shop-card_body {
-  height: 404.508px; /* Установлена точная высота */
-  width: 298px; /* Ширина остаётся прежней */
+  height: 330px; /* Остаётся прежним */
+  width: 300px; /* Увеличьте ширину */
   background-position: 50%;
   background-size: cover;
   overflow: hidden;
-  
   transition: 0.4s;
   position: relative;
+  margin: 0 auto; /* Центрирует карточку */
 }
 
 .ag-shop-card-body_link {
@@ -130,7 +131,7 @@ body html {
   max-width: 16px;
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   .ag-format-container {
       width: 96%;
   }
@@ -153,3 +154,4 @@ body html {
       width: 96%;
   }
 }
+ */
