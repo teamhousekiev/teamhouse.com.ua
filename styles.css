@@ -162,6 +162,7 @@ body {
     margin-top: 5vh;
     
    }
+
 }
 
 @media (min-width: 1025px) {
@@ -191,6 +192,7 @@ body {
         width: 20em;
         height: 20em;
     }
+   
 }
 
 
@@ -820,7 +822,7 @@ body{
     gap: 0.6rem;
     perspective: calc(var(--index) * 35);
     justify-content: center;
-
+margin-top: 80px;
 }
 
 .item {
@@ -1802,18 +1804,31 @@ body {
  
 }
   /* Стили для галереи новые  */
- 
 
-     .aboutUsTextContainer {
-        font-size: 3.75vh; /* Увеличиваем размер текста на 25% */
-        margin-top: 5vh;
-        text-align: left;
-        max-width: 85%;
-        margin: 0 auto;
-        line-height: 1.8; /* Увеличиваем межстрочное расстояние */
-        padding-left: 10px;
-        margin-bottom: 60px;
+ 
+  .aboutUsTextContainer {
+    font-size: 3.75vh;
+    margin-top: 5vh;
+    text-align: left;
+    max-width: 85%;
+    margin: 0 auto;
+    line-height: 1.8;
+    padding-left: 120px;
+    margin-bottom: 60px;
+    overflow: visible; /* Убедитесь, что текст не скрыт */
+    text-overflow: clip; /* Убираем многоточие */
+    white-space: normal; /* Разрешаем перенос текста на новые строки */
+}
+
+
+
+@media (max-width: 767px) {
+    .aboutUsTextContainer {
+        font-size: 4vh; /* Пример изменения размера для мобильных */
+        padding-left: 10px; /* Пример изменения отступа */
+        margin-top: 2vh; /* Пример изменения отступа сверху */
     }
+}
     
     /* Стиль текста */
     .aboutUsTextContainer p {
@@ -1835,68 +1850,63 @@ body {
         margin-top: 3vh;
     }
     
-  /* Основной стиль кнопки */
-.telegramButton {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #0088cc; /* Цвет фона */
+   
+     /* Стили для ссылки-кнопки */
+a.sharer {
+    background-color: #34ADE1;
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0 2px 0 #0E9BD8, 1px 4px 2px rgba(0,0,0,0.2);
     color: white;
-    font-size: 0.85em; /* Уменьшаем размер шрифта в 2 раза */
-    font-weight: bold;
-    padding: 4px 8px; /* Уменьшаем отступы */
-    border-radius: 10px; /* Уменьшаем радиус скругления */
-    text-decoration: none;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    text-align: center;
+    display: block;
+    font-family: sans-serif;
+    font-size: .85em;
+    font-weight: 300;
+    outline: none;
+    padding: 1em 0;
     position: relative;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    opacity: 0; /* Скрыта по умолчанию */
-    animation: fadeIn 1s forwards; /* Анимация появления */
-    margin-top: 5vh;
+    overflow: hidden;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    width: 100%;
+    text-align: center;
+    text-decoration: none; /* Убираем подчеркивание */
 }
 
-.telegramButton:hover {
-    background-color: #006fa6; /* Темный оттенок при наведении */
-    transform: scale(1.05); /* Увеличение размера при наведении */
+a.sharer:active {
+    box-shadow: 0 0 0 transparent;
+    transform: translateY(2px);
 }
 
-.telegramButton:active {
-    transform: scale(0.98); /* Эффект сжатия при нажатии */
+a.sharer .fa {
+    height: 100%;
+    left: 0;
+    line-height: 42px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 40px;
 }
 
-/* Иконка Telegram */
-.telegramButton .telegram-icon {
-    width: 12px; /* Уменьшаем размер иконки в 2 раза */
-    height: 12px; /* Уменьшаем размер иконки в 2 раза */
-    margin-right: 4px; /* Уменьшаем отступ между иконкой и текстом */
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Telegram_icon_%282019%29.svg/512px-Telegram_icon_%282019%29.svg.png'); /* Иконка Telegram */
-    background-size: cover;
-    background-position: center;
+/* Стили для списка */
+ul {
+    display: block;
+    list-style: none;
+    margin: 2em auto;
+    max-width: 100%;
+    padding: 0;
+    width: 490px;
 }
 
-/* Анимация появления кнопки */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+li {
+    display: inline-block;
+    margin: .3em;
+    width: 150px;
 }
-
-/* Мобильная версия */
-@media (max-width: 600px) {
-    .telegramButton {
-        font-size: 0.4em; /* Еще меньше размер шрифта на мобильных */
-        padding: 3px 6px; /* Меньшие отступы */
-    }
+.telegram-icon {
+    width: 20px;  /* Размер иконки */
+    height: 20px; /* Размер иконки */
+    margin-right: 10px; /* Отступ между иконкой и текстом */
+    vertical-align: middle; /* Выравнивание по вертикали */
 }
-
-
-
-
 
 

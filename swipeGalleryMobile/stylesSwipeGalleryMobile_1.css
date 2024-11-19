@@ -142,10 +142,6 @@ img {
   z-index: 1000; /* Чтобы карточка была выше других */
   position: relative;
 }
-.ourWorkContainer {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 
 
 /* @media only screen and (max-width: 767px) {
