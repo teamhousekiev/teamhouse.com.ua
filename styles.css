@@ -1101,14 +1101,14 @@ section .cards .card:nth-child(3)::before {
   left: -0.375rem;
 }
 
-.ourWorkMaintext {
+/* .ourWorkMaintext {
     font-size: 2em;
     margin: 10vh 0 12vh 0;
-}
+} */
 @media screen and (max-width: 767px) {
     .ourWorkMaintext {
-        font-size: 2em;
-        margin: 10vh 0 3vh 0;
+    
+    
     }
   }
 
@@ -1779,6 +1779,7 @@ body {
     /* Стили мобильной галереи */
     #mobile-gallery .ag-container-shops {
       padding: 2px;
+      margin-bottom: 30px;
     }
     /* Добавьте другие необходимые стили для мобильной версии */
     galleryOurWork {
@@ -1801,20 +1802,17 @@ body {
  
 }
   /* Стили для галереи новые  */
-  .aboutUsWrapper{
-    height: 70vh;
-    max-width: 150vh;
-     }
-    
+ 
+
      .aboutUsTextContainer {
         font-size: 3.75vh; /* Увеличиваем размер текста на 25% */
         margin-top: 5vh;
-        text-align: center;
-        max-width: 100%;
+        text-align: left;
+        max-width: 85%;
         margin: 0 auto;
         line-height: 1.8; /* Увеличиваем межстрочное расстояние */
-        text-align: center;
         padding-left: 10px;
+        margin-bottom: 60px;
     }
     
     /* Стиль текста */

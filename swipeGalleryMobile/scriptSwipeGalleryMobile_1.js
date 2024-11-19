@@ -1,43 +1,37 @@
-
 (function ($) {
-    $(function () {
-      var agSlideFlickity = $(".js-flickity-slider").flickity({
-        autoPlay: 2000,
-        imagesLoaded: true,
-        percentPosition: false,
-        prevNextButtons: false,
-        initialIndex: 5,
-        pageDots: false,
-        groupCells: 1
-      });
-  
-      var agCard = agSlideFlickity.find(".js-carousel-cell .js-card-bg"),
-        agTransform =
-          "string" == typeof document.documentElement.style.transform
-            ? "transform"
-            : "WebkitTransform",
-        agSlide = agSlideFlickity.data("flickity");
-  
-      agSlideFlickity.on("scroll.flickity", function () {
-        agSlide.slides.forEach(function (t, e) {
-          var n = agCard[e],
-            i = (-1 * (t.target + agSlide.x)) / 3;
-  
-          n.style[agTransform] = "translateX(" + i + "px)";
-        });
-      });
-  
-      agSlideFlickity.on("dragStart.flickity", function (t, e) {
-        document.ontouchmove = function (t) {
-          t.preventDefault();
-        };
-      });
-  
-      agSlideFlickity.on("dragEnd.flickity", function (t, e) {
-        document.ontouchmove = function (t) {
-          return true;
-        };
-      });
+  $(function () {
+    var agSlideFlickity = $(".js-flickity-slider").flickity({
+      autoPlay: false, // Отключаем автоплей
+      imagesLoaded: true,
+      percentPosition: false,
+      prevNextButtons: false,
+      pageDots: false,
+      wrapAround: true, // Зацикливаем слайдер
+      groupCells: 1
     });
-  })(jQuery);
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          agSlideFlickity.flickity('play'); // Включаем автоплей
+        } else {
+          agSlideFlickity.flickity('pause'); // Ставим на паузу
+        }
+      });
+    }, { threshold: 0.5 }); // Срабатывает, если хотя бы 50% элемента видны
+
+    observer.observe(document.querySelector(".js-flickity-slider"));
+  });
+})(jQuery);
+
+$(".js-carousel-cell").on("dblclick", function () {
+  const $card = $(this).find(".ag-shop-card_body");
+  if ($card.hasClass("zoomed")) {
+    $card.removeClass("zoomed"); // Убираем увеличение
+  } else {
+    $card.addClass("zoomed"); // Увеличиваем карточку
+  }
+});
+
+
   
