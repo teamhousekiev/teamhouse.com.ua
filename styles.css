@@ -392,12 +392,18 @@ button.contact-btn:hover .glow::after, button.contact-btn:hover .glow::before {
 
 .header .spotlight {
     pointer-events: none;
-    position: absolute; left: 0; right: 0; top:0; margin: 0 auto;
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    top: 0; 
+    margin: 0 auto;
     transition: filter 1s ease-in-out;
 
-    height: 47em; width: 100%;
+    height: 100vh; /* Занимает всю высоту экрана */
+    width: 100%;
     overflow: hidden;
 }
+
 .header .spotlight > div {
     border-radius: 0 0 50% 50%;
     position: absolute; left: 0; right: 0; margin: 0 auto; 
@@ -596,7 +602,7 @@ p {
 .accent-lines {
     pointer-events: none;
     position: absolute; top: 0; left: 0; right: 0;
-    width: 100%; height: 42em;
+    width: 100%; height: 100vh;
     z-index: -2;
     --accent-lines-clr: rgba(186, 215, 247, .18);
 }
@@ -650,7 +656,7 @@ p {
     opacity: 0; scale: 0;
     animation: accentload 2s ease-out 4.4s forwards;
 }
-
+/* 
 .accent-lines > div:nth-child(1) > div:nth-child(3)::before{ display: block; left: 24em; }
 .accent-lines > div:nth-child(1) > div:nth-child(3)::after{ display: block; right: 24em; }
 .accent-lines > div:nth-child(1) > div:nth-child(4)::before{ display: block; left: 24em; }
@@ -683,12 +689,12 @@ p {
 .accent-lines > div:nth-child(1) > div:nth-child(2)::after {
     opacity: 0; scale: 0;
     animation: accentload2 2s ease-out 2.4s forwards;
-}
-.accent-lines > div:nth-child(1) > div:nth-child(1)::before,
+} */
+/* .accent-lines > div:nth-child(1) > div:nth-child(1)::before,
 .accent-lines > div:nth-child(1) > div:nth-child(1)::after {
     opacity: 0; scale: 0;
     animation: accentload3 2s ease-out 2.4s forwards;
-} 
+}  */
 @keyframes accentload2 {
     0% {
         opacity: 0; scale: 0; transform: rotate(360deg);
@@ -994,7 +1000,8 @@ section span {
   text-transform: uppercase;
   display: block;
   font-size: 1.2rem;
-  color: #a3a3a3;
+  color: #000000;
+  font-weight: bold;
 }
 section h2 {
   font-size: clamp(3.5rem, 3rem + 1.6vw, 5rem);
@@ -1217,57 +1224,8 @@ section .cards .card:nth-child(3)::before {
     height: 100%;
     width: 100%;
   }
-  
-  @media screen and (max-width: 1199px) {
-   
-    .container {
-      max-width: 960px;
-    }
-  }
-  
-  @media screen and (max-width: 991px) {
-   
-    .container {
-      max-width: 720px;
-      display: block;
-    }
-    .card-wraper {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  
-  @media screen and (max-width: 767px) {
-  
-    .container {
-      max-width: 520px;
-    }
-    .card-wraper {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-    .card-main {
-      padding: 30px 20px;
-    }
-    a.card {
-      padding: 6px;
-    }
-  }
-  
-  @media screen and (max-width: 575px) {
- 
-    .container {
-      max-width: 100%;
-    }
-    .card-wraper {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-    .card-main {
-      padding: 40px;
-    }
-    a.card {
-      padding: 10px;
-    }
-  }
 
+  
 
   .wave-text {
     font-size: 2em;
@@ -1902,11 +1860,12 @@ li {
     margin: .3em;
     width: 150px;
 }
-.telegram-icon {
-    width: 20px;  /* Размер иконки */
-    height: 20px; /* Размер иконки */
-    margin-right: 10px; /* Отступ между иконкой и текстом */
-    vertical-align: middle; /* Выравнивание по вертикали */
+
+/* СКРЫТИЕ КОНТЕНТА УСЛУГИ ДЛЯ МОБИЛЬНЫЙ УСТРОЙСТВ */
+@media (max-width: 768px) {
+    .card-main .desktop-content {
+        display: none; /* Прячет контент */
+    }
 }
 
 

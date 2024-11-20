@@ -94,8 +94,9 @@ body html {
 .ag-shop-card_footer {
   padding: 15px 30px;
   border: 0;
-  background-color: #e700e7;
+  background-color: #f3f3f3;
   position: relative;
+  text-align: left; /* Текст будет выровнен по левому краю */
 }
 
 .ag-shop-card-footer_title {
@@ -143,28 +144,17 @@ img {
   position: relative;
 }
 
-
-/* @media only screen and (max-width: 767px) {
-  .ag-format-container {
-      width: 96%;
-  }
+img.zoomed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
-@media only screen and (max-width: 639px) {
+body.no-scroll {
+  overflow: hidden;
 }
-
-@media only screen and (max-width: 479px) {
-}
-
-@media (min-width: 768px) and (max-width: 979px) {
-  .ag-format-container {
-      width: 96%;
-  }
-}
-
-@media (min-width: 980px) and (max-width: 1161px) {
-  .ag-format-container {
-      width: 96%;
-  }
-}
- */
