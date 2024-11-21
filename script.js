@@ -265,80 +265,53 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// $('.carousel').flickity({
-//   autoPlay: 3000, // Интервал в миллисекундах (3 секунды)
-//   pauseAutoPlayOnHover: true, // Остановка при наведении курсора
-//   wrapAround: true, // Зацикливание
-//   prevNextButtons: true, // Кнопки переключения
-//   pageDots: true, // Точки переключения
-// });
 
 // секция о нас
-// const aboutUsTextContainer = document.querySelector('.aboutUsTextContainer');
+const aboutUsTextContainer = document.querySelector('.aboutUsTextContainer');
 
-// const observer = new IntersectionObserver((entries) => {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//             aboutUsTextContainer.classList.add('animate');
-//             observer.unobserve(aboutUsTextContainer); // Отключаем наблюдатель
-//         }
-//     });
-// }, { threshold: 0.1 }); // Анимация начнется, когда 10% контейнера будет видимо
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            aboutUsTextContainer.classList.add('animate');
+            observer.unobserve(aboutUsTextContainer); // Отключаем наблюдатель
+        }
+    });
+}, { threshold: 0.1 }); // Анимация начнется, когда 10% контейнера будет видимо
 
-// observer.observe(aboutUsTextContainer);
+observer.observe(aboutUsTextContainer);
 
 
-// // Скрыть форму на мобильных
-// (function () {
-//   // Функция для проверки размера экрана
-//   function checkScreenSize() {
-//     var footer = document.getElementById('footer'); // Получаем элемент с id "footer"
+// Скрыть форму на мобильных
+(function () {
+  // Функция для проверки размера экрана
+  function checkScreenSize() {
+    var footer = document.getElementById('footer'); // Получаем элемент с id "footer"
     
-//     // Проверяем ширину экрана
-//     if (window.innerWidth <= 767) { // Если ширина экрана <= 767px (мобильные устройства)
-//       footer.style.display = 'none'; // Скрыть элемент
-//     } else {
-//       footer.style.display = 'block'; // Показать элемент
-//     }
-//   }
-
-//   // Проверяем размер экрана при загрузке страницы
-//   checkScreenSize();
-
-//   // Проверяем размер экрана при изменении размера окна
-//   window.addEventListener('resize', checkScreenSize);
-// })();
-
-document.addEventListener("DOMContentLoaded", () => {
-  // ID элемента, куда подгрузить секцию
-  const servicesContainer = document.getElementById("servicesContainer");
-
-  if (servicesContainer) {
-    fetch("./services/services.html") // Укажите путь к services.html
-      .then((response) => {
-        if (!response.ok) throw new Error("Failed to fetch services.html");
-        return response.text();
-      })
-      .then((html) => {
-        servicesContainer.innerHTML = html;
-
-        // Подключение скриптов или стилей, если нужно
-        const script = document.createElement("script");
-        script.src = "./services/scripts.js"; // Путь к вашему JS для этой секции
-        document.body.appendChild(script);
-      })
-      .catch((err) => {
-        console.error("Error loading services.html:", err);
-      });
+    // Проверяем ширину экрана
+    if (window.innerWidth <= 767) { // Если ширина экрана <= 767px (мобильные устройства)
+      footer.style.display = 'none'; // Скрыть элемент
+    } else {
+      footer.style.display = 'block'; // Показать элемент
+    }
   }
-});
+
+  // Проверяем размер экрана при загрузке страницы
+  checkScreenSize();
+
+  // Проверяем размер экрана при изменении размера окна
+  window.addEventListener('resize', checkScreenSize);
+})();
 
 
 
-// СКРЫТИЕ КОНТЕНТА ЧЕРЕЗ JS
+// ОТКРЫТИЕ КВАДРАТОВ НАШИ УСЛУГИ 
 document.addEventListener('DOMContentLoaded', () => {
-  if (window.innerWidth <= 768) {
-      const desktopContents = document.querySelectorAll('.desktop-content');
-      desktopContents.forEach(content => content.remove());
-  }
+  const cards = document.querySelectorAll('.cardBuild');
+
+  cards.forEach(card => {
+      card.addEventListener('click', () => {
+          // Переключаем класс active на карточке
+          card.classList.toggle('active');
+      });
+  });
 });
