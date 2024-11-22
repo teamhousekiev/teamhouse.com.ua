@@ -78,13 +78,17 @@ body {
     box-sizing: border-box;
 }
 
+
 /* Медиазапросы для адаптации */
 
 @media (max-width: 767px) {
     /* Мобильные устройства */
     body {
         font-size: 14px; /* Размер шрифта для мобильных */
-        background: #05060f;
+        background-image: url('./img/background/Back4.jpg'); /* Путь к вашему изображению */
+        background-repeat: repeat-y; /* Клонирование только по вертикали */
+        background-size: auto 100%; /* Фиксируем ширину изображения, высота автоматически растягивается */
+        background-position: top left; /* Начало фона в левом верхнем углу */
     }
 
    
@@ -132,7 +136,7 @@ body {
     /* Планшеты */
     body {
         font-size: 16px;
-        background: #05060f;
+
     }
 
     .header {
@@ -811,9 +815,9 @@ p {
     --transition: cubic-bezier(.1, .7, 0, 1);
 }
 
-body{
+/* body{
     background-color: #141414;
-}
+} */
 
 .wrapperGalleryPC{
     display: flex;
@@ -945,10 +949,9 @@ margin-top: 80px;
   box-sizing: border-box;
 }
 
-body {
-  background: #171717;
+/* body {
   min-height: 100vh;
-}
+} */
 
 img {
   max-width: 100%;
@@ -1125,7 +1128,7 @@ section .cards .card:nth-child(3)::before {
 
 /*OUR SERVICE*/
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -1138,7 +1141,7 @@ section .cards .card:nth-child(3)::before {
   
     font-family: "Lato", sans-serif;
     font-weight: 400;
-  }
+  } */
   section {
     height: 100%;
   }
@@ -1205,21 +1208,23 @@ section .cards .card:nth-child(3)::before {
     padding: 10px;
   }
   .card-main {
-    border: 1px solid #1a5582;
-    padding: 40px;
-    width: 100%;
-    height: auto; /* Высота будет адаптироваться под содержимое */
-    min-height: 300px; /* Минимальная высота блока */
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: #000;
-    box-sizing: border-box; /* Padding не увеличивает размер блока */
+    
+         border: 1px solid #0f181f;
+        padding: 5vw;  /* Применение динамических отступов на основе ширины окна */
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: #313747;
+        box-sizing: border-box;
+    
 }
 
 /* Для мобильных устройств */
 @media (max-width: 768px) {
     .card-main {
-        padding: 2px;
+        padding: 0px;
         min-height: 50px; /* Минимальная высота для мобильных */
     }
 }
@@ -1329,29 +1334,52 @@ footer p, footer strong, footer b, footer {
     background-color: #1c1f2f;
 }
 .containerFooter {
-    display: flex;
-    align-items: flex-start; /* Меняем на flex-start для высоты по содержимому */
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
+    display: flex; /* Используем флекс-контейнер */
+    justify-content: space-around; /* Равномерное распределение элементов */
+    flex-wrap: wrap; /* Позволяем элементам переноситься на следующую строку */
+    gap: 20px; /* Добавляем расстояние между карточками */
+    width: 100%; /* Контейнер занимает всю ширину */
 }
+
 
 .rowFooter {
     display: flex;
-    justify-content: space-around; /* или space-around для отступов */
-    width: 100%; /* или задайте ширину, если хотите фиксированную */
-    margin-right: -15px;
-    margin-left: -15px;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Перенос строк */
+
+    width: 100%;
   
 }
-.cardFooter {
-    flex: 1; /* это гарантирует, что все элементы будут иметь одинаковую ширину */
-    text-align: left;
-    padding: 0 20px 0 20px; 
-
+.cardFooter, .cardFotter { /* Учитываем возможные ошибки в именах классов */
+    flex: 1 1 calc(25% - 40px); /* Каждый элемент занимает 25% ширины с учетом отступов */
+    box-sizing: border-box; /* Учитываем padding и border в ширине */
+    min-width: 250px; /* Минимальная ширина карточки */
+    max-width: 300px; /* Максимальная ширина карточки */
+    padding: 5px; /* Внутренний отступ */
 }
+
+@media (max-width: 768px) {
+    .cardFooter, .cardFotter {
+        flex: 1 1 calc(50% - 20px); /* Для мобильных: два элемента в строке */
+    }
+}
+
+@media (max-width: 480px) {
+    .cardFooter, .cardFotter {
+        flex: 1 1 100%; /* Для очень маленьких экранов: один элемент в строке */
+    }
+}
+
+/* Для мобильной версии */
+@media (max-width: 768px) {
+    .cardFooter {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+}
+}
+
+
 
 .footer-bottom {
     padding: 15px 0;
@@ -1884,20 +1912,23 @@ a.sharer .fa {
 }
 
 /* Стили для списка */
-.postsWrapper  {
-    display: block;
-    list-style: none;
+.postsWrapper {
+    display: flex; /* Используем flexbox */
+    flex-direction: column; /* Устанавливаем вертикальную ориентацию */
+    gap: 20px; /* Расстояние между элементами */
     margin: 2em auto;
     max-width: 100%;
     padding: 0;
-    width: 490px; /* Это значение для больших экранов */
-
+    width: 490px; /* Для больших экранов */
 }
 
 .postList {
+
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
     display: inline-block;
     margin: .3em;
-    width: 150px;
+   
 }
 
 @media (max-width: 768px) {
@@ -1919,7 +1950,17 @@ a.sharer .fa {
 .card-header {
     font-size: 30px;
     font-weight: 600;
-    color: #d3d1d1;
+    color: #f7ffff;
+   
+    
+}
+.cardBuild.active .card-header {
+    font-family: 'Miroslav';
+    color: #e50c27; /* Красный цвет для первой буквы */
+    background-color: #222e3a;
+     background-size: cover;  /* Чтобы картинка покрывала весь элемент */
+     background-position: center;  /* Центрируем картинку */
+     background-repeat: no-repeat;  /* Запрещаем повторение */
 }
 
 /* Скрыть текст по умолчанию */
@@ -1929,14 +1970,28 @@ a.sharer .fa {
     max-height: 0;
     overflow: hidden;
     transition: opacity 0.5s ease, max-height 0.5s ease;
+    text-align: left;
+    padding-left: 1vh;
+    
 }
+
 
 /* Показать текст при активации */
 .cardBuild.active .card-textBuild {
     display: block;
     opacity: 1;
-    max-height: 2000px;  /* Увеличиваем максимальную высоту */
+    max-height: 80vh;  /* Увеличиваем максимальную высоту */
+    overflow-y: auto;
+    backdrop-filter: blur(10px); /* Размытие фона */
+    z-index: 1000; /* Поверх всех остальных элементов */
+     /* Добавление фонового изображения */
+     background-color: #222e3a;
+     background-size: cover;  /* Чтобы картинка покрывала весь элемент */
+     background-position: center;  /* Центрируем картинку */
+     background-repeat: no-repeat;  /* Запрещаем повторение */
+   
 }
+
 
 
 
@@ -1959,3 +2014,59 @@ a.sharer .fa {
 }
 
 
+
+
+/* СТИЛИ ДЛЯ ТЕКСТА ----------------------------- */
+.text-indented {
+    overflow-y: auto; /* Включить прокрутку по вертикали */
+    height: 100%; /* Высота блока подстраивается под экран */
+    padding: 5%; /* Внутренние отступы */
+    background: rgba(0, 0, 0, 0.7); /* Блюр или затемнение, если нужно */
+    color: #f7ffff; /* Цвет текста для контраста */
+}
+
+.text-indented p {
+    text-indent: 10px; /* Отступ для первой строки в абзаце */
+    margin: 0 0 10px 0; /* Отступ между абзацами */
+    line-height: 1.6; /* Удобочитаемая высота строки */
+    text-align: justify; /* Выровнять текст по ширине */
+}
+
+.text-indented p:first-child {
+    text-indent: 0; /* Убираем отступ у первого абзаца */
+}
+
+/* ДРЕВНЕРУССКАЯ БУКВА ПЕРВАЯ _________________________ */
+@font-face {
+    font-family: 'Miroslav';
+    src: url('./fonts/miroslav/MIROSLN.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.first-letter {
+    font-family: 'Miroslav'; /* Применяет шрифт Miroslav */
+    font-size: 3em;  /* Увеличиваем размер первой буквы */
+    color: #e50c27; /* Красный цвет для первой буквы */
+    font-weight: bold; /* Увеличиваем жирность */
+    display: inline-block;
+    line-height: 1;
+    padding-right: 2px; /* Отступ после первой буквы */
+}
+
+/* РАБОТА С КАРТОЧКАМИ ТОЛЬКО ДЛЯ ПК ---------------------------------------- */
+@media (min-width: 768px) {
+    .card-textBuild {
+      display: none; /* Скрываем текст по умолчанию */
+      transition: opacity 0.3s ease;
+    }
+  
+    .card.zoomed .card-textBuild {
+      display: block; /* Показываем текст только если карточка увеличена */
+    }
+  
+    /* Можно добавить другие стили для ПК */
+  }
+  

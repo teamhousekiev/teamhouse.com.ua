@@ -87,59 +87,61 @@ animate();
 console.log("Привет Саймон");
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
+  // Проверка ширины экрана (только для ПК)
+  if (window.innerWidth >= 768) {
     var cards = document.querySelectorAll("a.card");
     var background = document.querySelector(".background");
-  
-    // Store the index of the last hovered card
+
+    // Сохранение индекса последней наведенной карты
     var lastHoveredCardIndex = localStorage.getItem("lastHoveredCardIndex") || 0;
-  
-    // Set the background to the last hovered card by default
+
+    // Установка фона на последнюю наведенную карту по умолчанию
     var cardRect = cards[lastHoveredCardIndex].getBoundingClientRect();
     var x = cardRect.left + window.scrollX + cardRect.width / 2;
     var y = cardRect.top + window.scrollY + cardRect.height / 2;
-  
+
     background.style.width = cardRect.width + "px";
     background.style.height = cardRect.height + "px";
     background.style.transform = `translate(${x - cardRect.width / 2}px, ${
       y - cardRect.height / 2
     }px)`;
-    background.style.opacity = "0"; // Set opacity to 0 when the page loads
-  
+    background.style.opacity = "0"; // Устанавливаем начальную непрозрачность фона
+
+    // Для каждой карты добавляем события
     cards.forEach(function (card, index) {
       card.addEventListener("mouseenter", function (e) {
-        // If the card is zoomed in, return early to prevent the hover effect
+        // Если карта уже увеличена, пропускаем эффект наведения
         if (card.classList.contains("zoomed")) {
           return;
         }
-  
+
         var rect = card.getBoundingClientRect();
         x = rect.left + window.scrollX + rect.width / 2;
         y = rect.top + window.scrollY + rect.height / 2;
-  
+
         background.style.width = rect.width + "px";
         background.style.height = rect.height + "px";
         background.style.transform = `translate(${x - rect.width / 2}px, ${
           y - rect.height / 2
         }px)`;
-        background.style.opacity = "1"; // Change opacity to 1 when a card is hovered over
+        background.style.opacity = "1"; // Фон становится видимым при наведении
         background.style.top = "0%";
         background.style.left = "0%";
         background.style.transformOrigin = "center";
-        // Store the index of the hovered card
+        // Сохраняем индекс наведения
         localStorage.setItem("lastHoveredCardIndex", index);
       });
-  
+
       card.addEventListener("mouseleave", function (e) {
-        background.style.opacity = "0"; // Change opacity back to 0 when the mouse leaves a card
-        // Reset the background size when the mouse leaves the card
+        background.style.opacity = "0"; // Фон скрывается, когда мышь уходит с карты
         background.style.width = "0px";
         background.style.height = "0px";
       });
-  
+
       card.addEventListener("click", function () {
         if (card.classList.contains("zoomed")) {
+          // Убираем эффект увеличения
           card.classList.remove("zoomed");
           card.style.transform = "none";
           card.style.position = "relative";
@@ -148,17 +150,18 @@ document.addEventListener("DOMContentLoaded", function () {
           card.style.top = "0";
           card.style.left = "0";
           card.style.zIndex = "0";
-  
-          // Remove the 'overflow' class from the body when a card is unzoomed
+
+          // Убираем класс overflow с body при уменьшении карты
           document.body.classList.remove("overflow");
-  
-          // Remove the 'opacity-0' class from other <a> tags when a card is unzoomed
+
+          // Восстанавливаем видимость других карт
           cards.forEach(function (otherCard) {
             if (otherCard !== card) {
               otherCard.classList.remove("opacity-0");
             }
           });
         } else {
+          // Применяем эффект увеличения
           card.classList.add("zoomed");
           card.style.position = "fixed";
           card.style.top = "50%";
@@ -169,11 +172,11 @@ document.addEventListener("DOMContentLoaded", function () {
           card.style.width = "90vw";
           card.style.height = "90vh";
           card.style.zIndex = "1000";
-  
-          // Add the 'overflow' class to the body when a card is zoomed
+
+          // Добавляем класс overflow на body при увеличении карты
           document.body.classList.add("overflow");
-  
-          // Add the 'opacity-0' class to other <a> tags when a card is zoomed
+
+          // Затемняем остальные карты
           cards.forEach(function (otherCard) {
             if (otherCard !== card) {
               otherCard.classList.add("opacity-0");
@@ -182,7 +185,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     });
-  });
+  }
+});
+
+
+
+
 
 
   function scrollToFooter() {
@@ -229,6 +237,8 @@ items.addEventListener('touchend', (e) => {
     items.style.transform = `translateX(${currentTranslateX}px)`; // Применяем финальную трансформацию
 });
 
+
+
 // Подгрузка мобильной версии галереи работ
 document.addEventListener("DOMContentLoaded", function () {
   // Проверка ширины экрана для мобильных устройств
@@ -266,19 +276,22 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// секция о нас
+// секция о нас для мобильных
 const aboutUsTextContainer = document.querySelector('.aboutUsTextContainer');
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            aboutUsTextContainer.classList.add('animate');
-            observer.unobserve(aboutUsTextContainer); // Отключаем наблюдатель
-        }
-    });
-}, { threshold: 0.1 }); // Анимация начнется, когда 10% контейнера будет видимо
+if (window.innerWidth <= 768) { // Проверяем ширину окна (например, до 768px — стандартный порог для мобильных)
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                aboutUsTextContainer.classList.add('animate');
+                observer.unobserve(aboutUsTextContainer); // Отключаем наблюдатель
+            }
+        });
+    }, { threshold: 0.1 }); // Анимация начнется, когда 10% контейнера будет видимо
 
-observer.observe(aboutUsTextContainer);
+    observer.observe(aboutUsTextContainer);
+}
+
 
 
 // Скрыть форму на мобильных
@@ -304,14 +317,32 @@ observer.observe(aboutUsTextContainer);
 
 
 
-// ОТКРЫТИЕ КВАДРАТОВ НАШИ УСЛУГИ 
-document.addEventListener('DOMContentLoaded', () => {
-  const cards = document.querySelectorAll('.cardBuild');
 
-  cards.forEach(card => {
-      card.addEventListener('click', () => {
-          // Переключаем класс active на карточке
-          card.classList.toggle('active');
-      });
-  });
+
+
+// -НЕВОЗМОЖНОСТЬ ПОКИНУТЬ САЙТ _____________________
+let backPressCount = 0;
+
+window.addEventListener("popstate", function(event) {
+    // Prevent default behavior on back button
+    if (backPressCount === 0) {
+        // Prevent going back and replace with a new state
+        history.pushState(null, null, location.href);
+    } else {
+        // If the user presses back twice, allow it to leave the page
+        backPressCount = 0;  // Reset count
+    }
 });
+
+document.addEventListener("backbutton", function() {
+    // Track the first back press
+    if (backPressCount === 0) {
+        backPressCount++;
+        alert("Press again to exit the site");  // Notify user to press again
+        return false;  // Prevent exit
+    } else {
+        backPressCount = 0;
+    }
+}, false);
+
+history.pushState(null, null, location.href);  // Initial state to override back navigation

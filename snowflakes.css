@@ -1,0 +1,21 @@
+/* snowflakes.css */
+.snowflake {
+    position: absolute;
+    background-color: white;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    animation: fall 10s linear infinite, accumulate 5s linear infinite;
+}
+
+/* Анимация падения снега */
+@keyframes fall {
+    0% { top: -50px; }
+    100% { top: 100%; }
+}
+
+/* Эффект накопления снега */
+@keyframes accumulate {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(0) scale(0.5); }
+}
