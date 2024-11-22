@@ -87,8 +87,9 @@ body {
         font-size: 14px; /* Размер шрифта для мобильных */
         background-image: url('./img/background/Back4.jpg'); /* Путь к вашему изображению */
         background-repeat: repeat-y; /* Клонирование только по вертикали */
-        background-size: auto 100%; /* Фиксируем ширину изображения, высота автоматически растягивается */
-        background-position: top left; /* Начало фона в левом верхнем углу */
+    background-size: auto 100%; /* Фиксируем ширину изображения, высота автоматически растягивается */
+    background-position: top left; /* Начало фона в левом верхнем углу */
+    background-attachment: fixed; /* Фиксируем фон, чтобы он не прокручивался */
     }
 
    
