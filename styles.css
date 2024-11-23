@@ -793,6 +793,11 @@ p {
     height: 40em;
     pointer-events: none;
 } 
+@media (max-width: 768px) {
+    .hero-spacer {
+        height: 100vh; /* Высота на мобильных устройствах */
+    }
+}
 
 /* .content-section {
     position: relative;
@@ -1968,18 +1973,30 @@ body {
 
 @media (max-width: 767px) {
     .aboutUsTextContainer {
-        font-size: 4vh; /* Пример изменения размера для мобильных */
-        padding-left: 10px; /* Пример изменения отступа */
         margin-top: 2vh; /* Пример изменения отступа сверху */
+        padding-left: 0px;
+        text-align: -webkit-auto;
+
     }
+    .aboutUsWrapper{
+        max-width: 95%;
+        padding: 0 0 0 0;
+   }
 }
     
     /* Стиль текста */
     .aboutUsTextContainer p {
+        font-size: 0.9rem;
         opacity: 0;
         transform: translateY(20px);
         transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    
+        /* Убедитесь, что контейнер не ограничивает текст */
+        white-space: normal; /* Разрешаем тексту переноситься на новые строки */
+        overflow: visible;   /* Убираем обрезку текста */
+        text-overflow: clip; /* Убираем многоточие */
     }
+    
     
     /* Задержка анимации */
     .aboutUsTextContainer.animate p:nth-child(1) { transition-delay: 0.5s; }
