@@ -82,17 +82,27 @@ body {
 /* Медиазапросы для адаптации */
 
 @media (max-width: 767px) {
+    
     /* Мобильные устройства */
-    body {
+        body {
         font-size: 14px; /* Размер шрифта для мобильных */
-        background-image: url('./img/background/Back4.jpg'); /* Путь к вашему изображению */
-        background-repeat: repeat-y; /* Клонирование только по вертикали */
-    background-size: auto 100%; /* Фиксируем ширину изображения, высота автоматически растягивается */
-    background-position: top left; /* Начало фона в левом верхнем углу */
-    background-attachment: fixed; /* Фиксируем фон, чтобы он не прокручивался */
-    }
+        background-image: url('./img/background/BackGround5.jpg');
+        background-repeat: no-repeat; /* Запрещаем повторение фона по горизонтали */
+        background-position: center top; /* Центрируем фон по горизонтали, верх по вертикали */
+        
+        /* Сужаем картинку по горизонтали */
+         background-size: 100% auto; /*Растягиваем изображение по ширине, высота сохраняет пропорции */
+        
+        /* Фиксируем фон, чтобы он не прокручивался */
+        background-attachment: fixed;
 
-   
+        /* Убираем горизонтальный скролл */
+        overflow-x: hidden; /* Отключаем горизонтальный скролл */
+    }
+    
+
+    /* Для предотвращения расширения страницы за пределы экрана */
+    }
     
     header {
         flex-direction: column; /* Переключает на вертикальное расположение элементов */
@@ -131,7 +141,7 @@ body {
         --accent-lines-clr: rgba(186, 215, 247, .18);
     }
     
-}
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
     /* Планшеты */
@@ -153,9 +163,9 @@ body {
         font-size: 1.2em;
     }
 
-    .content-section {
+    /* .content-section {
         padding: 12em 2em;
-    }
+    } */
 
    .aboutUsWrapper{
         max-width: 60%;
@@ -188,10 +198,10 @@ body {
     p {
         font-size: 1.5em;
     }
-
+/* 
     .content-section {
         padding: 16em 4em;
-    }
+    } */
 
     .mountains > div {
         width: 20em;
@@ -270,6 +280,21 @@ h2 a {
     height: auto; /* Сохраняет пропорции */
     max-height: 100px; /* Устанавливает максимальную высоту */
 }
+@media (max-width: 767px) {
+    .imgHeader{
+        font-size: 1em;
+        position: absolute; 
+        left: 2em;
+
+        top: 1em;
+        right: 29em;
+        bottom: 0.05em;
+        width: 100px; /* Установите желаемую ширину */
+        height: auto; /* Сохраняет пропорции */
+        max-height: 100px; /* Устанавливает максимальную высоту */
+    }
+}
+
 
 .header > :nth-child(2) {
     position: absolute;  right: 0; margin: 0 auto;
@@ -485,6 +510,10 @@ p {
     opacity: 0;
     animation: load 2s ease-in-out 0.6s forwards;
 }
+
+
+
+
 @keyframes load {  
     0% { opacity: 0;}    
     100% { opacity: 1;}    
@@ -504,6 +533,7 @@ p {
         #fff calc(var(--p) - 0.4em), 
         transparent var(--p) 
     ),
+
     linear-gradient(0deg, #bad1f1 30%, #9dc3f7 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -515,6 +545,46 @@ p {
     
     animation: pulse 10s linear 1.2s infinite;
 }
+@media (max-width: 768px) { /* Для мобильных устройств */
+   .heroT > h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+
+    font-size: 5em; /* Исходный размер текста */
+    font-weight: 600;
+    color: #9dc3f7; /* Этот цвет используется, но в данном случае он будет перекрыт фоном */
+
+    /* Градиенты для текста */
+    background: 
+        radial-gradient(2em 2em at 50% 50%, 
+            transparent calc(var(--p) - 2em), 
+            #fff calc(var(--p) - 1em), 
+            #fff calc(var(--p) - 0.4em), 
+            transparent var(--p)
+        ),
+        linear-gradient(0deg, #bad1f1 30%, #9dc3f7 100%);
+    background-clip: text; /* Фон применяется только к тексту */
+    -webkit-background-clip: text; /* Поддержка для Webkit-браузеров */
+    -webkit-text-fill-color: transparent; /* Делает сам текст прозрачным, но цвет задается фоном */
+
+    /* Тень текста для выделения */
+    text-shadow: 
+        0 2px 16px rgba(0, 0, 0, 0.24); /* Легкая тень для выделения */
+
+    /* Переменная для анимации */
+    --p: 0%;
+    transition: --p 3s linear;
+
+    /* Анимация */
+    animation: pulse 10s linear 1.2s infinite;
+}
+
+}
+
 
 .heroT h2:nth-child(2) {
     background:
@@ -724,14 +794,63 @@ p {
     pointer-events: none;
 } 
 
-.content-section {
+/* .content-section {
     position: relative;
     z-index: 1112;
     color: #fff;
     width: 100%;
     text-align: center;
     overflow: hidden;
+} */
+
+@media (max-width: 768px) { /* Для мобильных устройств */
+    .content-section {
+        position: relative;
+        z-index: 1112;
+        color: #fff;
+        width:95%; /* Ширина элемента по умолчанию */
+        max-width: 1200px; /* Ограничиваем максимальную ширину */
+        text-align: center;
+        overflow: hidden;
+    
+        /* Темный фон с 50% прозрачностью */
+        background-color: rgba(34, 46, 58, 0.5); /* Черный фон с 50% прозрачностью */
+         
+        /* Радиус скругления бордера */
+        border-radius: 10px;
+    
+        /* Добавляем отступы с помощью padding */
+        padding: 2em 10%; /* 2em сверху и снизу, 10% от ширины экрана слева и справа */
+    
+        margin: 0 auto; /* Центрируем блок по горизонтали */
+        margin-bottom: 1em;
+    }
+    .aboutUsWrapper {
+        position: relative;
+        z-index: 1112;
+        color: #fff;
+        width:95%; /* Ширина элемента по умолчанию */
+        max-width: 1200px; /* Ограничиваем максимальную ширину */
+        text-align: center;
+        overflow: hidden;
+    
+        /* Темный фон с 50% прозрачностью */
+        background-color: rgba(34, 46, 58, 0.5); /* Черный фон с 50% прозрачностью */
+         
+        /* Радиус скругления бордера */
+        border-radius: 10px;
+    
+        /* Добавляем отступы с помощью padding */
+        padding: 2em 10%; /* 2em сверху и снизу, 10% от ширины экрана слева и справа */
+    
+        margin: 0 auto; /* Центрируем блок по горизонтали */
+        margin-bottom: 1em;
+    }
+
+    
+    
 }
+
 
 .content-section p.subt {
     color: #d8ecf8be;

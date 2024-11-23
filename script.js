@@ -346,3 +346,29 @@ document.addEventListener("backbutton", function() {
 }, false);
 
 history.pushState(null, null, location.href);  // Initial state to override back navigation
+
+
+// --------------------------------------------------------------------------------------------------------
+
+window.addEventListener('load', function() {
+  // Получаем все элементы с текстом (можно настроить под нужные элементы)
+  const elements = document.querySelectorAll('.content-section, h2, p, div'); // Пример для элементов с классом .content-section, h2, p, div
+
+  elements.forEach(element => {
+      const elementRect = element.getBoundingClientRect(); // Получаем размер и положение элемента
+      const containerRect = element.parentElement.getBoundingClientRect(); // Получаем размер и положение контейнера
+
+      // Проверяем, выходит ли элемент за пределы по горизонтали
+      if (elementRect.right > containerRect.right) {
+          // Получаем название тега элемента
+          const elementTagName = element.tagName.toLowerCase(); // Получаем название тега в нижнем регистре
+
+          // Получаем индекс элемента в его родительском контейнере
+          const parent = element.parentElement;
+          const indexInParent = Array.from(parent.children).indexOf(element) + 1; // Индекс элемента в родительском контейнере (1-based)
+
+          // Логируем информацию о положении элемента
+          console.log(`Элемент '${elementTagName}' с индексом ${indexInParent} выходит за пределы контейнера.`);
+      }
+  });
+});
