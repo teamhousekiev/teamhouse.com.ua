@@ -87,109 +87,109 @@ animate();
 console.log("Привет Саймон"); 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Проверка ширины экрана (только для ПК)
-  if (window.innerWidth >= 768) {
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Проверка ширины экрана (только для ПК)
+//   if (window.innerWidth >= 768) {
    
-    var cards = document.querySelectorAll("a.card");
-    var background = document.querySelector(".background");
+//     var cards = document.querySelectorAll("a.card");
+//     var background = document.querySelector(".background");
 
-    // Сохранение индекса последней наведенной карты
-    var lastHoveredCardIndex = localStorage.getItem("lastHoveredCardIndex") || 0;
+//     // Сохранение индекса последней наведенной карты
+//     var lastHoveredCardIndex = localStorage.getItem("lastHoveredCardIndex") || 0;
 
-    // Установка фона на последнюю наведенную карту по умолчанию
-    var cardRect = cards[lastHoveredCardIndex].getBoundingClientRect();
-    var x = cardRect.left + window.scrollX + cardRect.width / 2;
-    var y = cardRect.top + window.scrollY + cardRect.height / 2;
+//     // Установка фона на последнюю наведенную карту по умолчанию
+//     var cardRect = cards[lastHoveredCardIndex].getBoundingClientRect();
+//     var x = cardRect.left + window.scrollX + cardRect.width / 2;
+//     var y = cardRect.top + window.scrollY + cardRect.height / 2;
 
-    background.style.width = cardRect.width + "px";
-    background.style.height = cardRect.height + "px";
-    background.style.transform = `translate(${x - cardRect.width / 2}px, ${
-      y - cardRect.height / 2
-    }px)`;
-    background.style.opacity = "0"; // Устанавливаем начальную непрозрачность фона
+//     background.style.width = cardRect.width + "px";
+//     background.style.height = cardRect.height + "px";
+//     background.style.transform = `translate(${x - cardRect.width / 2}px, ${
+//       y - cardRect.height / 2
+//     }px)`;
+//     background.style.opacity = "0"; // Устанавливаем начальную непрозрачность фона
 
-    // Для каждой карты добавляем события
-    cards.forEach(function (card, index) {
-      card.addEventListener("mouseenter", function (e) {
-        // Если карта уже увеличена, пропускаем эффект наведения
-        if (card.classList.contains("zoomed")) {
-          return;
-        }
+//     // Для каждой карты добавляем события
+//     cards.forEach(function (card, index) {
+//       card.addEventListener("mouseenter", function (e) {
+//         // Если карта уже увеличена, пропускаем эффект наведения
+//         if (card.classList.contains("zoomed")) {
+//           return;
+//         }
 
-        var rect = card.getBoundingClientRect();
-        x = rect.left + window.scrollX + rect.width / 2;
-        y = rect.top + window.scrollY + rect.height / 2;
+//         var rect = card.getBoundingClientRect();
+//         x = rect.left + window.scrollX + rect.width / 2;
+//         y = rect.top + window.scrollY + rect.height / 2;
 
-        background.style.width = rect.width + "px";
-        background.style.height = rect.height + "px";
-        background.style.transform = `translate(${x - rect.width / 2}px, ${
-          y - rect.height / 2
-        }px)`;
-        background.style.opacity = "1"; // Фон становится видимым при наведении
-        background.style.top = "0%";
-        background.style.left = "0%";
-        background.style.transformOrigin = "center";
-        // Сохраняем индекс наведения
-        localStorage.setItem("lastHoveredCardIndex", index);
-      });
+//         background.style.width = rect.width + "px";
+//         background.style.height = rect.height + "px";
+//         background.style.transform = `translate(${x - rect.width / 2}px, ${
+//           y - rect.height / 2
+//         }px)`;
+//         background.style.opacity = "1"; // Фон становится видимым при наведении
+//         background.style.top = "0%";
+//         background.style.left = "0%";
+//         background.style.transformOrigin = "center";
+//         // Сохраняем индекс наведения
+//         localStorage.setItem("lastHoveredCardIndex", index);
+//       });
 
-      card.addEventListener("mouseleave", function (e) {
-        background.style.opacity = "0"; // Фон скрывается, когда мышь уходит с карты
-        background.style.width = "0px";
-        background.style.height = "0px";
-      });
+//       card.addEventListener("mouseleave", function (e) {
+//         background.style.opacity = "0"; // Фон скрывается, когда мышь уходит с карты
+//         background.style.width = "0px";
+//         background.style.height = "0px";
+//       });
 
-      card.addEventListener("click", function () {
+//       card.addEventListener("click", function () {
         
-        if (card.classList.contains("zoomed")) {
-          // Убираем эффект увеличения
-          card.classList.remove("zoomed");
-          card.style.transform = "none";
-          card.style.position = "relative";
-          card.style.width = "unset";
-          card.style.height = "unset";
-          card.style.top = "0";
-          card.style.left = "0";
-          card.style.zIndex = "0";
+//         if (card.classList.contains("zoomed")) {
+//           // Убираем эффект увеличения
+//           card.classList.remove("zoomed");
+//           card.style.transform = "none";
+//           card.style.position = "relative";
+//           card.style.width = "unset";
+//           card.style.height = "unset";
+//           card.style.top = "0";
+//           card.style.left = "0";
+//           card.style.zIndex = "0";
 
-          // Убираем класс overflow с body при уменьшении карты
-          document.body.classList.remove("overflow");
+//           // Убираем класс overflow с body при уменьшении карты
+//           document.body.classList.remove("overflow");
 
-          // Восстанавливаем видимость других карт
-          cards.forEach(function (otherCard) {
-            if (otherCard !== card) {
-              otherCard.classList.remove("opacity-0");
-            }
-          });
-        } else {
-          // Применяем эффект увеличения
-          card.classList.add("zoomed");
-          card.style.position = "fixed";
-          card.style.top = "50%";
-          card.style.left = "50%";
-          requestAnimationFrame(function () {
-            card.style.transform = "translate(-50%, -50%)";
-          });
-          card.style.width = "90vw";
-          card.style.height = "90vh";
-          card.style.zIndex = "1000";
+//           // Восстанавливаем видимость других карт
+//           cards.forEach(function (otherCard) {
+//             if (otherCard !== card) {
+//               otherCard.classList.remove("opacity-0");
+//             }
+//           });
+//         } else {
+//           // Применяем эффект увеличения
+//           card.classList.add("zoomed");
+//           card.style.position = "fixed";
+//           card.style.top = "50%";
+//           card.style.left = "50%";
+//           requestAnimationFrame(function () {
+//             card.style.transform = "translate(-50%, -50%)";
+//           });
+//           card.style.width = "90vw";
+//           card.style.height = "90vh";
+//           card.style.zIndex = "1000";
 
-          // Добавляем класс overflow на body при увеличении карты
-          document.body.classList.add("overflow");
+//           // Добавляем класс overflow на body при увеличении карты
+//           document.body.classList.add("overflow");
 
-          // Затемняем остальные карты
-          cards.forEach(function (otherCard) {
-            if (otherCard !== card) {
-              otherCard.classList.add("opacity-0");
-            }
-          });
-          ChangeCardWrapper(); // Вызываем вашу функцию
-        }
-      });
-    });
-  }
-});
+//           // Затемняем остальные карты
+//           cards.forEach(function (otherCard) {
+//             if (otherCard !== card) {
+//               otherCard.classList.add("opacity-0");
+//             }
+//           });
+//           ChangeCardWrapper(); // Вызываем вашу функцию
+//         }
+//       });
+//     });
+//   }
+// });
 
 
 
@@ -466,72 +466,72 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
 
-  function exampleFunction() {
-    console.log("Где я нахожусь?");
-    console.trace(); // Показывает стек вызовов
-}
+//   function exampleFunction() {
+//     console.log("Где я нахожусь?");
+//     console.trace(); // Показывает стек вызовов
+// }
 
-// Пример использования
-document.addEventListener("click", function () {
-    exampleFunction(); // Вызов функции
-});
-// ------------------------------------------------------------------------------------
-document.addEventListener("DOMContentLoaded", function () {
-  // Проверка на мобильную версию (ширина экрана меньше 768px)
-  if (window.innerWidth <= 768) {
-    const cardElements = document.querySelectorAll('.cardBuild');
+// // Пример использования
+// document.addEventListener("click", function () {
+//     exampleFunction(); // Вызов функции
+// });
+// // ------------------------------------------------------------------------------------
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Проверка на мобильную версию (ширина экрана меньше 768px)
+//   if (window.innerWidth <= 768) {
+//     const cardElements = document.querySelectorAll('.cardBuild');
 
-    cardElements.forEach(function (card) {
-      card.addEventListener('click', function () {
-        // Ищем открытую карточку
-        const activeCard = document.querySelector('.cardBuild.zoomed');
+//     cardElements.forEach(function (card) {
+//       card.addEventListener('click', function () {
+//         // Ищем открытую карточку
+//         const activeCard = document.querySelector('.cardBuild.zoomed');
 
-        // Если другая карточка уже открыта, закрываем её
-        if (activeCard && activeCard !== card) {
-          activeCard.classList.remove('zoomed'); // Закрываем активную карточку
-          restoreImage(activeCard); // Восстанавливаем изображение в предыдущей карточке
-          // Возвращаем старую разметку с 2 колонками
-          if (!document.querySelector('.cardBuild.zoomed')) {
-            ChangeCardWrapper('repeat(2, 1fr)');
-          }
-        }
+//         // Если другая карточка уже открыта, закрываем её
+//         if (activeCard && activeCard !== card) {
+//           activeCard.classList.remove('zoomed'); // Закрываем активную карточку
+//           restoreImage(activeCard); // Восстанавливаем изображение в предыдущей карточке
+//           // Возвращаем старую разметку с 2 колонками
+//           if (!document.querySelector('.cardBuild.zoomed')) {
+//             ChangeCardWrapper('repeat(2, 1fr)');
+//           }
+//         }
 
-        // Переключаем состояние для текущей карточки
-        if (card.classList.contains('zoomed')) {
-          card.classList.remove('zoomed'); // Закрываем текущую карточку
-          restoreImage(card); // Восстанавливаем изображение
-          // Если не осталось активных карточек, возвращаем сетку в 2 колонки
-          if (!document.querySelector('.cardBuild.zoomed')) {
-            ChangeCardWrapper('repeat(2, 1fr)');
-          }
-        } else {
-          card.classList.add('zoomed'); // Открываем текущую карточку
-          hideImage(card); // Скрываем изображение при открытии карточки
-          ChangeCardWrapper('repeat(1, 1fr)'); // Меняем на 1 колонку
-        }
-      });
-    });
-  }
-});
+//         // Переключаем состояние для текущей карточки
+//         if (card.classList.contains('zoomed')) {
+//           card.classList.remove('zoomed'); // Закрываем текущую карточку
+//           restoreImage(card); // Восстанавливаем изображение
+//           // Если не осталось активных карточек, возвращаем сетку в 2 колонки
+//           if (!document.querySelector('.cardBuild.zoomed')) {
+//             ChangeCardWrapper('repeat(2, 1fr)');
+//           }
+//         } else {
+//           card.classList.add('zoomed'); // Открываем текущую карточку
+//           hideImage(card); // Скрываем изображение при открытии карточки
+//           ChangeCardWrapper('repeat(1, 1fr)'); // Меняем на 1 колонку
+//         }
+//       });
+//     });
+//   }
+// });
 
-// Функция для изменения layout (смена на 1 или 2 колонки)
-function ChangeCardWrapper(columns) {
-  const cardWrapper = document.querySelector('.card-wraper');
-  cardWrapper.style.gridTemplateColumns = columns; // Устанавливаем grid-template-columns
-}
+// // Функция для изменения layout (смена на 1 или 2 колонки)
+// function ChangeCardWrapper(columns) {
+//   const cardWrapper = document.querySelector('.card-wraper');
+//   cardWrapper.style.gridTemplateColumns = columns; // Устанавливаем grid-template-columns
+// }
 
-// Функция для скрытия изображения при открытой карточке
-function hideImage(card) {
-  const image = card.querySelector('img');
-  if (image) {
-    image.style.display = 'none'; // Скрываем изображение
-  }
-}
+// // Функция для скрытия изображения при открытой карточке
+// function hideImage(card) {
+//   const image = card.querySelector('img');
+//   if (image) {
+//     image.style.display = 'none'; // Скрываем изображение
+//   }
+// }
 
-// Функция для восстановления изображения при закрытой карточке
-function restoreImage(card) {
-  const image = card.querySelector('img');
-  if (image) {
-    image.style.display = 'block'; // Восстанавливаем изображение
-  }
-}
+// // Функция для восстановления изображения при закрытой карточке
+// function restoreImage(card) {
+//   const image = card.querySelector('img');
+//   if (image) {
+//     image.style.display = 'block'; // Восстанавливаем изображение
+//   }
+// }
