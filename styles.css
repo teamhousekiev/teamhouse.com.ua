@@ -1321,8 +1321,24 @@ section .cards .card:nth-child(3)::before {
   /* Для мобильных устройств, когда ширина экрана меньше 768px */
 @media (max-width: 768px) {
     .card-wraper {
-        grid-template-columns: repeat(1, minmax(0, 1fr)); /* 2 колонки для мобильных */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Две колонки */
+        gap: 0em; /* Расстояние между карточками */
     }
+
+    .card {
+        width: 100%; /* Карточка занимает всю ширину колонки */
+    }
+    .card-main {
+        border: 1px solid #0f181f;
+       padding: 5vw;  /* Применение динамических отступов на основе ширины окна */
+       width: 100%;
+       height: auto;
+       min-height: 300px;
+       border-radius: 20px;
+       overflow: hidden;
+       background-color: none;
+       box-sizing: border-box;
 }
   a.card {
     text-decoration: none;
@@ -1333,17 +1349,15 @@ section .cards .card:nth-child(3)::before {
     padding: 10px;
   }
   .card-main {
-    
-         border: 1px solid #0f181f;
+        border: 1px solid #0f181f;
         padding: 5vw;  /* Применение динамических отступов на основе ширины окна */
         width: 100%;
         height: auto;
         min-height: 300px;
         border-radius: 20px;
         overflow: hidden;
-        background-color: #313747;
         box-sizing: border-box;
-    
+}
 }
 
 /* Для мобильных устройств */
@@ -1351,6 +1365,7 @@ section .cards .card:nth-child(3)::before {
     .card-main {
         padding: 0px;
         min-height: 50px; /* Минимальная высота для мобильных */
+        border-radius: none;
     }
 }
  
@@ -1969,6 +1984,18 @@ body {
     white-space: normal; /* Разрешаем перенос текста на новые строки */
 }
 
+  /* Стиль текста */
+  .aboutUsTextContainer p {
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+
+    /* Убедитесь, что контейнер не ограничивает текст */
+    white-space: normal; /* Разрешаем тексту переноситься на новые строки */
+    overflow: visible;   /* Убираем обрезку текста */
+    text-overflow: clip; /* Убираем многоточие */
+}
 
 
 @media (max-width: 767px) {
@@ -1982,21 +2009,21 @@ body {
         max-width: 95%;
         padding: 0 0 0 0;
    }
+
+   .aboutUsTextContainer p {
+    font-size: 0.9rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+
+    /* Убедитесь, что контейнер не ограничивает текст */
+    white-space: normal; /* Разрешаем тексту переноситься на новые строки */
+    overflow: visible;   /* Убираем обрезку текста */
+    text-overflow: clip; /* Убираем многоточие */
+  }
 }
     
-    /* Стиль текста */
-    .aboutUsTextContainer p {
-        font-size: 0.9rem;
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-    
-        /* Убедитесь, что контейнер не ограничивает текст */
-        white-space: normal; /* Разрешаем тексту переноситься на новые строки */
-        overflow: visible;   /* Убираем обрезку текста */
-        text-overflow: clip; /* Убираем многоточие */
-    }
-    
+  
     
     /* Задержка анимации */
     .aboutUsTextContainer.animate p:nth-child(1) { transition-delay: 0.5s; }
@@ -2087,11 +2114,41 @@ a.sharer .fa {
 .card-header {
     font-size: 30px;
     font-weight: 600;
-    color: #f7ffff;
-   
-    
+    color: #f7ffff;  
 }
-.cardBuild.active .card-header {
+
+@media (max-width: 768px) {
+    .card-header {
+        font-size: 15px;
+        font-weight: 600;
+        color: #f7ffff;
+    }
+    .cardBuild.active .card-textBuild {
+        display: block;
+        opacity: 1;
+        max-height: 80vh;  
+        max-width: 80vh;
+        overflow-y: auto;
+        backdrop-filter: blur(10px);
+        z-index: 1000; 
+         background-color: #222e3a;
+         background-size: cover;  
+         background-position: center;  
+         background-repeat: no-repeat; 
+       
+    }
+    .cardBuild.active .card-wraper {
+        display: grid;  /* Убедитесь, что применяете grid */
+        grid-template-columns: 1fr;  /* Один столбец */
+        gap: 1em;  /* Пробел между элементами */
+        width: 100%; /* Убедитесь, что ширина контейнера 100% */
+    }
+  
+}
+
+
+
+.cardBuild.active .card-main {
     font-family: 'Miroslav';
     color: #e50c27; /* Красный цвет для первой буквы */
     background-color: #222e3a;
@@ -2099,6 +2156,7 @@ a.sharer .fa {
      background-position: center;  /* Центрируем картинку */
      background-repeat: no-repeat;  /* Запрещаем повторение */
 }
+
 
 /* Скрыть текст по умолчанию */
 .card-textBuild {
@@ -2113,30 +2171,36 @@ a.sharer .fa {
 }
 
 
-/* Показать текст при активации */
+
 .cardBuild.active .card-textBuild {
     display: block;
     opacity: 1;
-    max-height: 80vh;  /* Увеличиваем максимальную высоту */
+    max-height: 80vh;  
+    max-width: 80vh;
     overflow-y: auto;
-    backdrop-filter: blur(10px); /* Размытие фона */
-    z-index: 1000; /* Поверх всех остальных элементов */
-     /* Добавление фонового изображения */
+    backdrop-filter: blur(10px);
+    z-index: 1000; 
      background-color: #222e3a;
-     background-size: cover;  /* Чтобы картинка покрывала весь элемент */
-     background-position: center;  /* Центрируем картинку */
-     background-repeat: no-repeat;  /* Запрещаем повторение */
+     background-size: cover;  
+     background-position: center;  
+     background-repeat: no-repeat; 
    
 }
 
 
 
 
+/* ------------------------------------------------------------------------------------------------ */
+
+
+
 
 /* СКРЫТИЕ КОНТЕНТА УСЛУГИ ДЛЯ МОБИЛЬНЫЙ УСТРОЙСТВ */
+
+
 @media (max-width: 768px) {
     .card-main .desktop-content {
-        display: none; /* Прячет контент */
+        display: none; 
     }
     .header .spotlight {
         display: none;
@@ -2147,9 +2211,7 @@ a.sharer .fa {
      .cardFooterGallery  {
         display: none;
     } 
-    
 }
-
 
 
 

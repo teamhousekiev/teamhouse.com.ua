@@ -84,12 +84,13 @@ initParticles();
 animate();
 
 
-console.log("Привет Саймон");
+console.log("Привет Саймон"); 
 
 
 document.addEventListener("DOMContentLoaded", function () {
   // Проверка ширины экрана (только для ПК)
   if (window.innerWidth >= 768) {
+   
     var cards = document.querySelectorAll("a.card");
     var background = document.querySelector(".background");
 
@@ -140,6 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       card.addEventListener("click", function () {
+        
         if (card.classList.contains("zoomed")) {
           // Убираем эффект увеличения
           card.classList.remove("zoomed");
@@ -182,6 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
               otherCard.classList.add("opacity-0");
             }
           });
+          ChangeCardWrapper(); // Вызываем вашу функцию
         }
       });
     });
@@ -372,3 +375,163 @@ window.addEventListener('load', function() {
       }
   });
 });
+
+// ------------------------------------------------------------------------------------------------------------------
+// ОТображение про нас--------------------
+if (window.innerWidth > 768) { // Проверяем, что ширина экрана больше 768px
+  const aboutUsTextContainer = document.querySelector('.aboutUsTextContainer');
+  const cardWork = document.querySelector('cardWork');
+  const cardWrapper = document.querySelector('card-wraper');
+  console.log("CardWrapper" + cardWrapper);
+
+  if (aboutUsTextContainer) {
+      aboutUsTextContainer.style.opacity = '1'; // Делаем текст видимым
+      aboutUsTextContainer.style.transform = 'translateY(0)'; // Убираем смещение
+      aboutUsTextContainer.classList.add('animate')
+      console.log("Карточка должна появиться +animate'")
+  }
+}
+
+// --------------------------------------------------------------------------------------------------------------------------
+// Проверяем что отображение происходит на мобильном добавление галереи
+document.addEventListener("DOMContentLoaded", function () {
+  // Проверяем ширину экрана для мобильных устройств
+  if (window.innerWidth <= 768) {
+      const mobileGallery = document.getElementById("mobile-gallery");
+
+      // Подгрузка мобильной галереи в контейнер
+      if (mobileGallery) {
+          fetch("./swipeGalleryMobile/indexSwipeGalleryMobile_1.html")
+              .then(response => response.text())
+              .then(html => {
+                  // Добавляем контент в основной контейнер
+                  mobileGallery.innerHTML = html;
+
+                  // Клонируем галерею в карточки
+                  const cardContainers = document.querySelectorAll(".cardWork");
+                  cardContainers.forEach(container => {
+                      container.innerHTML = mobileGallery.innerHTML; // Клонируем содержимое
+                      container.style.display = "block"; // Делаем контейнер видимым
+                  });
+
+                  // Подключаем стили и скрипты для галереи
+                  const mobileStyles = document.createElement("link");
+                  mobileStyles.rel = "stylesheet";
+                  mobileStyles.href = "./swipeGalleryMobile/stylesSwipeGalleryMobile_1.css";
+                  document.head.appendChild(mobileStyles);
+
+                  const flickityScript = document.createElement("script");
+                  flickityScript.src = "./swipeGalleryMobile/scriptSwipeGalleryMobile_1.js";
+                  document.body.appendChild(flickityScript);
+              })
+              .catch(error => console.error("Ошибка при загрузке галереи:", error));
+      }
+  }
+});
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   if (window.innerWidth < 768) { // Проверяем ширину экрана
+//       const modal = document.querySelector('.modal-backdrop'); // Ищем элемент с классом modal-backdrop
+//       const aboutUsTextContainer = document.querySelector('.card-textBuild'); // Ищем контейнер текста
+
+//       if (modal && aboutUsTextContainer) {
+//           aboutUsTextContainer.style.display = 'block'; // Делаем текст видимым
+//           console.log("Модальное окно отображено");
+//       } else {
+//           console.log("Элементы modal-backdrop или card-textBuild не найдены");
+//       }
+//   }
+// });
+
+// // Функция для переключения сетки с 2 колонок на 1 при клике
+// function toggleGridLayout() {
+//   const cardWrapper = document.querySelector('.card-wraper'); // Выбираем элемент с классом .card-wraper
+
+//   // Получаем текущий стиль grid-template-columns
+//   const currentLayout = cardWrapper.style.gridTemplateColumns;
+
+//   // Меняем макет на 1 колонку, если был 2, и на 2 колонки, если был 1
+//   if (currentLayout === 'repeat(2, 1fr)' || currentLayout === '') {
+//       cardWrapper.style.gridTemplateColumns = 'repeat(1, 1fr)'; // Меняем на 1 колонку
+//   } else {
+//       cardWrapper.style.gridTemplateColumns = 'repeat(2, 1fr)'; // Меняем на 2 колонки
+//   }
+// }
+
+// // Добавляем обработчик события для клика
+// const cardBuildElement = document.querySelector('.cardBuild');
+// cardBuildElement.addEventListener('click', toggleGridLayout); // При клике на .cardBuild меняем макет
+
+// ОТображение про нас--------------------
+
+  
+
+  function exampleFunction() {
+    console.log("Где я нахожусь?");
+    console.trace(); // Показывает стек вызовов
+}
+
+// Пример использования
+document.addEventListener("click", function () {
+    exampleFunction(); // Вызов функции
+});
+// ------------------------------------------------------------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+  // Проверка на мобильную версию (ширина экрана меньше 768px)
+  if (window.innerWidth <= 768) {
+    const cardElements = document.querySelectorAll('.cardBuild');
+
+    cardElements.forEach(function (card) {
+      card.addEventListener('click', function () {
+        // Ищем открытую карточку
+        const activeCard = document.querySelector('.cardBuild.zoomed');
+
+        // Если другая карточка уже открыта, закрываем её
+        if (activeCard && activeCard !== card) {
+          activeCard.classList.remove('zoomed'); // Закрываем активную карточку
+          restoreImage(activeCard); // Восстанавливаем изображение в предыдущей карточке
+          // Возвращаем старую разметку с 2 колонками
+          if (!document.querySelector('.cardBuild.zoomed')) {
+            ChangeCardWrapper('repeat(2, 1fr)');
+          }
+        }
+
+        // Переключаем состояние для текущей карточки
+        if (card.classList.contains('zoomed')) {
+          card.classList.remove('zoomed'); // Закрываем текущую карточку
+          restoreImage(card); // Восстанавливаем изображение
+          // Если не осталось активных карточек, возвращаем сетку в 2 колонки
+          if (!document.querySelector('.cardBuild.zoomed')) {
+            ChangeCardWrapper('repeat(2, 1fr)');
+          }
+        } else {
+          card.classList.add('zoomed'); // Открываем текущую карточку
+          hideImage(card); // Скрываем изображение при открытии карточки
+          ChangeCardWrapper('repeat(1, 1fr)'); // Меняем на 1 колонку
+        }
+      });
+    });
+  }
+});
+
+// Функция для изменения layout (смена на 1 или 2 колонки)
+function ChangeCardWrapper(columns) {
+  const cardWrapper = document.querySelector('.card-wraper');
+  cardWrapper.style.gridTemplateColumns = columns; // Устанавливаем grid-template-columns
+}
+
+// Функция для скрытия изображения при открытой карточке
+function hideImage(card) {
+  const image = card.querySelector('img');
+  if (image) {
+    image.style.display = 'none'; // Скрываем изображение
+  }
+}
+
+// Функция для восстановления изображения при закрытой карточке
+function restoreImage(card) {
+  const image = card.querySelector('img');
+  if (image) {
+    image.style.display = 'block'; // Восстанавливаем изображение
+  }
+}
