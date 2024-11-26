@@ -2271,17 +2271,32 @@ a.sharer .fa {
 /* Базовые стили (для мобильных устройств) */
   /* Секция карточек */
   .teamServiceSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(19, 20, 24, 0.7); /* Черный фон с прозрачностью */
-  }
-  
-  
-  /* Карточка */
-  .teamCardContainer {
-    width: 90%; /* Ширина адаптируется под экран мобильного устройства */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 карточки в строке */
+    background-color: rgba(19, 20, 24, 0.7);
+    justify-items: center;
+    align-items: normal;
+    max-width: 150vh; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрируем контейнер по горизонтали */
+}
+
+
+@media (max-width: 1024px) {
+    .teamServiceSection {
+        grid-template-columns: repeat(2, 1fr); /* 2 карточки на экранах меньше 1024px */
+    }
+}
+
+@media (max-width: 600px) {
+    .teamServiceSection {
+        grid-template-columns: 1fr; /* 1 карточка на мобильных экранах */
+    }
+}
+
+
+/* Карточка */
+.teamCardContainer {
+    width: 90%; /* По умолчанию карточки занимают 90% ширины */
     max-width: 350px;
     background-color: #2c303b;
     border-radius: 10px;
@@ -2291,7 +2306,10 @@ a.sharer .fa {
     position: relative;
     margin-bottom: 20px;
     padding-top: 2.2rem;
-  }
+}
+
+
+
   
   /* Псевдоэлемент сверху (иконка или декоративный блок) */
  /* Псевдоелемент для фону */
@@ -2300,9 +2318,9 @@ a.sharer .fa {
     content: '';
     position: absolute;
     top: -15px;
-    left: 215px;
-    width: 54px;
-    height: 54px;
+    left: 255px;
+    width: 60px;
+    height: 60px;
     background-image: url(./img/service/germetik.jpg);
     background-size: cover;
     background-position: center;
@@ -2314,9 +2332,9 @@ a.sharer .fa {
     content: '';
     position: absolute;
     top: -8px;
-    left: 215px;
-    width: 54px;
-    height: 54px;
+    left: 255px;
+    width: 60px;
+    height: 60px;
     background-image: url(./img/service/ogorozha.png);
     background-size: cover;
     background-position: center;
@@ -2329,9 +2347,9 @@ a.sharer .fa {
     content: '';
     position: absolute;
     top: -8px;
-    left: 215px;
-    width: 54px;
-    height: 54px;
+    left: 255px;
+    width: 60px;
+    height: 60px;
     background-image: url(./img/service/window.png);
     background-size: cover;
     background-position: center;
@@ -2344,9 +2362,9 @@ a.sharer .fa {
     content: '';
     position: absolute;
     top: -8px;
-    left: 215px;
-    width: 54px;
-    height: 54px;
+    left: 255px;
+    width: 60px;
+    height: 60px;
     background-image: url(./img/service/kran.png);
     background-size: cover;
     background-position: center;
@@ -2359,9 +2377,9 @@ a.sharer .fa {
     content: '';
     position: absolute;
     top: -8px;
-    left: 215px;
-    width: 54px;
-    height: 54px;
+    left: 255px;
+    width: 60px;
+    height: 60px;
     background-image: url(./img/service/brus.png);
     background-size: cover;
     background-position: center;
@@ -2374,9 +2392,9 @@ a.sharer .fa {
     content: '';
     position: absolute;
     top: -8px;
-    left: 215px;
-    width: 60px;
-    height: 60px;
+    left: 255px;
+    width: 65px;
+    height: 65px;
     background-image: url(./img/service/garantiya.png);
     background-size: cover;
     background-position: center;
