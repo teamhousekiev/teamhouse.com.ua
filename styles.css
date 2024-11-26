@@ -130,8 +130,9 @@ body {
     }
 
     .content-section {
-        padding: 25em 0 15em 1em; /* Меньше отступов */
+        padding: 15em 0 10em 0em; /* Меньше отступов */
         text-align: center;
+        background: none;
     }
     .accent-lines {
         pointer-events: none;
@@ -162,10 +163,6 @@ body {
     p {
         font-size: 1.2em;
     }
-
-    /* .content-section {
-        padding: 12em 2em;
-    } */
 
    .aboutUsWrapper{
         max-width: 60%;
@@ -198,10 +195,6 @@ body {
     p {
         font-size: 1.5em;
     }
-/* 
-    .content-section {
-        padding: 16em 4em;
-    } */
 
     .mountains > div {
         width: 20em;
@@ -731,45 +724,7 @@ p {
     opacity: 0; scale: 0;
     animation: accentload 2s ease-out 4.4s forwards;
 }
-/* 
-.accent-lines > div:nth-child(1) > div:nth-child(3)::before{ display: block; left: 24em; }
-.accent-lines > div:nth-child(1) > div:nth-child(3)::after{ display: block; right: 24em; }
-.accent-lines > div:nth-child(1) > div:nth-child(4)::before{ display: block; left: 24em; }
-.accent-lines > div:nth-child(1) > div:nth-child(4)::after{ display: block; right: 24em; }
-.accent-lines > div:nth-child(1) > div:nth-child(5)::before{ display: block; left: 24em; }
-.accent-lines > div:nth-child(1) > div:nth-child(5)::after{ display: block; right: 24em; }
 
-.accent-lines > div:nth-child(1) > div:nth-child(2)::before,
-.accent-lines > div:nth-child(1) > div:nth-child(2)::after{ 
-    display: block; width: 5em; height: 1px; border-radius: 0; opacity: 0.12;
-}
-.accent-lines > div:nth-child(1) > div:nth-child(2)::before{
-    right: 24em; rotate: 45deg; translate: -2.5em 2.5em;
-}
-.accent-lines > div:nth-child(1) > div:nth-child(2)::after{
-    right: 24em; rotate: -45deg; translate: -2.5em 2.5em;
-}
-.accent-lines > div:nth-child(1) > div:nth-child(1)::before,
-.accent-lines > div:nth-child(1) > div:nth-child(1)::after{ 
-    display: block; width: 5em; height: 1px; border-radius: 0; opacity: 0.12;
-}
-.accent-lines > div:nth-child(1) > div:nth-child(1)::before{
-    left: 24em; rotate: 45deg; translate: 2.5em 7.5em;
-}
-.accent-lines > div:nth-child(1) > div:nth-child(1)::after{
-    left: 24em; rotate: -45deg; translate: 2.5em 7.5em;
-}
-
-.accent-lines > div:nth-child(1) > div:nth-child(2)::before,
-.accent-lines > div:nth-child(1) > div:nth-child(2)::after {
-    opacity: 0; scale: 0;
-    animation: accentload2 2s ease-out 2.4s forwards;
-} */
-/* .accent-lines > div:nth-child(1) > div:nth-child(1)::before,
-.accent-lines > div:nth-child(1) > div:nth-child(1)::after {
-    opacity: 0; scale: 0;
-    animation: accentload3 2s ease-out 2.4s forwards;
-}  */
 @keyframes accentload2 {
     0% {
         opacity: 0; scale: 0; transform: rotate(360deg);
@@ -799,14 +754,6 @@ p {
     }
 }
 
-/* .content-section {
-    position: relative;
-    z-index: 1112;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-} */
 
 @media (max-width: 768px) { /* Для мобильных устройств */
     .content-section {
@@ -1933,28 +1880,9 @@ body {
     #mobile-gallery .ag-container-shops {
       padding: 2px;
       margin-bottom: 30px;
-    }
-    /* Добавьте другие необходимые стили для мобильной версии */
-    galleryOurWork {
-        display: flex;
-        justify-content: center; /* Выравнивание по горизонтали */
-        align-items: center; /* Выравнивание по вертикали */
-        min-height: 100vh; /* Гарантирует, что секция займет минимум всю высоту экрана */
-        /* padding-block: min(20vh, 6rem); */
-        box-sizing: border-box; /* Учитывает отступы в общей ширине */
-        padding:0.5vh 0 0 0;
-    }
-  }
-  galleryOurWork {
-    display: flex;
-    justify-content: center; /* Выравнивание по горизонтали */
-    align-items: center; /* Выравнивание по вертикали */
-    min-height: 100vh; /* Гарантирует, что секция займет минимум всю высоту экрана */
-  
-    box-sizing: border-box; /* Учитывает отступы в общей ширине */
- 
+    } 
 }
-  /* Стили для галереи новые  */
+   /*Стили для галереи новые  */
 
  
   .aboutUsTextContainer {
@@ -1964,67 +1892,69 @@ body {
     max-width: 85%;
     margin: 0 auto;
     line-height: 1.8;
-    padding-left: 120px;
     margin-bottom: 60px;
     overflow: visible; /* Убедитесь, что текст не скрыт */
     text-overflow: clip; /* Убираем многоточие */
     white-space: normal; /* Разрешаем перенос текста на новые строки */
+    grid-template-rows: auto; /* Высота ячеек будет зависеть от содержания */
 }
 
-  /* Стиль текста */
-  .aboutUsTextContainer p {
+
+  .aboutUsTextContainer li {
     font-size: 1.5rem;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-
     /* Убедитесь, что контейнер не ограничивает текст */
     white-space: normal; /* Разрешаем тексту переноситься на новые строки */
     overflow: visible;   /* Убираем обрезку текста */
     text-overflow: clip; /* Убираем многоточие */
 }
-
+.aboutUsTextContainer.animate li {
+    opacity: 1;
+    transform: translateY(0);
+    color:#c2c6d1;
+    font-size: 22px;
+}
 
 @media (max-width: 767px) {
-    .aboutUsTextContainer {
-        margin-top: 2vh; /* Пример изменения отступа сверху */
-        padding-left: 0px;
-        text-align: -webkit-auto;
-
-    }
-    .aboutUsWrapper{
+    .aboutUsWrapper {
         max-width: 95%;
-        padding: 0 0 0 0;
-   }
+        padding: 0;
+    }
 
-   .aboutUsTextContainer p {
-    font-size: 0.9rem;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-
-    /* Убедитесь, что контейнер не ограничивает текст */
-    white-space: normal; /* Разрешаем тексту переноситься на новые строки */
-    overflow: visible;   /* Убираем обрезку текста */
-    text-overflow: clip; /* Убираем многоточие */
-  }
-}
-    
-  
-    
-    /* Задержка анимации */
-    .aboutUsTextContainer.animate p:nth-child(1) { transition-delay: 0.5s; }
-    .aboutUsTextContainer.animate p:nth-child(2) { transition-delay: 1s; }
-    .aboutUsTextContainer.animate p:nth-child(3) { transition-delay: 1.5s; }
-    .aboutUsTextContainer.animate p:nth-child(4) { transition-delay: 2s; }
-    .aboutUsTextContainer.animate p:nth-child(5) { transition-delay: 2.5s; } /* Добавляем задержку для последнего абзаца */
-    
-    .aboutUsTextContainer.animate p {
-        opacity: 1;
-        transform: translateY(0);
-        margin-top: 3vh;
+    .aboutUsTextContainer {
+        display: grid;
+        gap: 1rem; /* Расстояние между абзацами */
+        grid-template-rows: auto; /* Высота ячеек будет зависеть от содержания */
+        margin-left: 0px;
     }
     
+
+    .aboutUsTextContainer li {
+        font-size: 0.9rem;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+    }
+
+    .aboutUsTextContainer.animate li {
+        opacity: 1;
+        transform: translateY(1);
+        font-size: 14px;
+    }
+
+    /* Задержка анимации для абзацев */
+    .aboutUsTextContainer.animate li:nth-child(1) { transition-delay: 0.5s; }
+    .aboutUsTextContainer.animate li:nth-child(2) { transition-delay: 1s; }
+    .aboutUsTextContainer.animate li:nth-child(3) { transition-delay: 1.5s; }
+    .aboutUsTextContainer.animate li:nth-child(4) { transition-delay: 2s; }
+    .aboutUsTextContainer.animate li:nth-child(5) { transition-delay: 2.5s; }
+}
+
    
      /* Стили для ссылки-кнопки */
 a.sharer {
@@ -2042,9 +1972,16 @@ a.sharer {
     position: relative;
     overflow: hidden;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-    width: 100%;
+    width: 20%;
     text-align: center;
-    text-decoration: none; /* Убираем подчеркивание */
+    text-decoration: none;
+    margin: 0 auto; /* Центрирует кнопку */
+}
+
+@media (max-width: 768px) {
+    a.sharer {
+    width: 90%;
+    }
 }
 
 a.sharer:active {
@@ -2198,9 +2135,10 @@ a.sharer .fa {
      .cardFooterGallery  {
         display: none;
     } 
-    .socials-item{
+    #footer-socials .socials {
         display: none;
     }
+  
 }
 
 
@@ -2279,7 +2217,7 @@ a.sharer .fa {
     background-color: rgba(19, 20, 24, 0.7);
     justify-items: center;
     align-items: normal;
-    max-width: 90vh; /* Максимальная ширина контейнера */
+    max-width: 150vh; /* Максимальная ширина контейнера */
     margin: 0 auto; /* Центрируем контейнер по горизонтали */
 }
 
