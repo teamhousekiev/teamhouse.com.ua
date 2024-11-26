@@ -2198,6 +2198,9 @@ a.sharer .fa {
      .cardFooterGallery  {
         display: none;
     } 
+    .socials-item{
+        display: none;
+    }
 }
 
 
@@ -2276,7 +2279,7 @@ a.sharer .fa {
     background-color: rgba(19, 20, 24, 0.7);
     justify-items: center;
     align-items: normal;
-    max-width: 150vh; /* Максимальная ширина контейнера */
+    max-width: 90vh; /* Максимальная ширина контейнера */
     margin: 0 auto; /* Центрируем контейнер по горизонтали */
 }
 
