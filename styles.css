@@ -2321,7 +2321,7 @@ a.sharer .fa {
     content: '';
     position: absolute;
     top: -15px;
-    left: 255px;
+    left: 215px;
     width: 60px;
     height: 60px;
     background-image: url(./img/service/germetik.jpg);
@@ -2335,7 +2335,7 @@ a.sharer .fa {
     content: '';
     position: absolute;
     top: -8px;
-    left: 255px;
+    left: 215px;
     width: 60px;
     height: 60px;
     background-image: url(./img/service/ogorozha.png);
@@ -2350,7 +2350,7 @@ a.sharer .fa {
     content: '';
     position: absolute;
     top: -8px;
-    left: 255px;
+    left: 215px;
     width: 60px;
     height: 60px;
     background-image: url(./img/service/window.png);
@@ -2365,7 +2365,7 @@ a.sharer .fa {
     content: '';
     position: absolute;
     top: -8px;
-    left: 255px;
+    left: 215px;
     width: 60px;
     height: 60px;
     background-image: url(./img/service/kran.png);
@@ -2380,7 +2380,7 @@ a.sharer .fa {
     content: '';
     position: absolute;
     top: -8px;
-    left: 255px;
+    left: 215px;
     width: 60px;
     height: 60px;
     background-image: url(./img/service/brus.png);
@@ -2395,7 +2395,7 @@ a.sharer .fa {
     content: '';
     position: absolute;
     top: -8px;
-    left: 255px;
+    left: 215px;
     width: 65px;
     height: 65px;
     background-image: url(./img/service/garantiya.png);
