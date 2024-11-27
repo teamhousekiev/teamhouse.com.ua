@@ -134,13 +134,7 @@ body {
         text-align: center;
         background: none;
     }
-    .accent-lines {
-        pointer-events: none;
-        position: absolute; top: 0; left: 0; right: 0;
-        width: 100%; height: 100vh;
-        z-index: -2;
-        --accent-lines-clr: rgba(186, 215, 247, .18);
-    }
+
     
 
 
@@ -376,7 +370,7 @@ button.contact-btn:hover::before {
 button.contact-btn:hover .glow {
     --loop-cycle: 2s;
 }
-.contact-btn .glow::after, .contact-btn .glow::before {
+/* .contact-btn .glow::after, .contact-btn .glow::before {
     content: "";
     height: 100%;
     offset-anchor: 100% 50%;
@@ -389,7 +383,7 @@ button.contact-btn:hover .glow {
     animation: loop var(--loop-cycle) linear infinite;
     aspect-ratio: 1 / 1;
     transition: opacity 1s ease-in-out;
-}
+} */
 .contact-btn .glow::before {
     animation-delay: calc( var(--loop-cycle) / -2 );
 }
@@ -427,7 +421,7 @@ button.contact-btn:hover .glow::after, button.contact-btn:hover .glow::before {
     overflow: hidden;
 }
 
-.header .spotlight > div {
+/* .header .spotlight > div {
     border-radius: 0 0 50% 50%;
     position: absolute; left: 0; right: 0; margin: 0 auto; 
     top: 3em;
@@ -437,7 +431,7 @@ button.contact-btn:hover .glow::after, button.contact-btn:hover .glow::before {
     filter: blur(15px) opacity(0.5);
     z-index: -1;
     animation: load 2s ease-in-out forwards, loadrot 2s ease-in-out forwards, spotlight 21s ease-in-out infinite reverse;
-}
+} */
 .header .spotlight > div:nth-child(1){ 
     rotate: 20deg;
     animation: load 2s ease-in-out forwards, loadrot 2s ease-in-out forwards, spotlight 17s ease-in-out infinite;
@@ -579,7 +573,7 @@ p {
 }
 
 
-.heroT h2:nth-child(2) {
+/* .heroT h2:nth-child(2) {
     background:
     radial-gradient( 2em 2em at 50% 50%,
         transparent calc(var(--p) - 2em),
@@ -593,7 +587,7 @@ p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: blur(16px) opacity(0.4);
-}
+} */
 @keyframes pulse { 
     0% { --p:0%; }
     50% { --p:300%;}
@@ -655,7 +649,7 @@ p {
 @keyframes load2 {  
     0% { opacity: 0;}    
     100% { opacity: 0.3;}    
-}
+} 
 .heroSubP p::before{
     background: linear-gradient( -90deg, #9dc3f7 0%, transparent 100%);
     right: 120%;
@@ -665,17 +659,23 @@ p {
     background: linear-gradient( 90deg, #9dc3f7 0%, transparent 100%);
     left: 120%;
     translate: 5em 0;
-}
+} 
 
-.accent-lines {
+
+ .accent-lines {
     pointer-events: none;
-    position: absolute; top: 0; left: 0; right: 0;
+    position: absolute; 
     width: 100%; height: 100vh;
     z-index: -2;
     --accent-lines-clr: rgba(186, 215, 247, .18);
 }
-.accent-lines > div {
-    position: absolute; top: 0; right: 0; left: 0; margin: auto;
+
+ .accent-lines > div {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    left: 0; 
+    margin: auto;
     height: 100%; width: 100%;
 }
 .accent-lines > div:nth-child(1) > div{
@@ -695,6 +695,8 @@ p {
     width: 1px; height: 100%;
     background: var(--accent-lines-clr);
 }
+
+/* -------------------------------------------------------------------------------------------------------- */
 @keyframes accentload {
     0% {
         opacity: 0; scale: 0;
@@ -713,7 +715,7 @@ p {
 .accent-lines > div:nth-child(2) > div:nth-child(3){ right: 24em; }
 .accent-lines > div:nth-child(2) > div:nth-child(4){ right: 34em; }
 
-.accent-lines > div:nth-child(1) > div::before, 
+ .accent-lines > div:nth-child(1) > div::before, 
 .accent-lines > div:nth-child(1) > div::after { 
     content: ''; display: none; position: absolute;
     width: 0.2em; height: 0.2em; border-radius: 1em;
@@ -722,8 +724,8 @@ p {
     translate: 0 -1px;
 
     opacity: 0; scale: 0;
-    animation: accentload 2s ease-out 4.4s forwards;
-}
+    animation: accentload 2s ease-out 4.4s forwards; */
+ } 
 
 @keyframes accentload2 {
     0% {
@@ -742,7 +744,7 @@ p {
     100% {
         opacity: 0.12; scale: 1; transform: rotate(0deg);
     }
-}
+} 
 
 .hero-spacer {
     height: 40em;
