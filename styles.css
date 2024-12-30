@@ -261,9 +261,9 @@ h2 a {
     position: absolute; 
     left: 0;
     right: 29em;
-    bottom: 0.05em;
+    bottom: -1em;
     margin: 0.2em auto;
-    width: 100px; /* Установите желаемую ширину */
+    width: 150px; /* Установите желаемую ширину */
     height: auto; /* Сохраняет пропорции */
     max-height: 100px; /* Устанавливает максимальную высоту */
 }
