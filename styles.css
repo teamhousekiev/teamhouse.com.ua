@@ -2449,76 +2449,78 @@ a.sharer .fa {
 
 /* Кнопка инстаграм */
 /* Центровка кнопки только по горизонтали */
+/* Центровка контейнера */
 .center-container {
     display: flex;
     justify-content: center; /* Центровка по горизонтали */
-  }
-.btn {
-    margin: 40px;
-  }
-  .btnFooter{
-    margin: 0px;
+    flex-wrap: wrap; /* Перенос кнопок на новую строку */
   }
   
-  h2 {
-    color: #fff;
-  }
-  
-  p {
-    color: #fff;
-    font-family:sans-serif;
-    font-weight:lighter;
-  }
-
-.btn.btn-instagram {
-    background-color: transparent;
-    color: #ffffff;
-    border-color: #FF00Cf;
-    border-size: 2px;
-    border-radius: 0;
-  }
-  
-  .btn.btn-instagram:hover {
-    background-color: transparent;
-    color: #FF00Cf;
-    border-color: #ffffff;
-    border-size: 2px;
-    border-radius: 0;
-  }
-  /* Стили кнопки Telegram */
-.btn.btn-telegram {
-    background-color: transparent;
-    color: #ffffff; /* Фирменный цвет Telegram */
-    border-color: #0088cc;
-    border-width: 2px;
-    border-radius: 0;
+  .btn {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
   }
   
-  .btn.btn-telegram:hover {
-    background-color: transparent;
-    color: #0088cc;
-    border-color: #ffffff;
+  /* Кнопка Instagram */
+  .btn.btn-instagram {
+    background-color: rgba(255, 0, 207, 0.2); /* Прозрачный розовый фон */
+    color: #ffffff !important; /* Цвет текста белый для всех устройств */
+    border-color: #FF00CF;
     border-width: 2px;
     border-radius: 0;
   }
   
-  a{
-    color:#fff;
+  .btn.btn-instagram:hover {
+    background-color: rgba(255, 0, 207, 0.4); /* Более насыщенный фон при наведении */
+    color: #FF00CF !important; /* Текст розовый при наведении */
+    border-color: #ffffff;
   }
-  @media (min-width: 768px) {
-    .row {
-      display: flex;             /* Включаем flexbox для строки */
-      justify-content: center;   /* Центровка всех колонок по горизонтали */
-    }
   
-    .col-md-3 {
-      width: auto;               /* Отключаем фиксированную ширину (25%) */
-      flex: 0;                   /* Отключаем автоматическое растяжение */
-    }
-  } 
-  .bilsheRobit{
-    
-    color: white;
+  /* Кнопка Telegram */
+  .btn.btn-telegram {
+    background-color: rgba(0, 136, 204, 0.2); /* Прозрачный синий фон */
+    color: #ffffff !important; /* Цвет текста белый для всех устройств */
+    border-color: #0088cc;
+    border-width: 2px;
+    border-radius: 0;
   }
+  
+  .btn.btn-telegram:hover {
+    background-color: rgba(0, 136, 204, 0.4); /* Более насыщенный фон при наведении */
+    color: #0088cc !important; /* Текст синий при наведении */
+    border-color: #ffffff;
+  }
+  
+  /* Общие стили ссылок */
+  a {
+    color: #fff !important; /* Устанавливаем белый цвет текста для всех устройств */
+    text-decoration: none;
+  }
+  
+  /* Flexbox стили для строки */
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-3 {
+    width: 100%; /* На мобильных устройствах ширина кнопки 100% */
+    text-align: center; /* Центрирование кнопок */
+  }
+  
+  @media (min-width: 768px) {
+    .col-md-3 {
+      width: auto; /* Возвращаем автоширину для больших экранов */
+      flex: 0;
+    }
+  }
+  
+  /* Текст "Більше робіт" */
+  .bilsheRobit {
+    color: white !important; /* Цвет текста белый для всех устройств */
+  }
+  
