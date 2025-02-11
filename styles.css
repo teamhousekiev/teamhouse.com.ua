@@ -264,11 +264,11 @@ h2 a {
     position: absolute; 
     left: 0;
     right: 29em;
-    bottom: -1em;
+    bottom: -2em;
     margin: 0.2em auto;
-    width: 120px; /* Установите желаемую ширину */
+    width: 95px; /* Установите желаемую ширину */
     height: auto; /* Сохраняет пропорции */
-    max-height: 100px; /* Устанавливает максимальную высоту */
+    max-height: 85px; /* Устанавливает максимальную высоту */
 }
 @media (max-width: 767px) {
     .imgHeader{
@@ -2507,7 +2507,7 @@ a.sharer .fa {
     flex-wrap: wrap;
   }
   
-  .col-md-3 {
+  .col-md-3 {пше
     width: 100%; /* На мобильных устройствах ширина кнопки 100% */
     text-align: center; /* Центрирование кнопок */
   }
