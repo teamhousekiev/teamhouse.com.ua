@@ -276,7 +276,7 @@ h2 a {
         position: absolute; 
         left: 2em;
 
-        top: 1em;
+        top: 2em;
         right: 29em;
         bottom: 0.05em;
         width: 100px; /* Установите желаемую ширину */
@@ -1030,7 +1030,7 @@ margin-top: 80px;
   min-height: 100vh;
 } */
 
-img {
+Hr {
   max-width: 100%;
   display: block;
 }
