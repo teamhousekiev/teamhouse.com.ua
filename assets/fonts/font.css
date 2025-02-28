@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('/assets/fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* Переменные веса от 100 до 900 */
+    font-stretch: 75% 100%; /* Регулировка ширины */
+  }
+  
+@font-face {
+    font-family: 'Nunito';
+    src: url('/assets/fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 100 900;
+    font-stretch: 75% 100%;
+  }
+
+  @font-face {
+    font-family: 'Nunito';
+    src: url('/assets/fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* Переменные веса от 100 до 900 */
+    font-stretch: 75% 100%; /* Регулировка ширины */
+  }
+  
+@font-face {
+    font-family: 'Raleway';
+    src: url('/assets/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 100 900;
+    font-stretch: 75% 100%;
+  }
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/assets/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 100 900;
+    font-stretch: 75% 100%;
+  }
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 100 900;
+    font-stretch: 75% 100%;
+  }
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 100 900;
+    font-stretch: 75% 100%;
+  }
+
+  @font-face {
+    font-family: 'Nunito_Sans';
+    src: url('/assets/fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC\,opsz\,wdth\,wght.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 100 900;
+    font-stretch: 75% 100%;
+  }
+
+@font-face {
+    font-family: 'Nunito_Sans';
+    src: url('/assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 100 900;
+    font-stretch: 75% 100%;
+  }
+
