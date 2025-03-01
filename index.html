@@ -144,18 +144,18 @@
           <li><a id="Prices" href="pricing.html">ЦІНИ</a></li>
           <li><a id="AboutUs" href="about.html">ПРО НАС</a></li>
           <li><a id="Contacts" href="contact.html">КОНТАКТИ</a></li>
-          <!-- <div class="dropdown">
-            <button id="Language" class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          <div class="dropdown">
+            <button id="Lang" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
           МОВА
             </button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#" onclick="setLanguage('ru')">Русский</a></li>
-                <li><a class="dropdown-item" href="#" onclick="setLanguage('ua')">Українська</a></li>
-                <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a></li>
-                <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')">Français</a></li>
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('ru'); return false">Русский</a></li>
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('ua'); return false">Українська</a></li>
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('en'); return false">English</a></li>
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('fr'); return false">Français</a></li>
       
             </ul>
-        </div> -->
+        </div> 
           
 <!--           
           <li class="dropdown"><a> <span>МОВА</span> <i class="bi  toggle-dropdown"></i></a>
@@ -196,45 +196,46 @@
         <div class="carousel-item active">
           <img src="assets/img/hero-carousel/hero-carousel-1.webp" loading="lazy" alt="bugaivka">
           <div class="container">
-            <h2>Твій дім – наша справа!</h2>
-            <p>Ми створюємо комфорт і якість, використовуючи найкращі матеріали та сучасні технології, щоб кожен простір відповідав вашим очікуванням.</p>
-            <a href="services.html" class="btn-get-started">До нашіх послуг</a>
+            <h2 id="M001">Твій дім – наша справа!</h2>
+            <p id="M0011">Ми створюємо комфорт і якість, використовуючи найкращі матеріали та сучасні технології, щоб кожен простір відповідав вашим очікуванням.</p>
+            <a id="M002" href="services.html" class="btn-get-started">До нашіх послуг</a>
+
           </div>
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
           <img src="assets/img/hero-carousel/hero-carousel-2.webp" loading="lazy" alt="Vodostochka">
           <div class="container">
-            <h2>Будуємо майбутнє разом!</h2>
-            <p>Надійність, інновації та професіоналізм – основа нашої роботи, яка допомагає створювати затишні, функціональні та довговічні будівлі.</p>
-            <a href="farb-service-details.html" class="btn-get-started">До фарбування та утеплення</a>
+            <h2 id="M003" >Будуємо майбутнє разом!</h2>
+            <p id="M004">Надійність, інновації та професіоналізм – основа нашої роботи, яка допомагає створювати затишні, функціональні та довговічні будівлі.</p>
+            <a href="farb-service-details.html" class="btn-get-started" id="M005">До фарбування та утеплення</a>
           </div>
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
           <img src="assets/img/hero-carousel/hero-carousel-3.webp" loading="lazy" alt="Domino">
           <div class="container">
-            <h2>Ваша ідея – наше втілення!</h2>
-            <p>Ми уважно дослухаємося до ваших побажань і застосовуємо передові технології, щоб кожен проєкт став унікальним та ідеально підходив вам.
+            <h2 id="M006">Ваша ідея – наше втілення!</h2>
+            <p id="M007">Ми уважно дослухаємося до ваших побажань і застосовуємо передові технології, щоб кожен проєкт став унікальним та ідеально підходив вам.
 
             </p>
-            <a href="bud-service-details.html" class="btn-get-started">До будівництва</a>
+            <a href="bud-service-details.html" class="btn-get-started" id="M008" >До будівництва</a>
           </div>
         </div>
         <div class="carousel-item">
           <img src="assets/img/hero-carousel/hero-carousel-4.webp" loading="lazy" alt="Osokorky">
           <div class="container">
-            <h2>Дім, в якому хочеться жити!</h2>
-            <p>Ми створюємо простір, де гармонія, комфорт та якість поєднуються, щоб ви могли насолоджуватися кожним моментом у своєму ідеальному будинку.</p>
-            <a href="virobnitstvo-service-details.html" class="btn-get-started">Наше виробництво</a>
+            <h2 id="M009">Дім, в якому хочеться жити!</h2>
+            <p id="M010">Ми створюємо простір, де гармонія, комфорт та якість поєднуються, щоб ви могли насолоджуватися кожним моментом у своєму ідеальному будинку.</p>
+            <a id="M011" href="virobnitstvo-service-details.html" class="btn-get-started">Наше виробництво</a>
           </div>
         </div><!-- End Carousel Item -->
         <div class="carousel-item">
           <img src="assets/img/hero-carousel/hero-carousel-6.webp" loading="lazy" alt="banya Doneck">
           <div class="container">
-            <h2>Якість, що говорить сама за себе!</h2>
-            <p>Ми дотримуємося високих стандартів у кожному проєкті, забезпечуючи довговічність, стиль та безпеку вашого житла або бізнес-простору.</p>
-            <a href="garantiya-service-details.html" class="btn-get-started">Наша гарантія</a>
+            <h2 id="M012">Якість, що говорить сама за себе!</h2>
+            <p id="M013">Ми дотримуємося високих стандартів у кожному проєкті, забезпечуючи довговічність, стиль та безпеку вашого житла або бізнес-простору.</p>
+            <a id="M014" href="garantiya-service-details.html" class="btn-get-started">Наша гарантія</a>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -262,11 +263,11 @@
           <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200"><img src="assets/img/about.webp" loading="lazy"></div>
 
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="inner-title">ТІМ ХАУС</h2>
+            <h2 class="inner-title" id="Name" >ТІМ ХАУС</h2>
             <div class="our-story">
-              <h4>18 років будівництва</h4>
-              <h3>Наша історія</h3>
-              <p>
+              <h4 id="M015">18 років будівництва</h4>
+              <h3 id="M016">Наша історія</h3>
+              <p id="M017">
                 Ми працюємо з 2007 року та маємо 18 років досвіду у дерев’яному будівництві. 
                 За цей час збудували понад 100 об'єктів по всій Україні, допомагаючи втілювати мрії про затишний і
                  надійний дім. Кожен проєкт ТІМ ХАУС – це поєднання майстерності, 
@@ -274,11 +275,11 @@
 
               </p>
               <ul>
-                <li><i class="bi bi-check-circle"></i> <span>18 років досвіду </span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Власне виробництво</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Професійна команда</span></li>
+                <li><i class="bi bi-check-circle"></i> <span id="M018">18 років досвіду </span></li>
+                <li><i class="bi bi-check-circle"></i> <span id="M019">Власне виробництво</span></li>
+                <li><i class="bi bi-check-circle"></i> <span id="M020">Професійна команда</span></li>
               </ul>
-              <p>Ми надаємо гарантію 3 роки на всі наші роботи та виготовлені матеріали. Це наша впевненість у якості та надійності кожного проєкту. </p>
+              <p id="M021">Ми надаємо гарантію 3 роки на всі наші роботи та виготовлені матеріали. Це наша впевненість у якості та надійності кожного проєкту. </p>
 
               <!-- <div class="watch-video d-flex align-items-center position-relative">
                 <i class="bi bi-play-circle"></i>
@@ -298,8 +299,8 @@
 
           <!-- Section Title -->
           <div class="container section-title" data-aos="fade-up">
-            <h2>Послуги</h2>
-            <p>Обрані послуги<br></p>
+            <h2 id="M022">Послуги</h2>
+            <p id="M023">Обрані послуги<br></p>
           </div><!-- End Section Title -->
     
           <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -316,10 +317,10 @@
                       <i class="bi bi-house-fill"></i>
                     </div>
                     <a href="bud-service-details.html" loading="lazy" class="stretched-link">
-                      <h3>Будівництво</h3>
+                      <h3 id="M024">Будівництво</h3>
                     </a>
-                    <p>Повний комплекс будівельних та монтажних послуг: від зведення фундаментів і будинків до облаштування фасадів, терас, альтанок і садових домиків під ключ.</p>
-                    <h4>Детальніше про нашу справу</h4>
+                    <p id="M025">Повний комплекс будівельних та монтажних послуг: від зведення фундаментів і будинків до облаштування фасадів, терас, альтанок і садових домиків під ключ.</p>
+                    <h4 id="M026">Детальніше про нашу справу</h4>
                   </div>
                 </div>
               </div><!-- End Service Item -->
@@ -332,11 +333,11 @@
                     <div class="icon">
                       <i class="bi bi-thermometer-sun"></i>
                     </div>
-                    <a href="farb-service-details.html" loading="lazy"class="stretched-link">
-                      <h3>Фарбування та Утеплення</h3>
+                    <a href="farb-service-details.html" loading="lazy" class="stretched-link">
+                      <h3 id="M027">Фарбування та Утеплення</h3>
                     </a>
-                    <p>Виконуємо діагностику тепловтрат, фарбування, герметизацію дерев'яних будинків, відновлення покриттів та утеплення стін, для покращення енергоефективності.</p>
-                    <h4>Дізнатися деталі</h4>
+                    <p id="M028">Виконуємо діагностику тепловтрат, фарбування, герметизацію дерев'яних будинків, відновлення покриттів та утеплення стін, для покращення енергоефективності.</p>
+                    <h4 id="M029">Дізнатися деталі</h4>
                   </div>
                 </div>
               </div><!-- End Service Item -->
@@ -350,27 +351,27 @@
                       <i class="bi bi-brush-fill"></i>
                     </div>
                     <a href="restavracia-service-details.html" class="stretched-link">
-                      <h3>Реставрація вікон, дверей та терас</h3>
+                      <h3 id="M030">Реставрація вікон, дверей та терас</h3>
                     </a>
-                    <p>Професійне фарбування вікон і дверей, оновлення огорож, обслуговування терас і садових меблів, а також ремонт і фарбування сходів.</p>
-                    <h4>Про реставрацію вікон</h4>
+                    <p id="M031">Професійне фарбування вікон і дверей, оновлення огорож, обслуговування терас і садових меблів, а також ремонт і фарбування сходів.</p>
+                    <h4 id="M032">Про реставрацію вікон</h4>
                   </div>
                 </div>
               </div><!-- End Service Item -->
               <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                 <div class="service-item">
                   <div class="img">
-                    <img src="assets/img/services-4.webp"loading="lazy" class="img-fluid" alt="">
+                    <img src="assets/img/services-4.webp" loading="lazy" class="img-fluid" alt="" >
                   </div>
                   <div class="details position-relative">
                     <div class="icon">
                       <i class="bi bi-tools"></i>
                     </div>
                     <a href="maister-service-details.html" class="stretched-link">
-                      <h3>Майстер на годину</h3>
+                      <h3 id="M033">Майстер на годину</h3>
                     </a>
-                    <p>Експрес-ремонт і терміновий виїзд для утеплення, монтажу обшивки, ремонту сантехніки, електричних робіт та обслуговування терас — оперативно та якісно!</p>
-                    <h4>Детальніше про послугу</h4>
+                    <p id="M034">Експрес-ремонт і терміновий виїзд для утеплення, монтажу обшивки, ремонту сантехніки, електричних робіт та обслуговування терас — оперативно та якісно!</p>
+                    <h4 id="M035">Детальніше про послугу</h4>
                   </div>
                 </div>
               </div><!-- End Service Item -->
@@ -384,10 +385,10 @@
                       <i class="bi bi-box-seam-fill"></i>
                     </div>
                     <a href="virobnitstvo-service-details.html" class="stretched-link">
-                      <h3>Виробництво</h3>
+                      <h3 id="M036">Виробництво</h3>
                     </a>
-                    <p>Виготовляємо пиломатеріали, клеєний брус, терасні дошки, огорожі та декоративні елементи, виготовлених на заводах в Києві та Сарнах.</p>
-                    <h4>Переглянути про виробництво</h4>
+                    <p id="M037">Виготовляємо пиломатеріали, клеєний брус, терасні дошки, огорожі та декоративні елементи, виготовлених на заводах в Києві та Сарнах.</p>
+                    <h4 id="M038">Переглянути про виробництво</h4>
                   </div>
                 </div>
               </div><!-- End Service Item -->
@@ -401,10 +402,10 @@
                       <i class="bi bi-3-circle-fill"></i>
                     </div>
                     <a href="garantiya-service-details.html" class="stretched-link">
-                      <h3>Гарантія</h3>
+                      <h3 id="M039">Гарантія</h3>
                     </a>
-                    <p>Використовуємо сертифіковані матеріали, надаємо гарантію 3 роки, забезпечуємо прозорість умов і оперативну підтримку клієнтів.</p>
-                    <h4>Перйти до гарантії</h4>
+                    <p id="M040">Використовуємо сертифіковані матеріали, надаємо гарантію 3 роки, забезпечуємо прозорість умов і оперативну підтримку клієнтів.</p>
+                    <h4 id="M041">Перейти до гарантії</h4>
                   </div>
                   
                 </div>
@@ -421,8 +422,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Наші роботи</h2>
-        <p>Будуємо з натхненням, реставруємо з повагою.</p>
+        <h2 id="M042">Наші роботи</h2>
+        <p id="M043">Будуємо з натхненням, реставруємо з повагою.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -430,10 +431,10 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">всі</li>
-            <li data-filter=".filter-app">Будинки</li>
-            <li data-filter=".filter-product">Лазні</li>
-            <li data-filter=".filter-branding">Будівництво та реставрація</li>
+            <li data-filter="*" class="filter-active" id="M044">Всі</li>
+            <li data-filter=".filter-app" id="M045">Будинки</li>
+            <li data-filter=".filter-product" id="M046">Лазні</li>
+            <li data-filter=".filter-branding" id="M047">Будівництво та реставрація</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
@@ -442,8 +443,11 @@
               <img src="assets/img/masonry-portfolio/masonry-portfolio-1.webp" loading="lazy" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>256 м2</h4>
-                <p>Каркасний будинок</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.webp" loading="lazy" title="Каркасний будинок 256 м2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p id="M048">Каркасний будинок</p>
+                <a  href="assets/img/masonry-portfolio/masonry-portfolio-1.webp" loading="lazy"
+                 title=""
+                  
+                 data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
               </div>
             </div><!-- End Portfolio Item -->
@@ -452,8 +456,8 @@
               <img src="assets/img/masonry-portfolio/masonry-portfolio-2.webp" loading="lazy" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>105 м2</h4>
-                <p>Лазня з клееного брусу 180мм</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.webp"  loading="lazy" title="Лазня з клееного брусу 180мм" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p id="M049">Лазня з клееного брусу 180мм</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.webp"  loading="lazy" title="" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
               </div>
             </div><!-- End Portfolio Item -->
@@ -461,9 +465,9 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-3.webp" loading="lazy" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Огорожа</h4>
-                <p>Поеднання дуба та стекла</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.webp" loading="lazy" title="Огорожа + скло" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4 id="M050">Огорожа</h4>
+                <p id="M051">Поеднання дуба та стекла</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.webp" loading="lazy" title="" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
               </div>
             </div><!-- End Portfolio Item -->
@@ -472,8 +476,8 @@
               <img src="assets/img/masonry-portfolio/masonry-portfolio-4.webp"  loading="lazy" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>126 м2</h4>
-                <p>Каркасний будинок</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.webp" loading="lazy" title="Каркасний будинок 126 м2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p id="M052">Каркасний будинок</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.webp" loading="lazy" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
               </div>
             </div><!-- End Portfolio Item -->
@@ -482,8 +486,8 @@
               <img src="assets/img/masonry-portfolio/masonry-portfolio-5.webp" loading="lazy" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>64 м2</h4>
-                <p>Оциліндрована колода 200м</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.webp" loading="lazy" title="Баня з оциліндрованої колоди 200мм Площадь 64м2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p id="M053">Оциліндрована колода 200м</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.webp" loading="lazy" title="" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
               </div>
             </div><!-- End Portfolio Item -->
@@ -491,9 +495,9 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-6.webp" loading="lazy" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Тераса 145 м2 з басейном</h4>
-                <p>Терасна дошка термоясень</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.webp" loading="lazy" title="Тераса 145 м2 з басейном Доска термоясень" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4 id="M054">Тераса 145 м2 з басейном</h4>
+                <p id="M055">Терасна дошка термоясень</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.webp" loading="lazy" title="" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
               </div>
             </div><!-- End Portfolio Item -->
@@ -502,8 +506,8 @@
               <img src="assets/img/masonry-portfolio/masonry-portfolio-7.webp" loading="lazy" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>220 м2</h4>
-                <p>Будинок з клеєного брусу 200мм</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.webp" loading="lazy" title="Будинок з клеєного брусу 220 м2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p id="M056">Будинок з клеєного брусу 200мм</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.webp" loading="lazy" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
               </div>
             </div><!-- End Portfolio Item -->
@@ -511,9 +515,9 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-8.webp" loading="lazy" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Лазня 120м2</h4>
-                <p>Каркасна технологія, брус 100х100мм</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.webp" loading="lazy" title="Баня по каркасной технології" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4 id="M057">Лазня 120м2</h4>
+                <p id="M058">Каркасна технологія, брус 100х100мм</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.webp" loading="lazy" title="" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
               </div>
             </div><!-- End Portfolio Item -->
@@ -521,9 +525,9 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-9.webp" loading="lazy" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Тераса</h4>
-                <p>Композітна дошка</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.webp" loading="lazy" title="Тераса композітна дошка" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4 id="M059">Тераса</h4>
+                <p id="M060">Композітна дошка</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.webp" loading="lazy" title="" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
               </div>
             </div><!-- End Portfolio Item -->
@@ -595,14 +599,15 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">ТІМ ХАУС</span>
+            <span class="sitename" id="Name" >ТІМ ХАУС</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Корпоративний офіс,<br/> Дружби народів 21, вхід с Иоанна Павла II <br/><br/>
-              Поруч метро Звіринецька (Дружби Народів - 500 м).</p>
-            <p>Київ,  Україна</p>
-            <p class="mt-3"><strong>Тел. :</strong> <span>+38 (093) 752-74-77</span></p>
-            <br><strong>"Є питання? Пишіть нам на пошту!"</strong> <br><span>info@teamhouse.com.ua</span></p>
+            <p id="M061">Корпоративний офіс,<br/> <p id="M062" >Дружби народів 21, вхід с Иоанна Павла II</p> <br/>
+              <p  id="M063" >Поруч метро Звіринецька (Дружби Народів - 500 м).</p>
+            <p id="M064">Київ,  Україна</p>
+            <p class="mt-3" id="M065">Тел. :<span>+38 (093) 752-74-77</span></p>
+            <br>
+            <p id="M066">"Є питання? Пишіть нам на пошту!"</p><br><span>info@teamhouse.com.ua</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
@@ -613,26 +618,26 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Категорії</h4>
+          <h4 id="M067">Категорії</h4>
           <ul>
-            <li><a href="index.html">Головна</a></li>
-            <li><a href="services.html">Послугі</a></li>
-            <li><a href="portfolio.html">Наші роботи</a></li>
-            <li><a href="pricing.html">Ціни</a></li>
-            <li><a href="about.html">Про нас</a></li>
-            <li><a href="contact.html">Контакти</a></li>
+            <li><a id="M068" href="index.html">Головна</a></li>
+            <li><a id="M069" href="services.html">Послугі</a></li>
+            <li><a id="M070" href="portfolio.html">Наші роботи</a></li>
+            <li><a id="M071" href="pricing.html">Ціни</a></li>
+            <li><a id="M072" href="about.html">Про нас</a></li>
+            <li><a id="M073" href="contact.html">Контакти</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Наші Послуги</h4>
+          <h4 id="M074">Наші Послуги</h4>
           <ul>
-            <li><a href="bud-service-details.html">Будівництво</a></li>
-            <li><a href="farb-service-details.html">Фарбування та утеплення</a></li>
-            <li><a href="restavracia-service-details.html">Рестарація</a></li>
-            <li><a href="maister-service-details.html">Майстер на годину</a></li>
-            <li><a href="virobnitstvo-service-details.html">Виробництво</a></li>
-            <li><a href="garantiya-service-details.html">Гарантія</a></li>
+            <li ><a id="M075" href="bud-service-details.html">Будівництво</a></li>
+            <li ><a id="M076" href="farb-service-details.html">Фарбування та утеплення</a></li>
+            <li ><a id="M077" href="restavracia-service-details.html">Рестарація</a></li>
+            <li ><a id="M078" href="maister-service-details.html">Майстер на годину</a></li>
+            <li ><a id="M079" href="virobnitstvo-service-details.html">Виробництво</a></li>
+            <li ><a id="M080" href="garantiya-service-details.html">Гарантія</a></li>
           </ul>
         </div>
 
@@ -651,13 +656,14 @@
       </div> -->
     </div>
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright 2025</span> <strong class="px-1 sitename">Company</strong> <span>TEAM HOUSE IT PRODUCTION</span></p>
-      <div class="credits">
+      <p>© <p>Copyright 2025</p> <strong class="px-1 sitename">Company</strong> <span>TEAM HOUSE IT PRODUCTION</span></p>
+      <div class="credits" >
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <p>TEAM HOUSE IT</p>
+       <p id="M081">Designed by</p>  
+        <p>TEAM HOUSE IT</p>
       </div>
     </div>
 
