@@ -537,6 +537,327 @@ addTranslation("M081",
     "Designed by", // en
     "Conçu par" // fr
 );
+addTranslation("M082", 
+    "Строительство", // ru
+    "Будівництво", // ua
+    "Construction", // en
+    "Construction" // fr
+);
+
+addTranslation("M083", 
+    "Огорожи та тераси", // ru
+    "Огорожі та тераси", // ua
+    "Fences and terraces", // en
+    "Clôtures et terrasses" // fr
+);
+
+addTranslation("M084", 
+    "Вентилированные фасады", // ru
+    "Вентильовані фасади", // ua
+    "Ventilated facades", // en
+    "Façades ventilées" // fr
+);
+
+addTranslation("M085", 
+    "Вагонка, имитация бруса", // ru
+    "Вагонка, імітація бруса", // ua
+    "Cladding, imitation of log", // en
+    "Clins, imitation de rondins" // fr
+);
+
+addTranslation("M086", 
+    "Фундаменты с плитой", // ru
+    "Фундаменті з плитою", // ua
+    "Foundations with slab", // en
+    "Fondations avec dalle" // fr
+);
+
+addTranslation("M087", 
+    "Каркасные дома", // ru
+    "Каркасні будинки", // ua
+    "Frame houses", // en
+    "Maisons à ossature" // fr
+);
+
+addTranslation("M088", 
+    "Реконструкция зданий", // ru
+    "Реконструкція будівель", // ua
+    "Building reconstruction", // en
+    "Rénovation des bâtiments" // fr
+);
+
+addTranslation("M089", 
+    "Альтанки на заказ", // ru
+    "Альтанки на замовлення", // ua
+    "Custom gazebos", // en
+    "Abris de jardin sur mesure" // fr
+);
+
+addTranslation("M090", 
+    "Садовые дома", // ru
+    "Садові доміки під ключ", // ua
+    "Garden houses turnkey", // en
+    "Maisons de jardin clés en main" // fr
+);
+
+addTranslation("M091", 
+    "Покраска", // ru
+    "Фарбування", // ua
+    "Painting", // en
+    "Peinture" // fr
+);
+
+addTranslation("M092", 
+    "Шлифовка поверхностей", // ru
+    "Шліфування поверхонь", // ua
+    "Surface sanding", // en
+    "Ponçage de surface" // fr
+);
+
+addTranslation("M093", 
+    "Устранение трещин, грибка", // ru
+    "Усунення тріщин, грибка", // ua
+    "Crack and mold removal", // en
+    "Élimination des fissures, moisissure" // fr
+);
+
+addTranslation("M094", 
+    "Покраска стен дома", // ru
+    "Фарбування стін будинку", // ua
+    "House wall painting", // en
+    "Peinture des murs de maison" // fr
+);
+
+addTranslation("M095", 
+    "Герметизация \"Теплый шов\"", // ru
+    "Герметизація \"Теплий шов\"", // ua
+    "Sealing \"Warm joint\"", // en
+    "Étanchéité \"Joint chaud\"" // fr
+);
+
+addTranslation("M096", 
+    "Восстановление покрытий", // ru
+    "Відновлення покриттів", // ua
+    "Covering restoration", // en
+    "Restauration de revêtements" // fr
+);
+
+addTranslation("M097", 
+    "Утепление стен, крыши", // ru
+    "Утеплення стін, покрівлі", // ua
+    "Insulation of walls and roof", // en
+    "Isolation des murs et toit" // fr
+);
+
+addTranslation("M098", 
+    "Теплопотери тепловизором", // ru
+    "Тепловтрати тепловізором", // ua
+    "Heat loss with thermovision", // en
+    "Perte de chaleur avec thermovision" // fr
+);
+
+addTranslation("M099", 
+    "Реставрация", // ru
+    "Реставрація", // ua
+    "Restoration", // en
+    "Rénovation" // fr
+);
+
+addTranslation("M100", 
+    "Обслуживание террас", // ru
+    "Обслуговування терас", // ua
+    "Terrace maintenance", // en
+    "Entretien de terrasse" // fr
+);
+
+addTranslation("M101", 
+    "Детейлинг домов", // ru
+    "Детейлінг будинку", // ua
+    "House detailing", // en
+    "Détayage de maison" // fr
+);
+
+addTranslation("M102", 
+    "Покраска окон, дверей", // ru
+    "Фарбування вікон, дверей", // ua
+    "Painting windows, doors", // en
+    "Peinture des fenêtres, portes" // fr
+);
+
+addTranslation("M103", 
+    "Огорождение, навесы", // ru
+    "Огорожа, навіси", // ua
+    "Fencing, canopies", // en
+    "Clôtures, auvents" // fr
+);
+
+addTranslation("M104", 
+    "Садовая мебель", // ru
+    "Садові меблі", // ua
+    "Garden furniture", // en
+    "Meubles de jardin" // fr
+);
+addTranslation("M105", 
+    "Лестницы в доме", // ru
+    "Сходи в будинку", // ua
+    "Stairs in the house", // en
+    "Escaliers dans la maison" // fr
+);
+
+addTranslation("M106", 
+    "Ремонт лестниц", // ru
+    "Ремонт сходів", // ua
+    "Stair repair", // en
+    "Réparation d'escalier" // fr
+);
+addTranslation("M107", 
+    "Мастер на годину", // ru
+    "Майстер на годину", // ua
+    "Master for an hour", // en
+    "Maître à l'heure" // fr
+);
+addTranslation("M108", 
+    "Чистка террас", // ru
+    "Чистка терас", // ua
+    "Terrace cleaning", // en
+    "Nettoyage de terrasse" // fr
+);
+
+addTranslation("M109", 
+    "Устранение сквозняков", // ru
+    "Усунення протягів", // ua
+    "Draft removal", // en
+    "Élimination des courants d'air" // fr
+);
+
+addTranslation("M110", 
+    "Покраска и ремонт", // ru
+    "Фарбування та ремонт", // ua
+    "Painting and repair", // en
+    "Peinture et réparation" // fr
+);
+
+addTranslation("M111", 
+    "Ремонт обшивки", // ru
+    "Ремонт обшивки", // ua
+    "Cladding repair", // en
+    "Réparation du revêtement" // fr
+);
+
+addTranslation("M112", 
+    "Ремонт сантехники", // ru
+    "Ремонт сантехніки", // ua
+    "Plumbing repair", // en
+    "Réparation de plomberie" // fr
+);
+
+addTranslation("M113", 
+    "Декоративные элементы", // ru
+    "Декоративні елементи", // ua
+    "Decorative elements", // en
+    "Éléments décoratifs" // fr
+);
+
+addTranslation("M114", 
+    "Электрические работы", // ru
+    "Електричні роботи", // ua
+    "Electrical work", // en
+    "Travaux électriques" // fr
+);
+addTranslation("M115", 
+    "Производство", // ru
+    "Виробництво", // ua
+    "Manufacturing", // en
+    "Fabrication" // fr
+);
+addTranslation("M116", 
+    "Производство ограждений", // ru
+    "Виробництво огорож", // ua
+    "Fencing production", // en
+    "Production de clôtures" // fr
+);
+
+addTranslation("M117", 
+    "Терасная доска", // ru
+    "Терасна дошка", // ua
+    "Decking board", // en
+    "Planches de terrasse" // fr
+);
+
+addTranslation("M118", 
+    "Клееный брус для домов", // ru
+    "Клеєний брус для будинків", // ua
+    "Glued laminated timber for houses", // en
+    "Bois lamellé-collé pour maisons" // fr
+);
+
+addTranslation("M119", 
+    "Клееные балки конструкционные", // ru
+    "Клеєні балки конструкційні", // ua
+    "Glued laminated beams for construction", // en
+    "Poutres lamellées-collées pour la construction" // fr
+);
+
+addTranslation("M120", 
+    "Клееные балки на заказ", // ru
+    "Клеєні балки на замовлення", // ua
+    "Custom glued laminated beams", // en
+    "Poutres lamellées-collées sur mesure" // fr
+);
+
+addTranslation("M121", 
+    "Столбы, стропила клееные", // ru
+    "Стовпи, крокви клеєні", // ua
+    "Glued columns, rafters", // en
+    "Poteaux, chevrons lamellés-collés" // fr
+);
+
+addTranslation("M122", 
+    "Сухие, строганные пиломатериалы", // ru
+    "Пиломатеріали сухі, стругані", // ua
+    "Dry, planed lumber", // en
+    "Bois séché et raboté" // fr
+);
+addTranslation("M123", 
+    "Гарантия", // ru
+    "Гарантія", // ua
+    "Warranty", // en
+    "Garantie" // fr
+);
+addTranslation("M124", 
+    "Качество материалов", // ru
+    "Якість матеріалів", // ua
+    "Quality of materials", // en
+    "Qualité des matériaux" // fr
+);
+
+addTranslation("M125", 
+    "Производственный контроль", // ru
+    "Виробничий контроль", // ua
+    "Production control", // en
+    "Contrôle de production" // fr
+);
+
+addTranslation("M126", 
+    "Долговечность", // ru
+    "Довговічність", // ua
+    "Durability", // en
+    "Durabilité" // fr
+);
+
+addTranslation("M127", 
+    "Прозрачность", // ru
+    "Прозорість", // ua
+    "Transparency", // en
+    "Transparence" // fr
+);
+
+addTranslation("M128", 
+    "Поддержка клиентов", // ru
+    "Підтримка клієнтів", // ua
+    "Customer support", // en
+    "Support client" // fr
+);
 
 
 
@@ -560,43 +881,7 @@ addTranslation("M081",
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Функция для изменения языка
 function setLanguage(language) {
     // Сохраняем выбранный язык в localStorage
     localStorage.setItem('language', language);
@@ -610,7 +895,16 @@ function setLanguage(language) {
         "M052", "M053", "M054", "M055", "M056", "M057", "M058", "M059", "M060", "M061",
         "M062", "M063", "M064", "M065",  "M066", "M067", "M068", "M069", "M070", "M071",
         "M072", "M073", "M074", "M075", "M076", "M077", "M078", "M079", "M080", "M081", "M082", "M083", "M084", "M085", "M086", 
-        "M087", "M088", "M089", "M090", "M091", "M092", "M093", "M094", "M095", "M096", "M097", "M098", "M099", "M100"];
+        "M087", "M088", "M089", "M090", "M091", "M092", "M093", "M094", "M095", "M096", "M097", "M098", "M099", "M100", "M101", "M102", "M103", "M104", "M105", "M106", "M107", "M108", "M109", "M110", 
+        "M111", "M112", "M113", "M114", "M115", "M116", "M117", "M118", "M119", "M120", 
+        "M121", "M122", "M123", "M124", "M125", "M126", "M127", "M128", "M129", "M130", 
+        "M131", "M132", "M133", "M134", "M135", "M136", "M137", "M138", "M139", "M140", 
+        "M141", "M142", "M143", "M144", "M145", "M146", "M147", "M148", "M149", "M150", 
+        "M151", "M152", "M153", "M154", "M155", "M156", "M157", "M158", "M159", "M160", 
+        "M161", "M162", "M163", "M164", "M165", "M166", "M167", "M168", "M169", "M170", 
+        "M171", "M172", "M173", "M174", "M175", "M176", "M177", "M178", "M179", "M180", 
+        "M181", "M182", "M183", "M184", "M185", "M186", "M187", "M188", "M189", "M190", 
+        "M191", "M192", "M193", "M194", "M195", "M196", "M197", "M198", "M199", "M200"];
 
     elements.forEach(id => {
         const element = document.getElementById(id);
@@ -638,5 +932,9 @@ function loadSavedLanguage() {
     setLanguage(savedLanguage);
 }
 
-// Загружаем сохраненный язык при загрузке страницы
-document.addEventListener("DOMContentLoaded", loadSavedLanguage);
+// Вызов функции при загрузке страницы
+window.onload = loadSavedLanguage;
+
+
+
+
