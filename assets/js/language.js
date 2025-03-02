@@ -411,17 +411,19 @@ addTranslation("M061",
     "Bureau d'entreprise" // fr
 );
 addTranslation("M062", 
-    "Дружбы народов 21, вход с Иоанна Павла II", // ru
-    "Дружби народів 21, вхід з Іоанна Павла II", // ua
-    "21 Friendship of Nations, entrance from John Paul II", // en
-    "21 Amitié des peuples, entrée par Jean-Paul II" // fr
+    "Героев полка 'Азов', 12", // ru
+    "Героїв полку 'Азов', 12", // ua
+    "12 Heroes of the 'Azov' Regiment", // en
+    "12 Héros du régiment 'Azov'" // fr
 );
+
 addTranslation("M063", 
-    "Рядом с метро Зверинецкая (Дружбы Народов - 500 м)", // ru
-    "Поруч метро Звіринецька (Дружби Народів - 500 м)", // ua
-    "Next to Zvirynetska metro station (Friendship of Nations - 500 m)", // en
-    "À côté de la station de métro Zvirynetska (Amitié des Peuples - 500 m)" // fr
+    "Метро Оболонь, 5 метров", // ru
+    "Метро Оболонь, 5 метрів", // ua
+    "Obolon metro station, 5 meters", // en
+    "Station de métro Obolon, 5 mètres" // fr
 );
+
 addTranslation("M064", 
     "Киев, Украина", // ru
     "Київ, Україна", // ua
