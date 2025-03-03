@@ -295,6 +295,7 @@ addTranslation("M042",
     "Our work", // en
     "Nos travaux" // fr
 );
+
 addTranslation("M043", 
     "Строим с вдохновением, реставрируем с уважением.", // ru
     "Будуємо з натхненням, реставруємо з повагою.", // uk
@@ -320,10 +321,10 @@ addTranslation("M046",
     "Bains" // fr
 );
 addTranslation("M047", 
-    "Строительство и реставрация", // ru
-    "Будівництво та реставрація", // uk
-    "Construction and restoration", // en
-    "Construction et restauration" // fr
+    "Строительство и ремонт", // ru
+    "Будівництво та ремонт", // ua
+    "Construction and repair", // en
+    "Construction et réparation" // fr
 );
 
 addTranslation("M048", 
@@ -891,6 +892,554 @@ addTranslation("M131",
     "RESTORATION", // en
     "RÉPARATION" // fr
 );
+addTranslation("M132", 
+    "РАБОТЫ TEAM HOUSE", // ru
+    "РОБОТИ ТІМ ХАУС", // ua
+    "TEAM HOUSE WORKS", // en
+    "TRAVAUX TEAM HOUSE" // fr
+);
+addTranslation("M133", 
+    "НАШИ РАБОТЫ", // ru
+    "НАШІ РОБОТИ", // ua   
+    "OUR WORKS", // en
+    "NOS TRAVAUX" // fr
+);
+addTranslation("M134", 
+    "НАШИ РАБОТЫ", // ru
+    "НАШІ РОБОТИ", // ua   
+    "OUR WORKS", // en
+    "NOS TRAVAUX" // fr
+);
+addTranslation("M135", 
+    "ЦЕНЫ TEAM HOUSE", // ru
+    "ЦІНИ ТІМ ХАУС", // ua
+    "TEAM HOUSE PRICES", // en
+    "PRIX TEAM HOUSE" // fr
+);
+addTranslation("M136", 
+    "Гармония цены и качества в каждой детали", // ru
+    "Гармонія ціни та якості у кожній деталі", // ua
+    "The harmony of price and quality in every detail", // en
+    "L'harmonie du prix et de la qualité dans chaque détail" // fr
+);
+addTranslation("M137", 
+    "Главная", // ru
+    "Головна", // ua
+    "Home", // en
+    "Accueil" // fr
+);
+addTranslation("M138", 
+    "Наши цены", // ru
+    "Наші ціни", // ua
+    "Our prices", // en
+    "Nos prix" // fr
+);
+addTranslation("M139", 
+    "Консультация и расчет", // ru
+    "Консультація та прорахунок", // ua
+    "Consultation and calculation", // en
+    "Consultation et estimation" // fr
+);
+addTranslation("M140", 
+    "Обратившись к нам, вы получите детальный расчет стоимости материалов и работ", // ru
+    "Звернувшись до нас, ви отримаєте детальний розрахунок вартості матеріалів і робіт", // ua
+    "By contacting us, you will receive a detailed calculation of material and labor costs", // en
+    "En nous contactant, vous recevrez un calcul détaillé des coûts des matériaux et des travaux" // fr
+);
+addTranslation("M141", 
+    "грн", // ru
+    "грн", // ua
+    "UAH", // en
+    "UAH" // fr
+);
+addTranslation("M142", 
+    "Услуга", // ru
+    "Послуга", // ua
+    "Service", // en
+    "Service" // fr
+);
+addTranslation("M143", 
+    "Получить консультацию", // ru
+    "Отримати консультацію", // ua
+    "Get a consultation", // en
+    "Obtenir une consultation" // fr
+);
+addTranslation("M144", 
+    "Консультация по телефону.", // ru
+    "Консультація по телефону.", // ua
+    "Phone consultation", // en
+    "Consultation téléphonique" // fr
+);
+
+addTranslation("M145", 
+    "Бесплатная смета.", // ru
+    "Бескоштовний кошторис.", // ua
+    "Free estimate", // en
+    "Estimation gratuite" // fr
+);
+
+addTranslation("M146", 
+    "Выезд на объект.", // ru
+    "Виїзд на об'єкт.", // ua
+    "Site visit", // en
+    "Visite sur site" // fr
+);
+
+addTranslation("M147", 
+    "Выезд за пределы города — по договоренности.", // ru
+    "Виїзд за межі міста – за домовленістю.", // ua
+    "Departure outside the city – by arrangement.", // en
+    "Départ en dehors de la ville – selon entente." // fr
+);
+
+addTranslation("M148", 
+    "Срочный расчет сметы.", // ru
+    "Терміновий розрахунок кошторису.", // ua
+    "Urgent estimate calculation", // en
+    "Calcul d'estimation urgent" // fr
+);
+
+addTranslation("M149", 
+    "Индивидуальный подбор материалов.", // ru
+    "Індивідуальний підбір матеріалів.", // ua
+    "Individual selection of materials", // en
+    "Sélection individuelle des matériaux" // fr
+);
+
+addTranslation("M150", 
+    "Согласование проекта с архитектором.", // ru
+    "Узгодження проекту з архітектором.", // ua
+    "Project coordination with architect", // en
+    "Coordination du projet avec l'architecte" // fr
+);
+addTranslation("M151", 
+    "Популярная", // ru
+    "Популярна", // ua
+    "Popular", // en
+    "Populaire" // fr
+);
+addTranslation("M152", 
+    "Шлифовка дерева", // ru
+    "Шліфування дерева", // ua
+    "Wood sanding", // en
+    "Ponçage du bois" // fr
+);
+addTranslation("M153", 
+    "Шлифовка фасадов из термодерева и ограждений, детейлинг перед покраской для безупречного покрытия", // ru
+    "Шліфування термофасадів та огорож, детейлінг перед фарбуванням для бездоганного покриття", // ua
+    "Sanding of thermal facades and fences, sanding before painting for a flawless finish", // en
+    "Ponçage des façades thermiques et des clôtures, Ponçageavant peinture pour une finition impeccable" // fr
+);
+addTranslation("M154", 
+    "Заказать реставрацию", // ru
+    "Замовити реставрацію", // ua
+    "Order restoration", // en
+    "Commander la restauration" // fr
+);
+addTranslation("M155", 
+    "Удаление старого покрытия без повреждений", // ru
+    "Видалення старого покриття без пошкоджень", // ua
+    "Removal of old coating without damage", // en
+    "Retrait du vieux revêtement sans dommage" // fr
+);
+
+addTranslation("M156", 
+    "Глубокая шлифовка для идеальной гладкости", // ru
+    "Глибоке шліфування для ідеальної гладкості", // ua
+    "Deep sanding for perfect smoothness", // en
+    "Ponçage profond pour une surface parfaitement lisse" // fr
+);
+
+addTranslation("M157", 
+    "Деликатная обработка сложных деталей", // ru
+    "Делікатна обробка складних деталей", // ua
+    "Delicate processing of complex details", // en
+    "Traitement délicat des détails complexes" // fr
+);
+
+addTranslation("M158", 
+    "Подготовка к покраске или тонированию", // ru
+    "Підготовка до фарбування чи тонування", // ua
+    "Preparation for painting or tinting", // en
+    "Préparation pour la peinture ou la teinture" // fr
+);
+
+addTranslation("M159", 
+    "Работа с любыми деревянными поверхностями", // ru
+    "Робота з будь-якими дерев'яними поверхнями", // ua
+    "Work with any wooden surfaces", // en
+    "Travail sur toutes les surfaces en bois" // fr
+);
+
+addTranslation("M160", 
+    "Качественные абразивы для долговечного результата", // ru
+    "Якісні абразиви для довговічного результату", // ua
+    "High-quality abrasives for a lasting result", // en
+    "Abrasifs de haute qualité pour un résultat durable" // fr
+);
+
+addTranslation("M161", 
+    "Покраска изделия", // ru
+    "Фарбування виробу", // ua
+    "Painting of the product", // en
+    "Peinture de l'article" // fr
+);
+addTranslation("M162", 
+    "грн", // ru
+    "грн", // ua
+    "UAH", // en
+    "UAH" // fr
+);
+addTranslation("M163", 
+    "Строительство каркасного дома", // ru
+    "Будівництво каркасного будинку", // ua
+    "Frame house construction", // en
+    "Construction de maison à ossature" // fr
+);
+addTranslation("M164", 
+    "Каркасный дом по канадской технологии — это высокая теплопроизводительность и экономия.", // ru
+    "Каркасний будинок по канадській технології — це висока теплоефективність та економія.", // ua
+    "A frame house built with Canadian technology — high thermal efficiency and cost savings.", // en
+    "Une maison à ossature selon la technologie canadienne — haute efficacité thermique et économies." // fr
+);
+addTranslation("M165", 
+    "грн", // ru
+    "грн", // ua
+    "UAH", // en
+    "UAH" // fr
+);
+addTranslation("M166", 
+    "Заказать выезд на объект", // ru
+    "Замовити виїзд на об'ект", // ua
+    "Order site visit", // en
+    "Commander une visite sur site" // fr
+);
+addTranslation("M167", 
+    "Фундамент с плитой 150 мм", // ru
+    "Фундамент з плитою 150 мм", // ua
+    "Foundation with 150 mm slab", // en
+    "Fondation avec dalle de 150 mm" // fr
+);
+
+addTranslation("M168", 
+    "Несущий каркас стен 100х100 мм, сосна", // ru
+    "Несучий каркас стін 100х100 мм, сосна", // ua
+    "Load-bearing wall frame 100x100 mm, pine", // en
+    "Cadre porteur des murs 100x100 mm, pin" // fr
+);
+
+addTranslation("M169", 
+    "Имитaция бруса и углов снаружи", // ru
+    "Імітація брусу та кутів зовні", // ua
+    "Timber imitation and external corners", // en
+    "Imitation de bois et coins extérieurs" // fr
+);
+
+addTranslation("M170", 
+    "Кровля, битумная черепица", // ru
+    "Покрівля, бітумна черепиця", // ua
+    "Roofing, bitumen shingles", // en
+    "Toiture, bardeaux bitumineux" // fr
+);
+
+addTranslation("M171", 
+    "Утепление стен 200 мм, крыша 300 мм", // ru
+    "Утеплення стін 200 мм, покрівля 300 мм", // ua
+    "Wall insulation 200 mm, roof 300 mm", // en
+    "Isolation des murs 200 mm, toit 300 mm" // fr
+);
+
+addTranslation("M172", 
+    "Электрика, сантехника", // ru
+    "Електрика, сантехніка", // ua
+    "Electricity, plumbing", // en
+    "Électricité, plomberie" // fr
+);
+
+addTranslation("M173", 
+    "Окна и двери", // ru
+    "Вікна та двері", // ua
+    "Windows and doors", // en
+    "Fenêtres et portes" // fr
+);
+
+addTranslation("M174", 
+    "Отделка стен, полов и потолков", // ru
+    "Оздоблення стін, підлоги та стелі", // ua
+    "Wall, floor, and ceiling finishing", // en
+    "Finition des murs, des sols et des plafonds" // fr
+);
+
+addTranslation("M175", 
+    "Проект дома", // ru
+    "Проект будинку", // ua
+    "House project", // en
+    "Projet de maison" // fr
+);
+
+addTranslation("M176", 
+    "Геология, геодезия", // ru
+    "Геологія, геодезія", // ua
+    "Geology, geodesy", // en
+    "Géologie, géodésie" // fr
+);
+addTranslation("M177", 
+    "ПРО НАС TИМ ХАУС", // ru
+    "ПРО НАС ТІМ ХАУС", // ua
+    "ABOUT US TEAM HOUSE", // en
+    "À PROPOS DE NOUS TEAM HOUSE" // fr
+);
+addTranslation("M178", 
+    "Более 18 лет опыта — мы работаем надежно, эффективно и с гарантией.", // ru
+    "Більше 18 років досвіду — ми працюємо надійно, ефективно та з гарантією.", // ua
+    "Over 18 years of experience — we work reliably, efficiently, and with a guarantee.", // en
+    "Plus de 18 ans d'expérience — nous travaillons de manière fiable, efficace et avec garantie." // fr
+);
+addTranslation("M179", 
+    "Главная", // ru
+    "Головна", // ua
+    "Home", // en
+    "Accueil" // fr
+);
+
+addTranslation("M180", 
+    "Контакты", // ru
+    "Контакти", // ua
+    "Contacts", // en
+    "Contacts" // fr
+);
+addTranslation("M181", 
+    "ТИМ ХАУС", // ru
+    "ТІМ ХАУС", // ua
+    "TEAM HOUSE", // en
+    "TEAM HOUSE" // fr
+);
+addTranslation("M182", 
+    "Наша команда", // ru
+    "Наша команда", // ua
+    "Our team", // en
+    "Notre équipe" // fr
+);
+
+addTranslation("M183", 
+    "Наш многолетний опыт — гарантия стабильного результата и безупречной репутации.", // ru
+    "Наш багаторічний досвід — гарантія стабільного результату та бездоганної репутації.", // ua
+    "Our many years of experience guarantee stable results and an impeccable reputation.", // en
+    "Nos nombreuses années d'expérience garantissent des résultats stables et une réputation irréprochable." // fr
+);
+addTranslation("M184", 
+    "Строительное образование, работает с 2007 года", // ru
+    "Будівельна освіта, працює з 2007 року", // ua
+    "Construction education has been working since 2007", // en
+    "L'éducation en construction fonctionne depuis 2007" // fr
+);
+addTranslation("M185", 
+    "Вдохновитель", // ru
+    "Натхненник", // ua
+    "Inspiration", // en
+    "Inspiration" // fr
+);
+
+addTranslation("M186", 
+    "Главный инженер", // ru
+    "Головний інженер", // ua
+    "Chief Engineer", // en
+    "Ingénieur en chef" // fr
+);
+addTranslation("M187", 
+    "Застроил всю Киевскую область.", // ru
+    "Забудував всю Київську область.", // ua
+    "Built up the entire Kyiv region.", // en
+    "A construit toute la région de Kyiv." // fr
+);
+
+addTranslation("M188", 
+    "Стальной бригадир", // ru
+    "Сталевий бригадир", // ua
+    "Steel Foreman", // en
+    "Contremaître d'acier" // fr
+);
+
+addTranslation("M189", 
+    "Отдел строительства", // ru
+    "Відділ будівництва", // ua
+    "Construction Department", // en
+    "Département de la construction" // fr
+);
+addTranslation("M190", 
+    "Профессионал в реставрации", // ru
+    "Професіонал в реставрації", // ua
+    "Professional in restoration", // en
+    "Professionnel en restauration" // fr
+);
+
+addTranslation("M191", 
+    "Мастер-реставратор", // ru
+    "Майстер-реставратор", // ua
+    "Restoration Master", // en
+    "Maître restaurateur" // fr
+);
+
+addTranslation("M192", 
+    "Знает всё о реставрации.", // ru
+    "Знає все про реставрацію.", // ua
+    "Knows everything about restoration.", // en
+    "Sait tout sur la restauration." // fr
+);
+addTranslation("M193", 
+    "Внимателен ко всем деталям.", // ru
+    "Уважний до всіх деталей.", // ua
+    "Attentive to all details.", // en
+    "Attentif à tous les détails." // fr
+);
+
+addTranslation("M194", 
+    "Мастер-реставратор", // ru
+    "Майстер реставратор", // ua
+    "Restoration Master", // en
+    "Maître restaurateur" // fr
+);
+
+addTranslation("M195", 
+    "Покраска с уважением к результату.", // ru
+    "Фарбування з повагою до результату", // ua
+    "Painting with respect for the result.", // en
+    "Peinture avec respect du résultat." // fr
+);
+addTranslation("M196", 
+    "Наши преимущества", // ru
+    "Наші переваги", // ua
+    "Our advantages", // en
+    "Nos avantages" // fr
+);
+
+addTranslation("M197", 
+    "Гарантия высокого качества и безупречного результата на каждом этапе!", // ru
+    "Гарантія високої якості та бездоганного результату на кожному етапі!", // ua
+    "Guarantee of high quality and flawless results at every stage!", // en
+    "Garantie de haute qualité et de résultats impeccables à chaque étape!" // fr
+);
+addTranslation("M198", 
+    "Профессионализм", // ru
+    "Професіоналізм", // ua
+    "Professionalism", // en
+    "Professionnalisme" // fr
+);
+addTranslation("M199", 
+    "Реставрация деревянных изделий", // ru
+    "Реставрація дерев'яних виробів", // ua
+    "Restoration of wooden structures", // en
+    "Restauration des structures en bois" // fr
+);
+addTranslation("M200", 
+    "Строительство деревянных домов", // ru
+    "Будівництво дерев'яних будинків", // ua
+    "Construction of wooden houses", // en
+    "Construction de maisons en bois" // fr
+);
+addTranslation("M201", 
+    "Использование экологичных материалов", // ru
+    "Використання екологічних матеріалів", // ua
+    "Use of eco-friendly materials", // en
+    "Utilisation de matériaux écologiques" // fr
+);
+addTranslation("M202", 
+    "Индивидуальный подход к каждому клиенту", // ru
+    "Індивідуальний підхід до кожного клієнта", // ua
+    "Individual approach to each client", // en
+    "Approche individuelle pour chaque client" // fr
+);
+addTranslation("M203", 
+    "Соблюдение сроков выполнения", // ru
+    "Дотримання термінів виконання", // ua
+    "Adherence to deadlines", // en
+    "Respect des délais d'exécution" // fr
+);
+addTranslation("M204", 
+    "КОНТАКТЫ ТИМ ХАУС", // ru
+    "КОНТАКТИ ТІМ ХАУС", // ua
+    "CONTACTS TEAM HOUSE", // en
+    "CONTACTS TEAM HOUSE" // fr
+);
+addTranslation("M205", 
+    "Свяжитесь с нами – мы воплотим ваши мечты о идеальном деревянном доме!", // ru
+    "Зв’яжіться з нами – ми втілимо ваші мрії про ідеальний дерев’яний дім!", // ua
+    "Contact us – we will make your dreams of the perfect wooden house come true!", // en
+    "Contactez-nous – nous réaliserons vos rêves d'une maison en bois parfaite!" // fr
+);
+addTranslation("M206", 
+    "Главная", // ru
+    "Головна", // ua
+    "Home", // en
+    "Accueil" // fr
+);
+
+addTranslation("M207", 
+    "О нас", // ru
+    "Про нас", // ua
+    "About Us", // en
+    "À propos de nous" // fr
+);
+addTranslation("M208", 
+    "Украина, г. Киев, Героев полка \"Азов\", 12", // ru
+    "Україна, м. Київ, Героїв полку \"Азов\", 12", // ua
+    "Ukraine, Kyiv, Heroes of Azov Regiment, 12", // en
+    "Ukraine, Kyiv, Régiment des Héros d'Azov, 12" // fr
+);
+addTranslation("M209", 
+    "Звоните:", // ru
+    "Телефонуйте:", // ua
+    "Call us:", // en
+    "Appelez-nous :" // fr
+);
+addTranslation("M210", 
+    "Пишите нам:", // ru
+    "Пишіть нам:", // ua
+    "Write to us:", // en
+    "Écrivez-nous :" // fr
+);
+addTranslation("M212", 
+    "Корпоративный офис:", // ru
+    "Корпоративний офіс:", // ua
+    "Corporate office:", // en
+    "Bureau corporate :" // fr
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -939,7 +1488,17 @@ function setLanguage(language) {
         "M161", "M162", "M163", "M164", "M165", "M166", "M167", "M168", "M169", "M170", 
         "M171", "M172", "M173", "M174", "M175", "M176", "M177", "M178", "M179", "M180", 
         "M181", "M182", "M183", "M184", "M185", "M186", "M187", "M188", "M189", "M190", 
-        "M191", "M192", "M193", "M194", "M195", "M196", "M197", "M198", "M199", "M200"];
+        "M191", "M192", "M193", "M194", "M195", "M196", "M197", "M198", "M199", "M200","M201", "M202", "M203", "M204", "M205", "M206", "M207", "M208",
+        "M209", "M210", "M211", "M212", "M213", "M214", "M215", "M216", "M217", "M218",
+        "M219", "M220", "M221", "M222", "M223", "M224", "M225", "M226", "M227", "M228",
+        "M229", "M230", "M231", "M232", "M233", "M234", "M235", "M236", "M237", "M238",
+        "M239", "M240", "M241", "M242", "M243", "M244", "M245", "M246", "M247", "M248",
+        "M249", "M250", "M251", "M252", "M253", "M254", "M255", "M256", "M257", "M258",
+        "M259", "M260", "M261", "M262", "M263", "M264", "M265", "M266", "M267", "M268",
+        "M269", "M270", "M271", "M272", "M273", "M274", "M275", "M276", "M277", "M278",
+        "M279", "M280", "M281", "M282", "M283", "M284", "M285", "M286", "M287", "M288",
+        "M289", "M290", "M291", "M292", "M293", "M294", "M295", "M296", "M297", "M298",
+        "M299", "M300"];
 
     elements.forEach(id => {
         const element = document.getElementById(id);
