@@ -29,7 +29,7 @@ function addTranslation(key, ru, ua, en, fr, titleRu, titleUa, titleEn, titleFr)
 
 // Добавляем переводы для всех языков
 addTranslation("language", "ru", "ua", "en", "fr");
-addTranslation("Name", "ТИМ ХАУС", "ТІМ ХАУС", "TEAM HOUSE", "TEAM HOUSE");
+addTranslation("name01", "ТИМ ХАУС", "ТІМ ХАУС", "TEAM HOUSE", "TEAM HOUSE");
 addTranslation("Main", "ГЛАВНАЯ", "ГОЛОВНА", "MAIN", "ACCUEIL");
 addTranslation("Services", "УСЛУГИ", "ПОСЛУГИ", "SERVICES", "SERVICES");
 addTranslation("OurWorks", "НАШИ РАБОТЫ", "НАШІ РОБОТИ", "OUR WORKS", "NOS TRAVAUX");
@@ -540,11 +540,12 @@ addTranslation("M081",
     "Conçu par" // fr
 );
 addTranslation("M082", 
-    "Строительство", // ru
-    "Будівництво", // ua
-    "Construction", // en
-    "Construction" // fr
+    "СТРОИТЕЛЬСТВО", // ru
+    "БУДІВНИЦТВО", // ua
+    "CONSTRUCTION", // en
+    "CONSTRUCTION" // fr
 );
+
 
 addTranslation("M083", 
     "Огорожи та тераси", // ru
@@ -603,11 +604,12 @@ addTranslation("M090",
 );
 
 addTranslation("M091", 
-    "Покраска", // ru
-    "Фарбування", // ua
-    "Painting", // en
-    "Peinture" // fr
+    "ПОКРАСКА", // ru
+    "ФАРБУВАННЯ", // ua
+    "PAINTING", // en
+    "PEINTURE" // fr
 );
+
 
 addTranslation("M092", 
     "Шлифовка поверхностей", // ru
@@ -659,11 +661,12 @@ addTranslation("M098",
 );
 
 addTranslation("M099", 
-    "Реставрация", // ru
-    "Реставрація", // ua
-    "Restoration", // en
-    "Rénovation" // fr
+    "РЕСТАВРАЦИЯ", // ru
+    "РЕСТАВРАЦІЯ", // ua
+    "RESTORATION", // en
+    "RÉNOVATION" // fr
 );
+
 
 addTranslation("M100", 
     "Обслуживание террас", // ru
@@ -713,11 +716,12 @@ addTranslation("M106",
     "Réparation d'escalier" // fr
 );
 addTranslation("M107", 
-    "Мастер на годину", // ru
-    "Майстер на годину", // ua
-    "Master for an hour", // en
-    "Maître à l'heure" // fr
+    "МАСТЕР НА ЧАС", // ru
+    "МАЙСТЕР НА ГОДИНУ", // ua
+    "MASTER FOR AN HOUR", // en
+    "MAÎTRE À L'HEURE" // fr
 );
+
 addTranslation("M108", 
     "Чистка террас", // ru
     "Чистка терас", // ua
@@ -767,11 +771,12 @@ addTranslation("M114",
     "Travaux électriques" // fr
 );
 addTranslation("M115", 
-    "Производство", // ru
-    "Виробництво", // ua
-    "Manufacturing", // en
-    "Fabrication" // fr
+    "ПРОИЗВОДСТВО", // ru
+    "ВИРОБНИЦТВО", // ua
+    "MANUFACTURING", // en
+    "FABRICATION" // fr
 );
+
 addTranslation("M116", 
     "Производство ограждений", // ru
     "Виробництво огорож", // ua
@@ -789,43 +794,44 @@ addTranslation("M117",
 addTranslation("M118", 
     "Клееный брус для домов", // ru
     "Клеєний брус для будинків", // ua
-    "Glued laminated timber for houses", // en
-    "Bois lamellé-collé pour maisons" // fr
+    "Glued laminated timber ", // en
+    "Bois lamellé-collé pour " // fr
 );
 
 addTranslation("M119", 
-    "Клееные балки конструкционные", // ru
-    "Клеєні балки конструкційні", // ua
-    "Glued laminated beams for construction", // en
-    "Poutres lamellées-collées pour la construction" // fr
+    "Клееные балки ", // ru
+    "Клеєні балки ", // ua
+    "Glued laminated beams", // en
+    "Poutres lamellées-collées" // fr
 );
 
 addTranslation("M120", 
     "Клееные балки на заказ", // ru
     "Клеєні балки на замовлення", // ua
-    "Custom glued laminated beams", // en
-    "Poutres lamellées-collées sur mesure" // fr
+    "Glued laminated beams", // en
+    "Poutres lamellées-collées" // fr
 );
 
 addTranslation("M121", 
     "Столбы, стропила клееные", // ru
     "Стовпи, крокви клеєні", // ua
     "Glued columns, rafters", // en
-    "Poteaux, chevrons lamellés-collés" // fr
+    "Poteaux-chevrons lamellés" // fr
 );
 
 addTranslation("M122", 
-    "Сухие, строганные пиломатериалы", // ru
-    "Пиломатеріали сухі, стругані", // ua
+    "Строганные пиломат.", // ru
+    "Пиломат. стругані", // ua
     "Dry, planed lumber", // en
     "Bois séché et raboté" // fr
 );
 addTranslation("M123", 
-    "Гарантия", // ru
-    "Гарантія", // ua
-    "Warranty", // en
-    "Garantie" // fr
+    "ГАРАНТИЯ", // ru
+    "ГАРАНТІЯ", // ua
+    "WARRANTY", // en
+    "GARANTIE" // fr
 );
+
 addTranslation("M124", 
     "Качество материалов", // ru
     "Якість матеріалів", // ua
@@ -860,6 +866,26 @@ addTranslation("M128",
     "Customer support", // en
     "Support client" // fr
 );
+addTranslation("M129", 
+    "ДОМА", // ru
+    "БУДІНКИ", // ua
+    "BUILDINGS", // en
+    "BÂTIMENTS" // fr
+);
+addTranslation("M130", 
+    "БАНИ", // ru
+    "ЛАЗНІ", // ua
+    "BATHS", // en
+    "BAINS" // fr
+);
+addTranslation("M131", 
+    "РЕСТАВРАЦИЯ", // ru
+    "РЕСТАВРАЦІЯ", // ua
+    "RESTORATION", // en
+    "RÉPARATION" // fr
+);
+
+
 
 
 
@@ -889,7 +915,7 @@ function setLanguage(language) {
     localStorage.setItem('language', language);
 
     // Изменяем текст элементов на странице
-    const elements = ['Name', 'Main', 'Services', 'OurWorks', 'Prices', 'AboutUs', 'Contacts', 'Lang', 'M001', 'M0011', 'M002',
+    const elements = ['name01', 'Main', 'Services', 'OurWorks', 'Prices', 'AboutUs', 'Contacts', 'Lang', 'M001', 'M0011', 'M002',
         "M003", "M004", "M005", "M006", "M007", "M008", "M009", "M010", "M011", "M012", "M013", "M014", "M015", "M016", "M017", 
         "M018", "M019", "M020", "M021", "M022", "M023", "M024", "M025", "M026", "M027", "M028", "M029", "M030", "M031",
         "M032", "M033", "M034", "M035", "M036", "M037", "M038", "M039", "M040", "M041",
