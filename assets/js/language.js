@@ -1,4 +1,3 @@
-console.log("Старт смены языка");
 
 const texts = {
     ru: {},
@@ -6,25 +5,14 @@ const texts = {
     en: {},
     fr: {}
 };
-const titleTexts = {
-    ru: {},
-    ua: {},
-    en: {},
-    fr: {}
-};
 
-function addTranslation(key, ru, ua, en, fr, titleRu, titleUa, titleEn, titleFr) {
+
+function addTranslation(key, ru, ua, en, fr) {
     // Добавление текстов для перевода
     texts.ru[key] = ru;
     texts.ua[key] = ua;
     texts.en[key] = en;
-    texts.fr[key] = fr;
-
-    // Добавление атрибутов title, если они переданы
-    if (titleRu) titleTexts.ru[key] = titleRu;
-    if (titleUa) titleTexts.ua[key] = titleUa;
-    if (titleEn) titleTexts.en[key] = titleEn;
-    if (titleFr) titleTexts.fr[key] = titleFr;
+    texts.fr[key] = fr;;
 }
 
 // Добавляем переводы для всех языков
@@ -1519,14 +1507,6 @@ function setLanguage(language) {
         if (element) {
             // Обновляем текст элемента
             element.innerText = texts[language][id];
-
-            // Проверяем и обновляем атрибут title, если он существует
-            if (titleTexts[language] && titleTexts[language][id]) {
-                console.log(`Обновляем title для элемента ${id} на языке ${language}: ${titleTexts[language][id]}`);
-                element.setAttribute("title", titleTexts[language][id]);
-            } else {
-                console.log(`Нет данных для title элемента ${id} на языке ${language}`);
-            }
         }
     });
 
