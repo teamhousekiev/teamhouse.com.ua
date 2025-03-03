@@ -1404,6 +1404,440 @@ addTranslation("M214",
     "Home", // en
     "Accueil" // fr
 );
+addTranslation("M215", 
+    "СТРОИТЕЛЬСТВО ТИМ ХАУС", // ru
+    "БУДІВНИЦТВО ТІМ ХАУС", // ua
+    "TEAM HOUSE CONSTRUCTION", // en
+    "CONSTRUCTION TEAM HOUSE" // fr
+);
+addTranslation("M216", 
+    "Подробнее о строительстве", // ru
+    "Детальніше про будівництво", // ua
+    "More about construction", // en
+    "Plus sur la construction" // fr
+);
+
+addTranslation("M217", 
+    "Главная", // ru
+    "Головна", // ua
+    "Home", // en
+    "Accueil" // fr
+);
+
+addTranslation("M218", 
+    "О строительстве", // ru
+    "Про будівництво", // ua
+    "About construction", // en
+    "À propos de la construction" // fr
+);
+addTranslation("M219", 
+    "Ограждения и террасы", // ru
+    "Огорожі та тераси", // ua
+    "Fences and terraces", // en
+    "Clôtures et terrasses" // fr
+);
+
+addTranslation("M220", 
+    "Вентиляционные фасады", // ru
+    "Вентильовані фасади", // ua
+    "Ventilated facades", // en
+    "Façades ventilées" // fr
+);
+
+addTranslation("M221", 
+    "Вагонки, имитации бруса", // ru
+    "Вагонки, імітації бруса", // ua
+    "Paneling, beam imitation", // en
+    "Panneaux, imitation de bûches" // fr
+);
+
+addTranslation("M222", 
+    "Каркасные дома", // ru
+    "Каркасні будинки", // ua
+    "Frame houses", // en
+    "Maisons à ossature" // fr
+);
+
+addTranslation("M223", 
+    "Реконструкция зданий", // ru
+    "Реконструкція будівель", // ua
+    "Building reconstruction", // en
+    "Rénovation de bâtiments" // fr
+);
+
+addTranslation("M224", 
+    "Беседки на заказ", // ru
+    "Альтаноки на замовлення", // ua
+    "Custom gazebos", // en
+    "Chalets sur commande" // fr
+);
+
+addTranslation("M225", 
+    "Садовые домики под ключ", // ru
+    "Садові домівки під ключ", // ua
+    "Turnkey garden houses", // en
+    "Maisons de jardin clés en main" // fr
+);
+
+addTranslation("M226", 
+    "Комплексные строительные решения для вашего комфорта и безопасности", // ru
+    "Комплексні будівельні рішення для вашого комфорту та безпеки", // ua
+    "Comprehensive construction solutions for your comfort and safety", // en
+    "Solutions de construction complètes pour votre confort et sécurité" // fr
+);
+
+addTranslation("M227", 
+    "Мы предлагаем полный спектр строительных услуг, используя самые современные материалы и технологии. Ваша оселя, терраса или коммерческий объект будут созданы с учетом самых высоких стандартов качества и энергоэффективности.", // ru
+    "Ми пропонуємо повний спектр будівельних послуг, використовуючи найсучасніші матеріали та технології. Ваша оселя, тераса чи комерційний об’єкт будуть створені з урахуванням найвищих стандартів якості та енергоефективності.", // ua
+    "We offer a full range of construction services, using the latest materials and technologies. Your home, terrace, or commercial property will be created in accordance with the highest standards of quality and energy efficiency.", // en
+    "Nous proposons une gamme complète de services de construction, en utilisant les matériaux et technologies les plus modernes. Votre maison, terrasse ou propriété commerciale sera créée conformément aux normes les plus élevées de qualité et d'efficacité énergétique." // fr
+);
+addTranslation("M228", 
+    "Строительство – качество, надежность и современные технологии", // ru
+    "Будівництво – якість, надійність та сучасні технології", // ua
+    "Construction – quality, reliability, and modern technologies", // en
+    "Construction – qualité, fiabilité et technologies modernes" // fr
+);
+
+addTranslation("M229", 
+    "Выбирая нас, вы получаете высокое качество, экологичность и современный дизайн. Мы реализуем проекты любой сложности, учитывая все пожелания заказчика. Строим надежное будущее вместе с вами!", // ru
+    "Обираючи нас, ви отримуєте високу якість, екологічність та сучасний дизайн. Ми реалізуємо проєкти будь-якої складності, враховуючи всі побажання замовника. Створюйте надійне майбутнє разом із нами!", // ua
+    "By choosing us, you get high quality, eco-friendliness, and modern design. We implement projects of any complexity, considering all customer preferences. Build a reliable future with us!", // en
+    "En choisissant nous, vous bénéficiez de la haute qualité, de l'écologie et du design moderne. Nous réalisons des projets de toute complexité en tenant compte de toutes les demandes du client. Construisez un avenir fiable avec nous !" // fr
+);
+
+addTranslation("M230", 
+    "Более 18 лет опыта – строим деревянные дома с учетом современных технологий и традиционного мастерства.", // ru
+    "Понад 18 років досвіду – будуємо дерев’яні будинки з урахуванням сучасних технологій та традиційного майстерності.", // ua
+    "Over 18 years of experience – we build wooden houses with modern technologies and traditional craftsmanship.", // en
+    "Plus de 18 ans d'expérience – nous construisons des maisons en bois en tenant compte des technologies modernes et du savoir-faire traditionnel." // fr
+);
+
+addTranslation("M231", 
+    "Только надежные материалы – используем проверенные временем и экологичные строительные материалы для прочности и долговечности ваших объектов.", // ru
+    "Тільки надійні матеріали – використовуємо перевірені часом та екологічні будівельні матеріали для міцності та довговічності ваших об’єктів.", // ua
+    "Only reliable materials – we use time-tested and eco-friendly building materials for the strength and durability of your projects.", // en
+    "Seuls des matériaux fiables – nous utilisons des matériaux de construction éprouvés et écologiques pour la solidité et la durabilité de vos projets." // fr
+);
+
+addTranslation("M232", 
+    "Гарантия и оперативность – предоставляем гарантию на выполненные работы и быстро реагируем на запросы клиентов. Все наши специалисты проживают в Киеве, что позволяет оперативно выезжать на объект при необходимости.", // ru
+    "Гарантія та оперативність – надаємо гарантію на виконані роботи та швидко реагуємо на запити клієнтів. Усі наші спеціалісти проживають у Києві, що дозволяє оперативно виїжджати на об’єкт у разі потреби.", // ua
+    "Warranty and responsiveness – we provide a warranty on completed works and respond quickly to customer requests. All our specialists live in Kyiv, allowing us to promptly visit the site when needed.", // en
+    "Garantie et réactivité – nous offrons une garantie sur les travaux réalisés et réagissons rapidement aux demandes des clients. Tous nos spécialistes vivent à Kiev, ce qui nous permet de nous rendre rapidement sur site en cas de besoin." // fr
+);
+
+addTranslation("M233", 
+    "Профессиональный подход на каждом этапе строительства", // ru
+    "Професійний підхід на кожному етапі будівництва", // ua
+    "Professional approach at every stage of construction", // en
+    "Approche professionnelle à chaque étape de la construction" // fr
+);
+
+addTranslation("M234", 
+    "Наша команда – это квалифицированные специалисты с профильным высшим строительным образованием и многолетним опытом. Мы строго соблюдаем все технологические нормы и стандарты, обеспечивая качество и надежность каждого объекта.", // ru
+    "Наша команда – це кваліфіковані фахівці з профільною вищою будівельною освітою та багаторічним досвідом. Ми чітко дотримуємося всіх технологічних норм та стандартів, забезпечуючи якість і надійність кожного об’єкта.", // ua
+    "Our team consists of qualified specialists with a higher education in construction and many years of experience. We strictly adhere to all technological norms and standards, ensuring the quality and reliability of each project.", // en
+    "Notre équipe se compose de spécialistes qualifiés avec une formation supérieure en construction et de nombreuses années d'expérience. Nous respectons strictement toutes les normes et standards technologiques, garantissant la qualité et la fiabilité de chaque projet." // fr
+);
+addTranslation("M235", 
+    "Строительство осуществляется поэтапно:", // ru
+    "Будівництво здійснюється поетапно:", // ua
+    "Construction is carried out in stages:", // en
+    "La construction se déroule par étapes :" // fr
+);
+
+addTranslation("M236", 
+    "Сначала проводятся геологические и геодезические исследования, которые позволяют точно спроектировать будущую постройку. Затем закладывается фундамент – надежная основа, которая обеспечивает долговечность здания. После этого возводятся коробка и каркас, которые формируют общую конструкцию объекта.", // ru
+    "Спочатку проводяться геологічні та геодезичні дослідження, що дозволяють точно проєктувати майбутню споруду. Далі закладається фундамент – надійна основа, що забезпечує довговічність будівлі. Після цього зводяться коробка та каркас, що формують загальну конструкцію об’єкта.", // ua
+    "First, geological and geodetic studies are conducted, allowing accurate design of the future building. Then, a foundation is laid – a reliable base that ensures the durability of the building. After that, the shell and frame are built, which form the overall structure of the object.", // en
+    "Tout d'abord, des études géologiques et géodésiques sont réalisées, ce qui permet de concevoir précisément la future construction. Ensuite, une fondation est posée – une base fiable qui garantit la durabilité du bâtiment. Après cela, la coque et la charpente sont érigées, formant la structure générale du projet." // fr
+);
+
+addTranslation("M237", 
+    "Следующим этапом является крыша, которая защищает здание от погодных условий. Устанавливаются окна и двери, которые обеспечивают энергоэффективность и комфорт. Затем выполняется отделка фасада, которая не только улучшает внешний вид, но и выполняет утепляющую функцию.", // ru
+    "Наступним етапом є покрівля, яка захищає будівлю від погодних умов. Встановлюються вікна та двері, що забезпечують енергоефективність та комфорт. Далі виконується оздоблення фасаду, яке не тільки покращує зовнішній вигляд, а й виконує утеплювальну функцію.", // ua
+    "The next stage is the roofing, which protects the building from weather conditions. Windows and doors are installed, ensuring energy efficiency and comfort. Then, the facade decoration is carried out, which not only improves the appearance but also serves as insulation.", // en
+    "L'étape suivante est la couverture, qui protège le bâtiment des intempéries. Des fenêtres et des portes sont installées, assurant l'efficacité énergétique et le confort. Ensuite, la décoration de la façade est effectuée, ce qui améliore non seulement l'apparence extérieure, mais sert également de fonction isolante." // fr
+);
+
+addTranslation("M238", 
+    "На завершающих стадиях производится монтаж внутренних инженерных сетей, включая электричество, водоснабжение, отопление и канализацию. Затем выполняется внутренняя отделка, которая создает уютный и стильный интерьер. Заключительным этапом является сдача объекта, что предполагает полностью готовый к эксплуатации дом.", // ru
+    "На завершальних стадіях здійснюється монтаж внутрішніх інженерних мереж, включаючи електрику, водопостачання, опалення та каналізацію. Після цього виконується внутрішнє оздоблення, яке створює затишний та стильний інтер’єр. Завершальним етапом є здача об’єкта, що передбачає повністю готовий до експлуатації будинок.", // ua
+    "At the final stages, installation of internal engineering networks, including electricity, water supply, heating, and sewage, is carried out. After that, interior decoration is done, creating a cozy and stylish interior. The final stage is the handover of the object, which implies a fully ready-to-use house.", // en
+    "Aux étapes finales, l'installation des réseaux d'ingénierie internes, y compris l'électricité, l'approvisionnement en eau, le chauffage et l'assainissement, est réalisée. Ensuite, des travaux de décoration intérieure sont effectués, créant un intérieur confortable et élégant. L'étape finale est la remise de l'objet, ce qui implique une maison entièrement prête à l'emploi." // fr
+);
+
+addTranslation("M239", 
+    "Мы предоставляем гарантию на выполненные работы и всегда готовы прийти на помощь. С нами вы получаете надежное строительство без лишних хлопот и с гарантией качества!", // ru
+    "Ми надаємо гарантію на виконані роботи та завжди готові прийти на допомогу. З нами ви отримуєте надійне будівництво без зайвих клопотів та з гарантією якості!", // ua
+    "We provide a warranty on the completed work and are always ready to assist. With us, you get reliable construction without unnecessary hassles and with a quality guarantee!", // en
+    "Nous offrons une garantie sur les travaux réalisés et sommes toujours prêts à aider. Avec nous, vous obtenez une construction fiable sans tracas inutiles et avec une garantie de qualité !" // fr
+);
+addTranslation("M240", 
+    "Подробнее о покраске и утеплении", // ru
+    "Детальніше про фарбування та утеплення", // ua
+    "More about painting and insulation", // en
+    "Plus sur la peinture et l'isolation", // fr
+);
+addTranslation("M241", 
+    "Главная", // ru
+    "Головна", // ua
+    "Home", // en
+    "Accueil", // fr
+);
+
+addTranslation("M242", 
+    "О нашем профессиональном окрашивании", // ru
+    "Про наше професійне фарбування", // ua
+    "About our professional painting", // en
+    "À propos de notre peinture professionnelle", // fr
+);
+addTranslation("M250", 
+    "Шлифование поверхностей", // ru
+    "Шліфування поверхонь", // ua
+    "Sanding surfaces", // en
+    "Ponçage des surfaces", // fr
+);
+
+addTranslation("M251", 
+    "Устранение трещин, грибка", // ru
+    "Усунення тріщин, грибка", // ua
+    "Crack and mold removal", // en
+    "Élimination des fissures et moisissures", // fr
+);
+
+addTranslation("M243", 
+    "Покраска стен дома", // ru
+    "Фарбування стін будинку", // ua
+    "House wall painting", // en
+    "Peinture des murs de la maison", // fr
+);
+
+addTranslation("M244", 
+    "Герметизация \"Тёплый шов\"", // ru
+    "Герметизація \"Теплий шов\"", // ua
+    "Sealing \"Warm joint\"", // en
+    "Scellement \"Joint chaud\"", // fr
+);
+
+addTranslation("M245", 
+    "Восстановление покрытий", // ru
+    "Відновлення покриттів", // ua
+    "Restoration of coatings", // en
+    "Restauration des revêtements", // fr
+);
+
+addTranslation("M246", 
+    "Теплоизоляция стен, крыши", // ru
+    "Утеплення стін, покрівлі", // ua
+    "Thermal insulation of walls and roofs", // en
+    "Isolation thermique des murs et des toits", // fr
+);
+
+addTranslation("M247", 
+    "Теплопотери тепловизором", // ru
+    "Тепловтрати тепловізором", // ua
+    "Heat loss with thermal imaging", // en
+    "Pertes de chaleur avec une caméra thermique", // fr
+);
+
+addTranslation("M248", 
+    "Детейлинг дома раз в 5-7 лет", // ru
+    "Детейлінг будинку раз в 5-7 років", // ua
+    "House detailing once every 5-7 years", // en
+    "Détaillez la maison tous les 5-7 ans", // fr
+);
+
+addTranslation("M249", 
+    "Регулярный осмотр стен дома каждые 5-7 лет помогает вовремя выявить трещины, повреждения и проблемы с изоляцией. Это позволяет предотвратить серьёзные повреждения и сохранить энергоэффективность дома.", // ru
+    "Регулярний огляд стін будинку кожні 5-7 років допомагає вчасно виявити тріщини, пошкодження та проблеми з ізоляцією. Це дозволяє запобігти серйозним пошкодженням і зберегти енергоефективність дому.", // ua
+    "Regular inspection of house walls every 5-7 years helps to detect cracks, damage, and insulation issues in time. This prevents major damage and maintains the energy efficiency of the home.", // en
+    "L'inspection régulière des murs de la maison tous les 5-7 ans permet de détecter les fissures, les dommages et les problèmes d'isolation à temps. Cela permet de prévenir les dommages importants et de maintenir l'efficacité énergétique de la maison.", // fr
+);
+addTranslation("M252", 
+    "Покраска — долговечность, защита и эстетика.", // ru
+    "Фарбування – довговічність, захист та естетика.", // ua
+    "Painting – durability, protection, and aesthetics.", // en
+    "Peinture – durabilité, protection et esthétique.", // fr
+);
+addTranslation("M253", 
+    "Высококачественные краски обеспечивают надежную защиту от внешних воздействий, сохраняя цвет и внешний вид на долгие годы. Используем современные материалы для достижения максимального эффекта и энергоэффективности.", // ru
+    "Високоякісні фарби забезпечують надійний захист від зовнішніх впливів, зберігаючи колір і вигляд на довгі роки. Використовуємо сучасні матеріали для досягнення максимального ефекту та енергоефективності.", // ua
+    "High-quality paints provide reliable protection from external influences, maintaining color and appearance for many years. We use modern materials to achieve maximum effect and energy efficiency.", // en
+    "Les peintures de haute qualité offrent une protection fiable contre les influences extérieures, en maintenant la couleur et l'apparence pendant de nombreuses années. Nous utilisons des matériaux modernes pour obtenir un effet maximal et une efficacité énergétique.", // fr
+);
+
+addTranslation("M254", 
+    "Преимущества нашей услуги покраски стен:", // ru
+    "Переваги нашої послуги фарбування стін:", // ua
+    "Advantages of our wall painting service:", // en
+    "Les avantages de notre service de peinture murale :", // fr
+);
+addTranslation("M255", 
+    "Экологичность: ", // ru
+    "Екологічність: ", // ua
+    "Environmental friendliness: ", // en
+    "Respect de l'environnement : ", // fr
+);
+
+addTranslation("M256", 
+    "Долговечность: ", // ru
+    "Довговічність: ", // ua
+    "Durability: ", // en
+    "Durabilité : ", // fr
+);
+
+addTranslation("M257", 
+    "Эстетический вид: ", // ru
+    "Естетичний вигляд: ", // ua
+    "Aesthetic appearance: ", // en
+    "Apparence esthétique : ", // fr
+);
+addTranslation("M258", 
+    "Мы используем только безопасные для здоровья материалы.", // ru
+    "Ми використовуємо тільки безпечні для здоров’я матеріали.", // ua
+    "We use only health-safe materials.", // en
+    "Nous utilisons uniquement des matériaux sûrs pour la santé.", // fr
+);
+addTranslation("M259", 
+    "Покрытие, которое мы наносим, прослужит вам долго, не теряя цвета и не стираясь.", // ru
+    "Покриття, яке ми наносимо, прослужить вам довго, не втрачаючи кольору і не стираючись.", // ua
+    "The coating we apply will last a long time, retaining its color and not wearing off.", // en
+    "Le revêtement que nous appliquons durera longtemps, sans perdre sa couleur et sans s'user.", // fr
+);
+addTranslation("M260", 
+    "Ваше жилье или офис получат стильный и современный вид.", // ru
+    "Ваша оселя чи офіс отримає стильний та сучасний вигляд.", // ua
+    "Your home or office will have a stylish and modern look.", // en
+    "Votre maison ou bureau aura un aspect élégant et moderne.", // fr
+);
+addTranslation("M263", 
+    "С нами вы получаете не только красивые стены, но и гарантию качества и долговечности!", // ru
+    "З нами ви отримуєте не тільки гарні стіни, але й гарантію якості та довговічності!", // ua
+    "With us, you get not only beautiful walls but also a guarantee of quality and durability!", // en
+    "Avec nous, vous obtenez non seulement de beaux murs, mais aussi une garantie de qualité et de durabilité!" // fr
+);
+addTranslation("M261", 
+    "Профессиональный подход к покраске стен", // ru
+    "Професійний підхід до фарбування стін", // ua
+    "A professional approach to wall painting", // en
+    "Une approche professionnelle de la peinture murale" // fr
+);
+addTranslation("M262", 
+    "Покраска стен – это не просто декоративный этап, а важный элемент создания долговечного и эффективного интерьера. Покраска фасадов – это не только способ сделать ваш дом красивым, но и важный этап защиты стен от внешних факторов. Наш подход к покраске фасадов основан на использовании высококачественных материалов, обеспечивающих долговечность и устойчивость к атмосферным воздействиям.", // ru
+    "Фарбування стін є не просто декоративним етапом, а важливим елементом у створенні довговічного та ефективного інтер’єру. Фарбування фасадів — це не тільки спосіб зробити ваш будинок красивим, але й важливий етап для захисту стін від впливу зовнішніх факторів. Наш підхід до фарбування фасадів базується на використанні високоякісних матеріалів, які забезпечують довговічність і стійкість до атмосферних явищ.", // ua
+    "Wall painting is not just a decorative stage but an important element in creating a durable and efficient interior. Facade painting is not only a way to make your house beautiful but also a crucial step in protecting walls from external influences. Our approach to facade painting is based on the use of high-quality materials that ensure durability and resistance to weather conditions.", // en
+    "La peinture des murs n'est pas seulement une étape décorative, mais un élément important pour créer un intérieur durable et efficace. La peinture des façades n'est pas seulement un moyen d'embellir votre maison, mais aussi une étape essentielle pour protéger les murs des influences extérieures. Notre approche de la peinture des façades repose sur l'utilisation de matériaux de haute qualité garantissant durabilité et résistance aux intempéries." // fr
+);
+addTranslation("M264", 
+    "Шлифовка поверхностей:", // ru
+    "Шліфування поверхонь:", // ua
+    "Surface grinding:", // en
+    "Ponçage des surfaces:" // fr
+);
+
+addTranslation("M265", 
+    "Мы выполняем шлифовку поверхностей разного типа для подготовки к дальнейшей обработке, что позволяет достичь идеального результата и долговечного эффекта.", // ru
+    "Ми здійснюємо шліфування поверхонь різного типу для підготовки до подальшої обробки, що дозволяє досягти ідеального результату і довготривалого ефекту.", // ua
+    "We perform grinding of various surfaces to prepare them for further treatment, achieving perfect results and long-lasting effects.", // en
+    "Nous effectuons le ponçage de diverses surfaces pour les préparer à un traitement ultérieur, obtenant ainsi un résultat parfait et durable." // fr
+);
+
+addTranslation("M266", 
+    "Устранение трещин и грибка:", // ru
+    "Усунення тріщин і грибка:", // ua
+    "Crack and mold removal:", // en
+    "Élimination des fissures et des moisissures:" // fr
+);
+
+addTranslation("M267", 
+    "Наши специалисты быстро и эффективно устраняют трещины, грибок и влагу, обеспечивая здоровую среду и продлевая срок службы вашего жилья.", // ru
+    "Наші фахівці швидко і ефективно усувають тріщини, грибок і вологу, що забезпечує здорове середовище та продовжує термін служби вашої оселі.", // ua
+    "Our specialists quickly and effectively eliminate cracks, mold, and moisture, ensuring a healthy environment and extending the lifespan of your home.", // en
+    "Nos spécialistes éliminent rapidement et efficacement les fissures, les moisissures et l'humidité, garantissant un environnement sain et prolongeant la durée de vie de votre habitation." // fr
+);
+
+addTranslation("M268", 
+    "Покраска стен:", // ru
+    "Фарбування стін:", // ua
+    "Wall painting:", // en
+    "Peinture des murs:" // fr
+);
+
+addTranslation("M269", 
+    "Мы используем только качественные краски, которые позволяют стенам выглядеть новыми, не терять цвет и защищать поверхности от вредных воздействий.", // ru
+    "Ми використовуємо лише якісні фарби, що дозволяють стінам виглядати новими, не втрачати кольору і захищати поверхні від шкідливих впливів.", // ua
+    "We use only high-quality paints that keep walls looking new, maintain color, and protect surfaces from harmful effects.", // en
+    "Nous utilisons uniquement des peintures de haute qualité qui permettent aux murs de paraître neufs, de conserver leur couleur et de protéger les surfaces des effets néfastes." // fr
+);
+
+addTranslation("M270", 
+    "Герметизация \"Теплый шов\":", // ru
+    "Герметизація \"Теплий шов\":", // ua
+    "Sealing \"Warm Seam\":", // en
+    "Joint d'étanchéité \"Chaud\":" // fr
+);
+
+addTranslation("M271", 
+    "Технология \"Теплый шов\" позволяет эффективно сохранять тепло в доме, снижая расходы на отопление и повышая энергоэффективность.", // ru
+    "Технологія \"Теплий шов\" дозволяє ефективно зберігати тепло в будинку, зменшуючи витрати на опалення і підвищуючи енергоефективність.", // ua
+    "The \"Warm Seam\" technology effectively retains heat in the house, reducing heating costs and improving energy efficiency.", // en
+    "La technologie \"Chaud Joint\" permet de conserver efficacement la chaleur dans la maison, réduisant les coûts de chauffage et améliorant l'efficacité énergétique." // fr
+);
+
+addTranslation("M272", 
+    "Восстановление покрытий:", // ru
+    "Відновлення покриттів:", // ua
+    "Coating restoration:", // en
+    "Restauration des revêtements:" // fr
+);
+
+addTranslation("M273", 
+    "Возвращение старым покрытиям нового вида и функциональности без необходимости их полной замены.", // ru
+    "Повернення старим покриттям нового вигляду і функціональності без необхідності їх повної заміни.", // ua
+    "Restoring old coatings to a new appearance and functionality without the need for full replacement.", // en
+    "Rendre aux anciens revêtements un nouvel aspect et une nouvelle fonctionnalité sans nécessité de remplacement complet." // fr
+);
+
+addTranslation("M274", 
+    "Утепление стен и кровли:", // ru
+    "Утеплення стін та покрівлі:", // ua
+    "Wall and roof insulation:", // en
+    "Isolation des murs et du toit:" // fr
+);
+
+addTranslation("M275", 
+    "Мы используем инновационные материалы для утепления, которые позволяют значительно уменьшить теплопотери и сделать ваш дом комфортным и экономичным.", // ru
+    "Ми використовуємо інноваційні матеріали для утеплення, що дозволяють значно зменшити тепловтрати і зробити ваш будинок комфортним та економічним.", // ua
+    "We use innovative insulation materials that significantly reduce heat loss, making your home comfortable and economical.", // en
+    "Nous utilisons des matériaux d'isolation innovants qui réduisent considérablement les pertes de chaleur, rendant votre maison confortable et économique." // fr
+);
+addTranslation("M276", 
+    "Теплопотери тепловизором:", // ru
+    "Тепловтрати тепловізором:", // ua
+    "Heat loss detection with a thermal imager:", // en
+    "Détection des pertes thermiques avec une caméra thermique:" // fr
+);
+
+addTranslation("M277", 
+    "Выявление проблемных мест и холодных зон в здании для оптимизации затрат на отопление и повышения эффективности утепления.", // ru
+    "Виявлення проблемних місць і холодних зон у будівлі для оптимізації витрат на опалення та підвищення ефективності утеплення.", // ua
+    "Identifying problem areas and cold zones in a building to optimize heating costs and improve insulation efficiency.", // en
+    "Identification des zones problématiques et des zones froides dans un bâtiment afin d'optimiser les coûts de chauffage et d'améliorer l'efficacité de l'isolation." // fr
+);
+addTranslation("M276",  
+    "ПОКРАСКА TИМ ХАУС", // ru  
+    "ФАРБУВАННЯ ТІМ ХАУС", // ua  
+    "TEAM HOUSE PAINTING", // en  
+    "PEINTURE TEAM HOUSE" // fr  
+);
+
+
+
+
+
+
 
 
 
