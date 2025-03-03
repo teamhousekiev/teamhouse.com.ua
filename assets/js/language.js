@@ -532,6 +532,13 @@ addTranslation("M079",
     "Production" // fr
 );
 
+addTranslation("M080", 
+    "Гарантия", // ru
+    "Гарантія", // ua
+    "Warranty", // en
+    "Garantie" // fr
+);
+
 
 addTranslation("M081", 
     "Разработано", // ru
