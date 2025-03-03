@@ -1404,6 +1404,20 @@ addTranslation("M212",
     "Corporate office:", // en
     "Bureau corporate :" // fr
 );
+addTranslation("M213", 
+    "ТИМ ХАУС", // ru
+    "ТІМ ХАУС", // ua
+    "TEAM HOUSE", // en
+    "TEAM HOUSE" // fr
+);
+addTranslation("M214", 
+    "Главная", // ru
+    "Головна", // ua
+    "Home", // en
+    "Accueil" // fr
+);
+
+
 
 
 
