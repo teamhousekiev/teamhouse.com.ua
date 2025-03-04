@@ -874,11 +874,11 @@ addTranslation("M130",
     "BATHS", // en
     "BAINS" // fr
 );
-addTranslation("M131", 
-    "РЕСТАВРАЦИЯ", // ru
-    "РЕСТАВРАЦІЯ", // ua
-    "RESTORATION", // en
-    "RÉPARATION" // fr
+addTranslation("M131",  
+"СТРОИТЕЛЬСТВО РЕМОНТ", // ru  
+"БУДІВНИЦТВО РЕМОНТ", // ua  
+"CONSTRUCTION REPAIR", // en  
+"CONSTRUCTION RÉNOVATION" // fr  
 );
 addTranslation("M132", 
     "РАБОТЫ TEAM HOUSE", // ru
@@ -1826,12 +1826,987 @@ addTranslation("M277",
     "Identifying problem areas and cold zones in a building to optimize heating costs and improve insulation efficiency.", // en
     "Identification des zones problématiques et des zones froides dans un bâtiment afin d'optimiser les coûts de chauffage et d'améliorer l'efficacité de l'isolation." // fr
 );
-addTranslation("M276",  
+addTranslation("M278",  
     "ПОКРАСКА TИМ ХАУС", // ru  
     "ФАРБУВАННЯ ТІМ ХАУС", // ua  
     "TEAM HOUSE PAINTING", // en  
     "PEINTURE TEAM HOUSE" // fr  
 );
+addTranslation("M279",  
+    "Подробнее о реставрации", // ru  
+    "Детальніше про реставрацію", // ua  
+    "More about restoration", // en  
+    "Plus d'informations sur la restauration" // fr  
+);
+
+addTranslation("M280",  
+    "Главная", // ru  
+    "Головна", // ua  
+    "Home", // en  
+    "Accueil" // fr  
+);
+
+addTranslation("M281",  
+    "Реставрация продлевает срок службы вашего жилья", // ru  
+    "Реставрація продовжує термін служби вашої оселі", // ua  
+    "Restoration extends the lifespan of your home", // en  
+    "La restauration prolonge la durée de vie de votre maison" // fr  
+);
+addTranslation("M282",  
+    "Чистка террас", // ru  
+    "Чистка терас", // ua  
+    "Terrace cleaning", // en  
+    "Nettoyage des terrasses" // fr  
+);
+
+addTranslation("M283",  
+    "Устранение сквозняков", // ru  
+    "Усунення протягів", // ua  
+    "Draft elimination", // en  
+    "Élimination des courants d'air" // fr  
+);
+
+addTranslation("M284",  
+    "Покраска и ремонт", // ru  
+    "Фарбування та ремонт", // ua  
+    "Painting and repair", // en  
+    "Peinture et réparation" // fr  
+);
+
+addTranslation("M285",  
+    "Ремонт обшивки", // ru  
+    "Ремонт обшивки", // ua  
+    "Cladding repair", // en  
+    "Réparation du revêtement" // fr  
+);
+
+addTranslation("M286",  
+    "Декоративные элементы", // ru  
+    "Декоративні елементи", // ua  
+    "Decorative elements", // en  
+    "Éléments décoratifs" // fr  
+);
+
+addTranslation("M287",  
+    "Электромонтажные работы", // ru  
+    "Електричні роботи", // ua  
+    "Electrical work", // en  
+    "Travaux électriques" // fr  
+);
+addTranslation("M288",  
+    "Мастер там, где он нужен", // ru  
+    "Майстер там, де він потрібен", // ua  
+    "The master is where he is needed", // en  
+    "Le maître est là où il est nécessaire" // fr  
+);
+
+addTranslation("M289",  
+    "Когда возникают мелкие поломки или срочно нужен ремонт, важны два фактора — скорость и профессионализм. Не всегда есть время и возможность самостоятельно искать инструменты, разбираться в тонкостях работы или тратить часы на решение проблемы.", // ru  
+
+    "Коли виникають дрібні поломки або терміново потрібен ремонт, важливі два фактори — швидкість і професіоналізм. Не завжди є час і можливість самостійно шукати інструменти, розбиратися в тонкощах роботи або витрачати години на вирішення проблеми.", // ua  
+
+    "When minor breakdowns occur or urgent repairs are needed, two factors are crucial — speed and professionalism. There is not always time and opportunity to look for tools, understand the intricacies of the work, or spend hours solving the problem.", // en  
+
+    "Lorsque des pannes mineures surviennent ou qu'une réparation urgente est nécessaire, deux facteurs sont essentiels — la rapidité et le professionnalisme. Il n'y a pas toujours le temps et la possibilité de chercher des outils, de comprendre les subtilités du travail ou de passer des heures à résoudre le problème." // fr  
+);
+addTranslation("M290",  
+    "Профессиональная реставрация деревянных окон", // ru  
+    "Професійна реставрація дерев'яних вікон", // ua  
+    "Professional restoration of wooden windows", // en  
+    "Restauration professionnelle des fenêtres en bois" // fr  
+);
+addTranslation("M291", 
+    "Со временем деревянные окна подвергаются воздействию солнечного света, что приводит к разрушению лакового покрытия. Поверхность дерева становится уязвимой к воздействию грибка, споры которого оседают в порах древесины, разрушая её структуру. Дубильные вещества не могут эффективно с ними бороться, из-за чего древесина со временем темнеет и теряет свою привлекательность. Регулярный визуальный осмотр и реставрация окон каждые 5-10 лет позволяют избежать серьёзных повреждений и сохранить красоту и функциональность деревянных поверхностей.", // ru
+    "З часом дерев'яні вікна піддаються впливу сонячного світла, що призводить до руйнування лакового покриття. Поверхня дерева стає вразливою до впливу грибка, спори якого осідають в порах дерева, руйнуючи його структуру. Дубильні речовини не можуть ефективно боротися з ними, через що деревина з часом темніє і втрачає свою привабливість. Регулярний візуальний огляд та реставрація вікон кожні 5-10 років дозволяють уникнути серйозних пошкоджень і зберегти красу та функціональність дерев'яних поверхонь.", // ua
+
+    "Over time, wooden windows are exposed to sunlight, which leads to the destruction of the lacquer coating. The surface of the wood becomes vulnerable to mold, whose spores settle in the pores of the wood, destroying its structure. Tannins cannot effectively combat them, causing the wood to darken over time and lose its appeal. Regular visual inspections and window restoration every 5-10 years help prevent serious damage and maintain the beauty and functionality of wooden surfaces.", // en
+    "Avec le temps, les fenêtres en bois sont exposées à la lumière du soleil, ce qui entraîne la destruction du revêtement de laque. La surface du bois devient vulnérable aux moisissures, dont les spores s'installent dans les pores du bois et en détruisent la structure. Les tanins ne peuvent pas lutter efficacement contre elles, ce qui fait que le bois s'assombrit avec le temps et perd son attrait. Une inspection visuelle régulière et une restauration des fenêtres tous les 5 à 10 ans permettent d'éviter des dommages importants et de préserver la beauté et la fonctionnalité des surfaces en bois." // fr
+);
+addTranslation("M292",
+"Реставрация системой защиты выполняется в следующей последовательности:",
+"Реставрація системою захисту виконується у наступній послідовності:",
+"Restoration using the protection system is carried out in the following sequence:",
+"La restauration avec le système de protection est réalisée selon la séquence suivante:"
+);
+addTranslation("M293", 
+    "Снятие старого лака:", // ru
+    "Зняття старого лаку: ", // ua
+    "Removal of old lacquer: ", // en
+    "Enlèvement de l'ancien vernis :", // fr
+);
+
+addTranslation("M294", 
+    "Нанесение изолятора: \n", // ru
+    "Нанесення ізолятора : \n", // ua
+    "Application of the isolator: \n", // en
+    "Application de l'isolant : \n", // fr
+);
+
+addTranslation("M295", 
+    "Нанесение защитного слоя:", // ru
+    "Нанесення захисного шару:", // ua
+    "Application of protective layer:", // en
+    "Application de la couche de protection :", // fr
+);
+addTranslation("M296",
+"Снятие старого лака выполняется вручную с помощью инструментов и растворителей краски.",
+"Зняття старого лаку виконується вручну за допомогою інструментів та розчинників фарби",
+"The removal of old lacquer is done manually using tools and paint solvents.",
+"L'enlèvement de l'ancien vernis est effectué manuellement à l'aide d'outils et de solvants pour peinture."
+)
+addTranslation("M297",
+"Для защиты от проникновения дубильных веществ, которые разрушают лак.",
+"Для захисту проникнення дубильних речовин, які руйнують лак.",
+"To protect against the penetration of tannins that destroy the lacquer.",
+"Pour protéger contre la pénétration des tanins qui détruisent le vernis."
+)
+addTranslation("M298",
+"Финишный слой лака толщиной 200 мкм для долговечной защиты.",
+"Фінішний шар лаку товщиною 200 мкм для довговічного захисту.",
+"A finish layer of lacquer 200 microns thick for long-lasting protection.",
+"Une couche de finition de vernis de 200 microns pour une protection durable."
+)
+addTranslation("M299", 
+    "Реставрация деревянных окон способствует энергоэффективности дома, снижая потери тепла и повышая изоляционные свойства.", // ru
+    "Реставрація дерев'яних вікон сприяє енергоефективності будинку, зменшуючи втрати тепла та підвищуючи ізоляційні властивості", // ua
+    "Restoring wooden windows contributes to the energy efficiency of the house by reducing heat loss and improving insulation properties.", // en
+    "La restauration des fenêtres en bois contribue à l'efficacité énergétique de la maison en réduisant les pertes de chaleur et en améliorant les propriétés d'isolation.", // fr
+);
+
+addTranslation("M300", 
+    "Восстановление вместо замены — это экологичный подход", // ru
+    "Відновлення замість заміни — це екологічний підхід", // ua
+    "Restoration instead of replacement – this is an eco-friendly approach", // en
+    "La restauration plutôt que le remplacement - c'est une approche écologique", // fr
+);
+
+addTranslation("M301", 
+    "Восстановление вместо замены — это экологичный подход, который сохраняет природные ресурсы и уменьшает количество отходов. Используемые нами качественные материалы безопасны для здоровья и окружающей среды, а технология нанесения покрытий обеспечивает долговечную защиту от воздействия погоды.", // ru
+    "Відновлення замість заміни — це екологічний підхід, що зберігає природні ресурси та зменшує кількість відходів. Якісні матеріали, які ми використовуємо, безпечні для здоров’я та довкілля, а технологія нанесення покриттів забезпечує довговічний захист від погодних впливів.", // ua
+    "Restoration instead of replacement is an eco-friendly approach that preserves natural resources and reduces waste. The high-quality materials we use are safe for health and the environment, and the coating application technology ensures long-lasting protection from weather impacts.", // en
+    "La restauration plutôt que le remplacement est une approche écologique qui préserve les ressources naturelles et réduit les déchets. Les matériaux de haute qualité que nous utilisons sont sûrs pour la santé et l'environnement, et la technologie d'application des revêtements garantit une protection durable contre les intempéries.", // fr
+);
+
+addTranslation("M302", 
+    "Мастер на час ТИМ ХАУС", // ru
+    "Майстер на годину ТІМ ХАУС", // ua
+    "Master for an hour TEAM HOUSE", // en
+    "Maître pour une heure TEAM HOUSE", // fr
+);
+addTranslation("M303", 
+    "Надежная помощь и мелкий ремонт без лишних хлопот", // ru
+    "Надійна допомога та дрібний ремонт без зайвих клопотів", // ua
+    "Reliable help and minor repairs without unnecessary hassle", // en
+    "Aide fiable et petites réparations sans tracas inutiles", // fr
+);
+
+addTranslation("M304", 
+    "Мастер на час", // ru
+    "Майстер на годину", // ua
+    "Master for an hour", // en
+    "Maître pour une heure", // fr
+);
+addTranslation("M305", 
+    "Главная", // ru
+    "Головна", // ua
+    "Home", // en
+    "Accueil", // fr
+);
+addTranslation("M306", 
+    "Чистка террас", // ru
+    "Чистка терас", // ua
+    "Terrace cleaning", // en
+    "Nettoyage de terrasse", // fr
+);
+
+addTranslation("M307", 
+    "Устранение сквозняков", // ru
+    "Усунення протягів", // ua
+    "Draft removal", // en
+    "Élimination des courants d'air", // fr
+);
+
+addTranslation("M308", 
+    "Покраска и ремонт", // ru
+    "Фарбування та ремонт", // ua
+    "Painting and repair", // en
+    "Peinture et réparation", // fr
+);
+
+addTranslation("M309", 
+    "Ремонт обшивки", // ru
+    "Ремонт обшивки", // ua
+    "Cladding repair", // en
+    "Réparation du revêtement", // fr
+);
+
+addTranslation("M310", 
+    "Ремонт сантехники", // ru
+    "Ремонт сантехніки", // ua
+    "Plumbing repair", // en
+    "Réparation de plomberie", // fr
+);
+
+addTranslation("M311", 
+    "Декоративные элементы", // ru
+    "Декоративні елементи", // ua
+    "Decorative elements", // en
+    "Éléments décoratifs", // fr
+);
+
+addTranslation("M312", 
+    "Электрические работы", // ru
+    "Електричні роботи", // ua
+    "Electrical work", // en
+    "Travaux électriques", // fr
+);
+addTranslation("M313", 
+    "Мастер на час — быстро и профессионально", // ru
+    "Майстер на годину — швидко та професійно", // ua
+    "Handyman by the hour — fast and professional", // en
+    "Homme à tout faire à l'heure - rapide et professionnel", // fr
+);
+
+addTranslation("M314", 
+    "Когда возникают мелкие поломки или срочно нужен ремонт, важны два фактора — скорость и профессионализм. Не всегда есть время и возможность самостоятельно разбираться в тонкостях работы или тратить часы на решение проблемы.", // ru
+    "Коли виникають дрібні поломки або терміново потрібен ремонт, важливі два фактори — швидкість і професіоналізм. Не завжди є час і можливість самостійно розбиратися в тонкощах роботи або витрачати години на вирішення проблеми.", // ua
+    "When small breakdowns occur or urgent repairs are needed, two factors are important — speed and professionalism. There is not always time and opportunity to deal with the nuances of the work on your own or spend hours solving the problem.", // en
+    "Lorsqu'il y a de petites pannes ou qu'une réparation urgente est nécessaire, deux facteurs sont importants : la rapidité et le professionnalisme. Il n'y a pas toujours le temps et la possibilité de comprendre les subtilités du travail ou de passer des heures à résoudre le problème.", // fr
+);
+addTranslation("M315", 
+    "Когда нужен мастер на час?", // ru
+    "Коли потрібен майстер на годину?", // ua
+    "When do you need a handyman by the hour?", // en
+    "Quand avez-vous besoin d'un homme à tout faire à l'heure ?", // fr
+);
+
+addTranslation("M316", 
+    "Наш мастер на час – это удобное решение для тех, кто ценит своё время и не хочет тратить его на поиск инструментов и попытки самостоятельного ремонта. Опытный специалист приедет в удобное для вас время, быстро оценит ситуацию и качественно выполнит все необходимые работы.", // ru
+    "Наш майстер на годину – це зручне рішення для тих, хто цінує свій час та не хоче витрачати його на пошук інструментів і спроби самостійного ремонту. Досвідчений спеціаліст приїде у зручний для вас час, швидко оцінить ситуацію та якісно виконає всі необхідні роботи.", // ua
+    "Our handyman by the hour is a convenient solution for those who value their time and don't want to spend it searching for tools or attempting DIY repairs. An experienced specialist will come at a time convenient for you, quickly assess the situation, and efficiently complete all necessary tasks.", // en
+    "Notre homme à tout faire à l'heure est une solution pratique pour ceux qui apprécient leur temps et ne veulent pas le passer à chercher des outils ou à tenter des réparations eux-mêmes. Un spécialiste expérimenté viendra à un moment qui vous convient, évaluera rapidement la situation et effectuera efficacement tous les travaux nécessaires.", // fr
+);
+
+addTranslation("M317", 
+    "Если необходимо срочно устранить мелкую поломку", // ru
+    "Якщо необхідно терміново усунути дрібну поломку", // ua
+    "If you need to urgently fix a small breakdown", // en
+    "Si vous devez réparer rapidement une petite panne", // fr
+);
+
+addTranslation("M318", 
+    "Если у вас нет инструментов или навыков для ремонта", // ru
+    "Якщо у вас немає інструментів або навичок для ремонту", // ua
+    "If you don't have the tools or skills for the repair", // en
+    "Si vous n'avez pas les outils ou les compétences nécessaires pour réparer", // fr
+);
+
+addTranslation("M319", 
+    "Если нужно выполнить работу быстро и без хлопот", // ru
+    "Якщо потрібно виконати роботу швидко і без клопоту", // ua
+    "If you need the job done quickly and without hassle", // en
+    "Si vous devez effectuer le travail rapidement et sans tracas", // fr
+);
+
+addTranslation("M320", 
+    "Если вы хотите быть уверены в качестве выполненных работ", // ru
+    "Якщо ви хочете бути впевненими в якості виконаних робіт", // ua
+    "If you want to be confident in the quality of the work done", // en
+    "Si vous voulez être sûr de la qualité du travail effectué", // fr
+);
+addTranslation("M321",
+  "Выбирая нас, вы получаете не только безупречный результат, но и гарантию качества.", // ru
+  "Обираючи нас, ви отримуєте не лише бездоганний результат, а й гарантію якості.", // uk
+  "By choosing us, you get not only a flawless result but also a quality guarantee.", // en
+  "En nous choisissant, vous obtenez non seulement un résultat impeccable, mais aussi une garantie de qualité." // fr
+);
+
+addTranslation("M322",
+  "Профессиональный мастер — качество, которое служит годами", // ru
+  "Професійний майстер — якість, що служить роками", // uk
+  "Professional master — quality that lasts for years", // en
+  "Maître professionnel — qualité qui dure des années" // fr
+);
+
+addTranslation("M323",
+  "Мы используем современные материалы, проверенные технологии и соблюдаем все строительные нормы, чтобы создать для вас комфорт и уют. Доверте ваше пространство профессионалам — и наслаждайтесь результатом без лишних хлопот!", // ru
+  "Ми використовуємо сучасні матеріали, перевірені технології та дотримуємося всіх будівельних норм, щоб створити для вас комфорт і затишок. Довірте свій простір професіоналам — і насолоджуйтесь результатом без зайвого клопоту!", // uk
+  "We use modern materials, proven technologies, and adhere to all building standards to create comfort and coziness for you. Trust your space to professionals and enjoy the result without unnecessary hassle!", // en
+  "Nous utilisons des matériaux modernes, des technologies éprouvées et respectons toutes les normes de construction pour créer du confort et de la chaleur pour vous. Confiez votre espace à des professionnels et profitez du résultat sans tracas inutiles !" // fr
+);
+
+addTranslation("M324",
+  "Оперативный выезд мастера", // ru
+  "Оперативний виїзд майстра", // uk
+  "Prompt arrival of the master", // en
+  "Arrivée rapide du maître" // fr
+);
+
+addTranslation("M325",
+  "Приезжаем в удобное для вас время.", // ru
+  "Приїдемо у зручний для вас час.", // uk
+  "We will come at a time convenient for you.", // en
+  "Nous viendrons à un moment qui vous convient." // fr
+);
+
+addTranslation("M326",
+  "Качественное выполнение работы", // ru
+  "Якісне виконання роботи", // uk
+  "Quality execution of work", // en
+  "Exécution de qualité du travail" // fr
+);
+
+addTranslation("M327",
+  "Опытные специалисты и профессиональные инструменты.", // ru
+  "Досвідчені фахівці та професійні інструменти.", // uk
+  "Experienced specialists and professional tools.", // en
+  "Spécialistes expérimentés et outils professionnels." // fr
+);
+
+addTranslation("M328",
+  "Доступные цены", // ru
+  "Доступні ціни", // uk
+  "Affordable prices", // en
+  "Prix abordables" // fr
+);
+
+addTranslation("M329",
+  "Оптимальное соотношение цены и качества", // ru
+  "Оптимальне співвідношення вартості та якості", // uk
+  "Optimal value for money", // en
+  "Rapport qualité/prix optimal" // fr
+);
+
+addTranslation("M330",
+  "Гарантия на услуги", // ru
+  "Гарантію на послуги", // uk
+  "Warranty on services", // en
+  "Garantie sur les services" // fr
+);
+
+addTranslation("M331",
+  "Ответственность за выполненные работы", // ru
+  "Відповідальність за виконані роботи", // uk
+  "Responsibility for the work performed", // en
+  "Responsabilité des travaux effectués" // fr
+);
+
+addTranslation("M332",
+  "Услуги, которые предоставляет наш мастер:", // ru
+  "Послуги, які надає наш майстер:", // uk
+  "Services provided by our master:", // en
+  "Services fournis par notre maître :" // fr
+);
+addTranslation("M333",
+  "Мастер на час — быстро и профессионально", // ru
+  "Майстер на годину — швидко та професійно", // uk
+  "Master by the hour — fast and professionally", // en
+  "Maître à l'heure — rapide et professionnel" // fr
+);
+
+addTranslation("M334",
+  "Когда возникают мелкие поломки или срочно требуется ремонт, важны два фактора — скорость и профессионализм. Не всегда есть время и возможность самостоятельно разбираться в тонкостях работы или тратить часы на решение проблемы.", // ru
+  "Коли виникають дрібні поломки або терміново потрібен ремонт, важливі два фактори — швидкість і професіоналізм. Не завжди є час і можливість самостійно розбиратися в тонкощах роботи або витрачати години на вирішення проблеми.", // uk
+  "When small breakdowns occur or urgent repairs are needed, two factors are important — speed and professionalism. There's not always time or the ability to deal with the intricacies of the work or spend hours solving the problem.", // en
+  "Lorsque de petites pannes se produisent ou qu'une réparation urgente est nécessaire, deux facteurs sont importants — la rapidité et le professionnalisme. Il n'y a pas toujours le temps ou la possibilité de se pencher sur les subtilités du travail ou de passer des heures à résoudre le problème." // fr
+);
+addTranslation("M336",
+  "Ремонт мебели — от мелких поломок до полного восстановления.", // ru
+  "Ремонт меблів — від дрібних поломок до повного відновлення.", // uk
+  "Furniture repair — from small repairs to full restoration.", // en
+  "Réparation de meubles — des petites réparations à la restauration complète." // fr
+);
+
+addTranslation("M337",
+  "Мы предоставляем качественные услуги по ремонту мебели, включая исправление трещин, замену фурнитуры и обновление покрытий.", // ru
+  "Ми надаємо якісні послуги з ремонту меблів, включаючи виправлення тріщин, заміну фурнітури та оновлення покриттів.", // uk
+  "We provide quality furniture repair services, including crack repair, hardware replacement, and finish restoration.", // en
+  "Nous proposons des services de réparation de meubles de qualité, y compris la réparation des fissures, le remplacement des accessoires et la restauration des finitions." // fr
+);
+addTranslation("M338", 
+  "Ремонт мебели", // ru
+  "Ремонт меблів", // ua
+  "Furniture repair", // en
+  "Réparation de meubles" // fr
+);
+
+addTranslation("M339", 
+  "— от мелких поломок до полного восстановления.", // ru
+  "— від дрібних поломок до повного відновлення.", // ua
+  "— from small fixes to complete restoration.", // en
+  "— des petites pannes à la restauration complète." // fr
+);
+addTranslation("M340", 
+  "Электрические работы", // ru
+  "Електричні роботи", // ua
+  "Electrical work", // en
+  "Travaux électriques" // fr
+);
+
+addTranslation("M341", 
+  "— ремонт и монтаж розеток, выключателей, освещения.", // ru
+  "— ремонт та монтаж розеток, вимикачів, освітлення.", // ua
+  "— repair and installation of sockets, switches, lighting.", // en
+  "— réparation et installation de prises, interrupteurs, éclairage." // fr
+);
+addTranslation("M342", 
+  "Сантехнические работы", // ru
+  "Сантехнічні роботи", // ua
+  "Plumbing work", // en
+  "Travaux de plomberie" // fr
+);
+
+addTranslation("M343", 
+  "— ремонт смесителей, замена труб, устранение протечек.", // ru
+  "— ремонт змішувачів, заміна труб, усунення течей.", // ua
+  "— repair of faucets, pipe replacement, leak fixing.", // en
+  "— réparation de robinets, remplacement de tuyaux, réparation des fuites." // fr
+);
+addTranslation("M344", 
+  "Мелкий ремонт", // ru
+  "Дрібний ремонт", // ua
+  "Minor repairs", // en
+  "Petites réparations" // fr
+);
+
+addTranslation("M345", 
+  "— устранение трещин, ремонт дверей, окон, стен.", // ru
+  "— усунення тріщин, ремонти дверей, вікон, стін.", // ua
+  "— crack repairs, door, window, and wall repairs.", // en
+  "— réparation des fissures, portes, fenêtres et murs." // fr
+);
+addTranslation("M346", 
+  "Сборка мебели", // ru
+  "Збірка меблів", // ua
+  "Furniture assembly", // en
+  "Assemblage de meubles" // fr
+);
+
+addTranslation("M347", 
+  "— быстро и качественно соберем вашу мебель.", // ru
+  "— швидко та якісно зберемо ваші меблі.", // ua
+  "— we will assemble your furniture quickly and efficiently.", // en
+  "— nous assemblerons vos meubles rapidement et efficacement." // fr
+);
+addTranslation("M348", 
+  "Другие бытовые работы", // ru
+  "Інші побутові роботи", // ua
+  "Other household tasks", // en
+  "Autres tâches ménagères" // fr
+);
+
+addTranslation("M349", 
+  "— от починки техники до установки бытовых приборов.", // ru
+  "— від лагодження техніки до установки побутових пристроїв.", // ua
+  "— from repairing appliances to installing household devices.", // en
+  "— de la réparation des appareils à l'installation des appareils ménagers." // fr
+);
+addTranslation("M350", 
+  "Не тратьте время на поиски мастера — мы готовы помочь вам прямо сейчас!", // ru
+  "Не витрачайте час на пошуки майстра — ми готові допомогти вам прямо зараз!", // ua
+  "Don't waste time looking for a handyman — we're ready to help you right now!", // en
+  "Ne perdez pas de temps à chercher un artisan - nous sommes prêts à vous aider maintenant !", // fr
+);
+addTranslation("M351", 
+  "ПРОИЗВОДСТВО ТИМ ХАУС", // ru
+  "ВИРОБНИЦТВО ТІМ ХАУС", // uk
+  "TEAM HOUSE PRODUCTION", // en
+  "PRODUCTION TEAM HOUSE", // fr
+);
+addTranslation("M352", 
+  "Наше производство — ваша опора, а качество продукции — гарантия долговечности!", // ru
+  "Наше виробництво — ваша опора, а якість продукції — гарантія довговічності!", // uk
+  "Our production is your support, and the quality of our products is the guarantee of longevity!", // en
+  "Notre production est votre soutien, et la qualité de nos produits est la garantie de durabilité!", // fr
+);
+addTranslation("M353", 
+  "Главная", // ru
+  "Головна", // uk
+  "Home", // en
+  "Accueil", // fr
+);
+
+addTranslation("M354", 
+  "Производство", // ru
+  "Виробництво", // uk
+  "Production", // en
+  "Production", // fr
+);
+addTranslation("M355", 
+  "Производство ограждений", // ru
+  "Виробництво огорож", // uk
+  "Fencing production", // en
+  "Production de clôtures", // fr
+);
+
+addTranslation("M356", 
+  "Террасная доска", // ru
+  "Терасна дошка", // uk
+  "Decking board", // en
+  "Planche de terrasse", // fr
+);
+
+addTranslation("M357", 
+  "Клеёный брус для домов", // ru
+  "Клеєний брус для будинків", // uk
+  "Glued timber for houses", // en
+  "Bois collé pour maisons", // fr
+);
+
+addTranslation("M358", 
+  "Клеёные балки конструкционные", // ru
+  "Клеєні балки конструкційні", // uk
+  "Glued structural beams", // en
+  "Poutres collées pour structures", // fr
+);
+
+addTranslation("M359", 
+  "Клеёные балки на заказ", // ru
+  "Клеєні балки на замовлення", // uk
+  "Custom glued beams", // en
+  "Poutres collées sur commande", // fr
+);
+
+addTranslation("M360", 
+  "Колонны, стропила клеёные", // ru
+  "Стовпи, крокви клеєні", // uk
+  "Glued posts, rafters", // en
+  "Poteaux, chevrons collés", // fr
+);
+
+addTranslation("M361", 
+  "Сухие строганные пиломатериалы", // ru
+  "Пиломатериали сухі, стругані", // uk
+  "Dry planed timber", // en
+  "Bois séché et raboté", // fr
+);
+
+addTranslation("M362", 
+  "Профессионализм на каждом этапе производства", // ru
+  "Професіоналізм на кожному етапі виробництва", // uk
+  "Professionalism at every stage of production", // en
+  "Professionnalisme à chaque étape de la production", // fr
+);
+
+addTranslation("M363", 
+  "Мы используем только профессиональные клеи, которые обеспечивают надёжное соединение элементов и долговечность готовых изделий. Все процессы контролируются на каждом этапе — от выбора древесины до финальной обработки.", // ru
+  "Ми використовуємо лише професійні клеї, які забезпечують надійне з’єднання елементів і довговічність готових виробів. Всі процеси контролюються на кожному етапі — від вибору деревини до фінальної обробки.", // uk
+  "We use only professional glues that ensure a reliable connection of elements and the durability of the finished products. All processes are controlled at each stage — from selecting the wood to final processing.", // en
+  "Nous utilisons uniquement des colles professionnelles qui assurent une connexion fiable des éléments et la durabilité des produits finis. Tous les processus sont contrôlés à chaque étape — de la sélection du bois à la finition finale.", // fr
+);
+addTranslation("M364", 
+  "Почему стоит выбрать наше производство?", // ru
+  "Чому варто обрати наше виробництво?", // uk
+  "Why choose our production?", // en
+  "Pourquoi choisir notre production?", // fr
+);
+
+addTranslation("M365", 
+  "У нас есть собственная мастерская в Киеве, где мы выполняем заказы для наших клиентов с максимальной скоростью и точностью. В мастерской мы клеим, создаем ограждения, изготавливаем мебель и другие деревянные изделия, которые удовлетворяют все потребности наших заказчиков. Кроме того, мы сушим и строгаем древесину для дальнейшего производства.", // ru
+  "У нас є власна майстерня в Києві, де ми виготовляємо замовлення для наших клієнтів з максимальною швидкістю та точністю. У майстерні ми клеїмо, створюємо огорожі, виготовляємо меблі та інші дерев'яні вироби, що задовольняють всі потреби наших замовників. Крім того, ми сушимо та стругаємо деревину для подальшого виробництва.", // uk
+  "We have our own workshop in Kyiv where we produce orders for our clients with maximum speed and accuracy. In the workshop, we glue, create fences, make furniture, and other wooden products that meet all our clients' needs. In addition, we dry and plane the wood for further production.", // en
+  "Nous avons notre propre atelier à Kyiv où nous fabriquons les commandes pour nos clients avec la plus grande rapidité et précision. Dans l'atelier, nous collons, créons des clôtures, fabriquons des meubles et d'autres produits en bois qui répondent à tous les besoins de nos clients. De plus, nous séchons et rabotons le bois pour la production future.", // fr
+);
+addTranslation("M366", 
+  "Преимущества мастерской:", // ru
+  "Переваги майстерні:", // uk
+  "Advantages of the workshop:", // en
+  "Avantages de l'atelier:", // fr
+);
+addTranslation("M367", 
+  "Скорость выполнения заказов:", // ru
+  "Швидкість виконання замовлень:", // uk
+  "Order fulfillment speed:", // en
+  "Vitesse d'exécution des commandes:", // fr
+);
+
+addTranslation("M368", 
+  "Индивидуальный подход к каждому заказу:", // ru
+  "Індивідуальний підхід до кожного замовлення:", // uk
+  "Individual approach to each order:", // en
+  "Approche individuelle pour chaque commande:", // fr
+);
+
+addTranslation("M369", 
+  "Высокое качество обработки и материалов:", // ru
+  "Висока якість обробки та матеріалів:", // uk
+  "High quality of processing and materials:", // en
+  "Haute qualité de traitement et de matériaux:", // fr
+);
+addTranslation("M370", 
+  "наша мастерская в Киеве гарантирует оперативное изготовление изделий в кратчайшие сроки.", // ru
+  "наша майстерня в Києві гарантує оперативне виготовлення виробів у найкоротші терміни.", // uk
+  "our workshop in Kyiv guarantees the prompt production of products in the shortest terms.", // en
+  "notre atelier à Kiev garantit une fabrication rapide des produits dans les plus brefs délais.", // fr
+);
+addTranslation("M371", 
+  "мы изготавливаем продукцию по уникальным проектам, учитывая все пожелания и требования наших клиентов.", // ru
+  "ми виготовляємо продукцію за унікальними проектами, враховуючи всі побажання та вимоги наших клієнтів.", // uk
+  "we produce products according to unique projects, considering all the wishes and requirements of our clients.", // en
+  "nous fabriquons des produits selon des projets uniques, en tenant compte de toutes les demandes et exigences de nos clients.", // fr
+);
+addTranslation("M372", 
+  "в мастерской используются только проверенные материалы и профессиональное оборудование, что гарантирует долговечность и надежность каждого изделия.", // ru
+  "у майстерні використовуються тільки перевірені матеріали та професійне обладнання, що гарантує довговічність і надійність кожного виробу.", // uk
+  "only tested materials and professional equipment are used in the workshop, ensuring the durability and reliability of each product.", // en
+  "dans l'atelier, seuls des matériaux éprouvés et des équipements professionnels sont utilisés, garantissant la durabilité et la fiabilité de chaque produit.", // fr
+);
+addTranslation("M373", 
+  "Мы изготавливаем изделия из сосны, ели, ольхи, дуба, ясеня, кедра.", // ru
+  "Ми виготовляємо вироби з сосни, смереки, ольхи, дуба, ясеня, кедра.", // uk
+  "We manufacture products from pine, spruce, alder, oak, ash, cedar.", // en
+  "Nous fabriquons des produits en pin, épicéa, aulne, chêne, frêne, cèdre.", // fr
+);
+addTranslation("M374", 
+  "Производство в городе Сарны", // ru
+  "Виробництво у місті Сарни", // uk
+  "Production in the city of Sarny", // en
+  "Production dans la ville de Sarny", // fr
+);
+
+addTranslation("M375", 
+  "Оборудовано современными промышленными сушилками и немецким станком для производства клееного бруса. Это позволяет нам обеспечивать высокое качество материалов для строительства деревянных домов. Мы способны производить не только клееный брус, но и конструктивные балки и стропильные системы для строительства, гарантируя надежность и долговечность каждой детали. Наш подход к работе позволяет создавать продукты, соответствующие самым высоким стандартам качества и надежности.", // ru
+  "Оснащене сучасними промисловими сушками та німецьким станком для виготовлення клеєного бруса. Це дозволяє нам забезпечити високу якість матеріалів для будівництва дерев'яних будинків. Ми здатні виготовляти не лише клеєний брус, а й конструкційні балки та стропильні системи для будівництва, гарантуючи надійність і довговічність кожної деталі. Наш підхід до роботи дозволяє створювати продукти, які відповідають найвищим стандартам якості та надійності.", // uk
+  "Equipped with modern industrial dryers and a German machine for manufacturing glued timber. This allows us to ensure high quality materials for building wooden houses. We are able to produce not only glued timber but also structural beams and truss systems for construction, guaranteeing the reliability and durability of every detail. Our approach to work allows us to create products that meet the highest standards of quality and reliability.", // en
+  "Équipé de séchoirs industriels modernes et d'une machine allemande pour fabriquer du bois lamellé-collé. Cela nous permet d'assurer la haute qualité des matériaux pour la construction de maisons en bois. Nous sommes capables de produire non seulement du bois lamellé-collé, mais aussi des poutres structurelles et des systèmes de fermes pour la construction, garantissant la fiabilité et la durabilité de chaque détail. Notre approche du travail permet de créer des produits qui répondent aux normes les plus élevées en matière de qualité et de fiabilité.", // fr
+);
+addTranslation("M376", 
+  "Профилированный клееный брус", // ru
+  "Профільований клеєний брус", // uk
+  "Profiled glued timber", // en
+  "Bois lamellé profilé", // fr
+);
+
+addTranslation("M377", 
+  "Мы изготавливаем профилированный клееный брус, который соответствует самым высоким стандартам качества. Предлагаем европейский профиль с 7 уровнями защиты от продувания, что обеспечивает герметичность и теплоизоляцию. Также изготавливаем брус по индивидуальному профилю заказчика, используя высокоточное оборудование и надежные технологии склеивания.", // ru
+  "Ми виготовляємо профільований клеєний брус, що відповідає найвищим стандартам якості. Пропонуємо європейський профіль із 7 ступенями захисту від продування, який забезпечує герметичність і теплоізоляцію. Також виготовляємо брус за індивідуальним профілем замовника, використовуючи високоточне обладнання та надійні технології склеювання.", // uk
+  "We manufacture profiled glued timber that meets the highest quality standards. We offer a European profile with 7 levels of protection against drafts, ensuring airtightness and thermal insulation. We also produce timber according to the customer's custom profile, using high-precision equipment and reliable gluing technologies.", // en
+  "Nous fabriquons du bois lamellé-collé profilé qui répond aux normes de qualité les plus élevées. Nous proposons un profil européen avec 7 niveaux de protection contre les courants d'air, assurant l'étanchéité et l'isolation thermique. Nous fabriquons également du bois selon le profil personnalisé du client, en utilisant des équipements de haute précision et des technologies de collage fiables.", // fr
+);
+addTranslation("M378", 
+  "Профилированный сухой брус", // ru
+  "Профільований сухий брус", // uk
+  "Profiled dry timber", // en
+  "Bois sec profilé", // fr
+);
+
+addTranslation("M379", 
+  "Мы изготавливаем профилированный сухой брус, который проходит тщательную сушку и обработку, что гарантирует его прочность и долговечность. Благодаря стабильной геометрии и минимальному усадке, он идеально подходит для строительства. Мы предлагаем различные типы профилей, в том числе европейский с улучшенной герметичностью, а также возможность изготовления индивидуального профиля по вашему проекту.", // ru
+  "Ми виготовляємо профільований сухий брус, який проходить ретельну сушку та обробку, що гарантує його міцність і довговічність. Завдяки стабільній геометрії та мінімальній усадці він ідеально підходить для будівництва. Пропонуємо різні типи профілів, зокрема європейський із покращеною герметичністю, а також можливість виготовлення індивідуального профілю за вашим проєктом.", // uk
+  "We manufacture profiled dry timber that undergoes thorough drying and treatment, ensuring its strength and durability. Due to its stable geometry and minimal shrinkage, it is perfect for construction. We offer various profile types, including a European profile with enhanced airtightness, and also the possibility of making custom profiles based on your project.", // en
+  "Nous fabriquons du bois sec profilé qui subit un séchage et un traitement minutieux, garantissant sa résistance et sa durabilité. Grâce à sa géométrie stable et à son faible taux de retrait, il est parfait pour la construction. Nous proposons différents types de profils, y compris un profil européen avec une meilleure étanchéité, ainsi que la possibilité de fabriquer des profils personnalisés selon votre projet.", // fr
+);
+
+addTranslation("M380", 
+  "Конструкционный клееный брус", // ru
+  "Конструкційний клеєний брус", // uk
+  "Structural glued timber", // en
+  "Bois lamellé-collé pour construction", // fr
+);
+
+addTranslation("M381", 
+  "Мы изготавливаем конструкционный клееный брус, который соответствует конструкторским расчетам и обеспечивает прочность строительных конструкций. Склеивание выполняется с использованием современных технологий и проверенных клеев, что гарантирует стабильность геометрии и высокую несущую способность. Брус идеально подходит для балок перекрытия, стропильных систем и несущих конструкций, обеспечивая надежность и безопасность строительства.", // ru
+  "Ми виготовляємо конструкційний клеєний брус, який відповідає конструкторським розрахункам та забезпечує міцність будівельних конструкцій. Склеювання виконується за сучасними технологіями з використанням перевірених клеїв, що гарантує стабільність геометрії та високу несучу здатність. Брус ідеально підходить для балок перекриття, стропильних систем і несучих конструкцій, забезпечуючи надійність та безпеку будівництва.", // uk
+  "We manufacture structural glued timber that meets engineering calculations and ensures the strength of building structures. The gluing is done using modern technologies and tested adhesives, which guarantees geometry stability and high load-bearing capacity. The timber is ideal for floor beams, roof trusses, and load-bearing structures, ensuring the reliability and safety of the construction.", // en
+  "Nous fabriquons du bois lamellé-collé pour la construction qui répond aux calculs structurels et assure la solidité des structures de bâtiment. Le collage est réalisé en utilisant des technologies modernes et des colles éprouvées, garantissant la stabilité de la géométrie et une grande capacité de charge. Le bois est idéal pour les poutres de plancher, les systèmes de fermes de toit et les structures porteuses, assurant la fiabilité et la sécurité de la construction.", // fr
+);
+
+addTranslation("M382", 
+  "Клееные колонны и балки", // ru
+  "Клеєні колони та балки", // uk
+  "Glued columns and beams", // en
+  "Colonnes et poutres collées", // fr
+);
+
+addTranslation("M383", 
+  "Мы изготавливаем клееные колонны и балки из сосны и ели, отбирая древесину только с живым сучком, что придает им натуральный и благородный вид. Благодаря целостности и безупречной обработке, балки имеют эстетичный и завершенный вид, идеально дополняя любое пространство. Они подчеркивают природную красоту дерева и создают атмосферу уюта и гармонии.", // ru
+  "Ми виготовляємо клеєні колони та балки з сосни та смереки, відбираючи деревину тільки з живим сучком, що надає їм природний та благородний вигляд. Завдяки цілісності й бездоганній обробці, балки мають естетичний та завершений вигляд, ідеально доповнюючи будь-який простір. Вони підкреслюють природну красу дерева та створюють атмосферу затишку й гармонії.", // uk
+  "We manufacture glued columns and beams from pine and spruce, selecting wood only with live knots, which gives them a natural and noble appearance. Thanks to their integrity and impeccable processing, the beams have an aesthetic and finished look, perfectly complementing any space. They highlight the natural beauty of the wood and create an atmosphere of coziness and harmony.", // en
+  "Nous fabriquons des colonnes et des poutres collées à partir de pin et d'épicéa, en sélectionnant le bois uniquement avec des nœuds vivants, ce qui leur donne un aspect naturel et noble. Grâce à leur intégrité et à leur traitement impeccable, les poutres ont un aspect esthétique et fini, complétant parfaitement n'importe quel espace. Elles soulignent la beauté naturelle du bois et créent une atmosphère de confort et d'harmonie.", // fr
+);
+addTranslation("M384", 
+  "Вагонка, имитация бруса, доска для пола", // ru
+  "Вагонка, імітація бруса, дошка для підлоги", // uk
+  "Cladding, timber imitation, floorboard", // en
+  "Revêtement, imitation de bois, plancher", // fr
+);
+
+addTranslation("M385", 
+  "Мы изготавливаем вагонку, имитацию бруса и доску для пола в различных профилях, адаптируя продукцию индивидуально под ваш проект. Клиенты могут выбрать не только профиль, но и размер и тип древесины, что позволяет создать идеальное сочетание стиля и функциональности для любого интерьера или экстерьера.", // ru
+  "Ми виготовляємо вагонку, імітацію бруса та дошку для підлоги у різних профілях, адаптуючи продукцію індивідуально під ваш проєкт. Клієнти можуть обрати не лише профіль, а й розмір та тип деревини, що дозволяє створити ідеальне поєднання стилю та функціональності для будь-якого інтер’єру чи екстер’єру.", // uk
+  "We manufacture cladding, timber imitation, and floorboards in various profiles, tailoring the product individually to your project. Customers can choose not only the profile but also the size and type of wood, allowing for the perfect combination of style and functionality for any interior or exterior.", // en
+  "Nous fabriquons des revêtements, des imitations de bois et des planchers dans différents profils, en adaptant le produit individuellement à votre projet. Les clients peuvent choisir non seulement le profil, mais aussi la taille et le type de bois, permettant ainsi une combinaison parfaite de style et de fonctionnalité pour tout intérieur ou extérieur.", // fr
+);
+
+addTranslation("M386", 
+  "Кровельные системы, лаги, обрешетка, рейка", // ru
+  "Стропильні системи, лаги, обрешітка, рейка", // uk
+  "Roof trusses, beams, battens, slats", // en
+  "Systèmes de charpente, poutres, liteaux, lattes", // fr
+);
+
+addTranslation("M387", 
+  "Мы изготавливаем кровельные системы, лаги, обрешетку и рейку, обеспечивая точность размеров и качество обработки. Предлагаем материалы из сухой строганой древесины, которые идеально подходят для крыш, перекрытий и каркасного строительства. Изготовление осуществляется по индивидуальным проектам с учетом нагрузок и конструктивных особенностей.", // ru
+  "Ми виготовляємо стропильні системи, лаги, обрешітку та рейку, забезпечуючи точність розмірів та якість обробки. Пропонуємо матеріали з сухої струганої деревини, які ідеально підходять для дахів, перекриттів та каркасного будівництва. Виготовлення відбувається за індивідуальними проєктами, з урахуванням навантажень та конструктивних особливостей.", // uk
+  "We manufacture roof trusses, beams, battens, and slats, ensuring size accuracy and processing quality. We offer materials made from dry planed timber, which are perfect for roofs, floors, and frame construction. Manufacturing is done according to custom projects, taking into account loads and structural features.", // en
+  "Nous fabriquons des systèmes de charpente, des poutres, des liteaux et des lattes, en garantissant la précision des dimensions et la qualité du traitement. Nous proposons des matériaux en bois sec raboté, qui conviennent parfaitement pour les toitures, les planchers et la construction à ossature. La fabrication se fait selon des projets personnalisés, en tenant compte des charges et des caractéristiques structurelles.", // fr
+);
+addTranslation("M388", 
+  "ГАРАНТИЯ ТИМ ХАУС", // ru
+  "ГАРАНТІЯ ТІМ ХАУС", // uk
+  "TEAM HOUSE WARRANTY", // en
+  "GARANTIE TEAM HOUSE", // fr
+);
+addTranslation("M389", 
+  "Гарантированное качество, быстрый сервис – ваша уверенность на каждом этапе!", // ru
+  "Гарантована якість, швидкий сервіс – ваша впевненість у кожному етапі!", // uk
+  "Guaranteed quality, fast service – your confidence at every stage!", // en
+  "Qualité garantie, service rapide – votre confiance à chaque étape !" // fr
+);
+addTranslation("M390", 
+  "Главная", // ru
+  "Головна", // uk
+  "Home", // en
+  "Accueil", // fr
+);
+
+addTranslation("M391", 
+  "О нашей гарантии", // ru
+  "Про нашу гарантію", // uk
+  "About Our Guarantee", // en
+  "À propos de notre garantie", // fr
+);
+addTranslation("M392", 
+  "Качество материалов", // ru
+  "Якість матеріалів", // uk
+  "Material Quality", // en
+  "Qualité des matériaux", // fr
+);
+
+addTranslation("M393", 
+  "Производственный контроль", // ru
+  "Виробничий контроль", // uk
+  "Production Control", // en
+  "Contrôle de production", // fr
+);
+
+addTranslation("M394", 
+  "Долговечность", // ru
+  "Довговічність", // uk
+  "Durability", // en
+  "Durabilité", // fr
+);
+
+addTranslation("M395", 
+  "Прозрачность оплат", // ru
+  "Прозорість оплат", // uk
+  "Payment Transparency", // en
+  "Transparence des paiements", // fr
+);
+
+addTranslation("M396", 
+  "Поддержка клиентов", // ru
+  "Підтримка клієнтів", // uk
+  "Customer Support", // en
+  "Support client", // fr
+);
+addTranslation("M397", 
+  "Гарантия на материалы и работу!", // ru
+  "Гарантія на матеріали та роботу!", // uk
+  "Warranty on materials and work!", // en
+  "Garantie sur les matériaux et le travail!", // fr
+);
+addTranslation("M398", 
+  "В ТИМ ХАУС мы полностью уверены в качестве нашей работы и материалов, поэтому предоставляем гарантию как на выполненные работы, так и на использованные материалы.", // ru
+  "В ТІМ ХАУС ми повністю впевнені в якості нашої роботи та матеріалів, тому надаємо гарантію як на виконані роботи, так і на використані матеріали.", // uk
+  "At TEAM HOUSE, we are fully confident in the quality of our work and materials, so we provide a warranty on both the work performed and the materials used.", // en
+  "Chez TEAM HOUSE, nous sommes entièrement confiants dans la qualité de notre travail et de nos matériaux, c'est pourquoi nous offrons une garantie sur le travail effectué ainsi que sur les matériaux utilisés.", // fr
+);
+addTranslation("M399", 
+  "Гарантированное качество, быстрый сервис — ваша уверенность на каждом этапе!", // ru
+  "Гарантована якість, швидкий сервіс – ваша впевненість у кожному етапі!", // uk
+  "Guaranteed quality, fast service – your confidence at every stage!", // en
+  "Qualité garantie, service rapide – votre confiance à chaque étape!", // fr
+);
+
+addTranslation("M400", 
+  "Наша команда всегда быстро реагирует на гарантийные случаи и обеспечивает оперативный выезд, чтобы решить любые вопросы в кратчайшие сроки. TIM HOUSE находится в Киеве, и все наши сотрудники являются жителями города. Мы не работаем с гастарбайтерами или бригадами из других городов, где после получения оплаты невозможно связаться с исполнителями. Наши специалисты всегда на связи и готовы предоставить вам надежность и спокойствие, гарантируя бесперебойную поддержку на всех этапах выполнения работ. Не ждите — звоните прямо сейчас!", // ru
+  "Наша команда завжди швидко реагує на гарантійні випадки та забезпечує оперативний виїзд, щоб вирішити будь-які питання у найкоротші терміни. ТІМ ХАУС знаходиться в Києві, і всі наші співробітники є мешканцями міста. Ми не працюємо з госторбайтерами чи бригадами з інших міст, де після отримання оплати неможливо зв'язатися з виконавцями. Наші спеціалісти завжди на зв'язку та готові надати вам надійність і спокій, гарантуючи безперервну підтримку на всіх етапах виконання робіт. Не чекай – дзвони прямо зараз!", // uk
+  "Our team always responds quickly to warranty cases and provides prompt departure to resolve any issues as soon as possible. TIM HOUSE is located in Kyiv, and all our employees are residents of the city. We do not work with guest workers or teams from other cities, where after receiving payment it is impossible to contact the performers. Our specialists are always available and ready to provide you with reliability and peace of mind, guaranteeing continuous support at all stages of the work process. Don’t wait — call now!", // en
+  "Notre équipe réagit toujours rapidement aux cas de garantie et assure un départ rapide pour résoudre tous les problèmes dans les plus brefs délais. TIM HOUSE est situé à Kiev, et tous nos employés sont des habitants de la ville. Nous ne travaillons pas avec des travailleurs étrangers ou des équipes d'autres villes, où après le paiement, il est impossible de contacter les exécutants. Nos spécialistes sont toujours disponibles et prêts à vous offrir fiabilité et tranquillité d'esprit, garantissant un soutien continu à toutes les étapes de l'exécution des travaux. N'attendez pas – appelez maintenant !", // fr
+);
+addTranslation("M401", 
+  "Не жди — звони прямо сейчас!", // ru
+  "Не чекай – дзвони прямо зараз!", // uk
+  "Don't wait – call right now!", // en
+  "N'attends pas – appelle dès maintenant !" // fr
+);
+addTranslation("M402", 
+  "Как происходит работа с нами:", // ru
+  "Як відбувається робота з нами:", // uk
+  "How the work with us goes:", // en
+  "Comment se passe le travail avec nous :" // fr
+);
+addTranslation("M403", 
+  "Позвоните нам", // ru
+  "Зателефонуйте нам", // uk
+  "Call us", // en
+  "Appelez-nous", // fr
+);
+
+addTranslation("M404", 
+  "— для консультации и запроса на расчет.", // ru
+  "— для консультації та запиту на розрахунок.", // uk
+  "— for consultation and calculation request.", // en
+  "— pour une consultation et une demande de devis.", // fr
+);
+addTranslation("M405", 
+  "Предварительный расчет", // ru
+  "Попередній прорахунок", // uk
+  "Preliminary calculation", // en
+  "Calcul préliminaire", // fr
+);
+
+addTranslation("M406", 
+  "— стоимости работ и материалов.", // ru
+  "— вартості робіт та матеріалів.", // uk
+  "— cost of work and materials.", // en
+  "— coût des travaux et des matériaux.", // fr
+);
+addTranslation("M407", 
+  "Выезд на объект", // ru
+  "Виїзд на об'єкт", // uk
+  "Site visit", // en
+  "Visite sur site", // fr
+);
+
+addTranslation("M408", 
+  "— для детального осмотра и уточнения деталей проекта.", // ru
+  "— для детального огляду та уточнення деталей проєкту.", // uk
+  "— for a detailed inspection and clarification of project details.", // en
+  "— pour une inspection détaillée et clarification des détails du projet.", // fr
+);
+addTranslation("M409", 
+  "Предоплата", // ru
+  "Передоплата", // uk
+  "Prepayment", // en
+  "Acompte", // fr
+);
+
+addTranslation("M410", 
+  "— после согласования всех условий — для начала работ.", // ru
+  "— після узгодження всіх умов — для початку робіт.", // uk
+  "— after agreeing on all conditions — to start the work.", // en
+  "— après avoir convenu de toutes les conditions — pour commencer les travaux.", // fr
+);
+addTranslation("M411", 
+  "Предоплата", // ru
+  "Передоплата", // uk
+  "Prepayment", // en
+  "Acompte", // fr
+);
+
+addTranslation("M412", 
+  "— после согласования всех условий — для начала работ.", // ru
+  "— після узгодження всіх умов — для початку робіт.", // uk
+  "— after agreeing on all conditions — to start the work.", // en
+  "— après avoir convenu de toutes les conditions — pour commencer les travaux.", // fr
+);
+addTranslation("M413", 
+  "Конечный расчет", // ru
+  "Кінцевий розрахунок,", // uk
+  "Final calculation,", // en
+  "Règlement final,", // fr
+);
+
+addTranslation("M414", 
+  "— после завершения работ.", // ru
+  "— після завершення робіт.", // uk
+  "— after the work is completed.", // en
+  "— après l'achèvement des travaux.", // fr
+);
+addTranslation("M415", 
+  "Гарантия", // ru
+  "Гарантія", // uk
+  "Warranty", // en
+  "Garantie", // fr
+);
+
+addTranslation("M416", 
+  "— мы предоставляем гарантию на выполненные работы и материалы.", // ru
+  "— ми надаємо гарантію на виконані роботи та матеріали.", // uk
+  "— we provide a warranty on the completed work and materials.", // en
+  "— nous offrons une garantie sur les travaux effectués et les matériaux.", // fr
+);
+addTranslation("M417", 
+  "Мы всегда готовы обеспечить качество и надежность на каждом этапе!", // ru
+  "Ми завжди готові забезпечити якість і надійність на кожному етапі!", // uk
+  "We are always ready to ensure quality and reliability at every stage!", // en
+  "Nous sommes toujours prêts à garantir la qualité et la fiabilité à chaque étape!", // fr
+);
+addTranslation("M418", 
+  "ТИМ ХАУС", // ru
+  "ТІМ ХАУС", // uk
+  "TEAM HOUSE", // en
+  "TEAM HOUSE", // fr
+);
+addTranslation("M419", 
+  "УСЛУГИ ТИМ ХАУС", // ru  
+  "ПОСЛУГИ ТІМ ХАУС", // uk  
+  "TEAM HOUSE SERVICES", // en  
+  "SERVICES TEAM HOUSE" // fr  
+);
+addTranslation("M420", 
+  "Услуги", // ru  
+  "Послуги", // uk  
+  "Services", // en  
+  "Services" // fr  
+);
+
+addTranslation("M421", 
+  "Главная", // ru  
+  "Головна", // uk  
+  "Home", // en  
+  "Accueil" // fr  
+);
+
+addTranslation("M422", 
+  "Услуги", // ru  
+  "Послуги", // uk  
+  "Services", // en  
+  "Services" // fr  
+);
+addTranslation("M423",  
+  "Выбирая нас, вы выбираете спокойствие и уверенность.", // ru  
+  "Обираючи нас, ви обираєте спокій і впевненість.", // uk  
+  "By choosing us, you choose peace of mind and confidence.", // en  
+  "En nous choisissant, vous choisissez la tranquillité d'esprit et la confiance." // fr  
+);  
+
+addTranslation("M424",  
+  "Гарантированное качество, надежность и быстрое выполнение работ – ваш покой в надежных руках.", // ru  
+  "Гарантована якість, надійність та швидке виконання робіт – ваш спокій у надійних руках.", // uk  
+  "Guaranteed quality, reliability, and fast execution of work – your peace of mind is in safe hands.", // en  
+  "Qualité garantie, fiabilité et exécution rapide des travaux – votre tranquillité d'esprit est entre de bonnes mains." // fr  
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1934,7 +2909,21 @@ function setLanguage(language) {
         "M269", "M270", "M271", "M272", "M273", "M274", "M275", "M276", "M277", "M278",
         "M279", "M280", "M281", "M282", "M283", "M284", "M285", "M286", "M287", "M288",
         "M289", "M290", "M291", "M292", "M293", "M294", "M295", "M296", "M297", "M298",
-        "M299", "M300"];
+        "M299", "M300", "M301", "M302", "M303", "M304", "M305", "M306", "M307", "M308", "M309", 
+        "M310", "M311", "M312", "M313", "M314", "M315", "M316", "M317", "M318", "M319", 
+        "M320", "M321", "M322", "M323", "M324", "M325", "M326", "M327", "M328", "M329", 
+        "M330", "M331", "M332", "M333", "M334", "M335", "M336", "M337", "M338", "M339", 
+        "M340", "M341", "M342", "M343", "M344", "M345", "M346", "M347", "M348", "M349", 
+        "M350", "M351", "M352", "M353", "M354", "M355", "M356", "M357", "M358", "M359", 
+        "M360", "M361", "M362", "M363", "M364", "M365", "M366", "M367", "M368", "M369", 
+        "M370", "M371", "M372", "M373", "M374", "M375", "M376", "M377", "M378", "M379", 
+        "M380", "M381", "M382", "M383", "M384", "M385", "M386", "M387", "M388", "M389", 
+        "M390", "M391", "M392", "M393", "M394", "M395", "M396", "M397", "M398", "M399", 
+        "M400", "M401", "M402", "M403", "M404", "M405", "M406", "M407", "M408", "M409",
+        "M410", "M411", "M412", "M413", "M414", "M415", "M416", "M417", "M418", "M419",
+        "M420", "M421", "M422", "M423", "M424", "M425", "M426", "M427", "M428", "M429",
+        "M430", "M431", "M432", "M433", "M434", "M435", "M436", "M437", "M438", "M439",
+        "M440", "M441", "M442", "M443", "M444", "M445", "M446", "M447", "M448", "M449"];
 
     elements.forEach(id => {
         const element = document.getElementById(id);
