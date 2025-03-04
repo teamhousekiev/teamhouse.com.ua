@@ -1816,7 +1816,7 @@ section,
 }
 
 .pricing h4 {
-  color: var(--accent-color);
+  color: var(--nav-hover-color);
   font-size: 48px;
   font-weight: 700;
   font-family: var(--heading-font);
@@ -1912,9 +1912,9 @@ section,
 }
 
 .pricing .featured .cta-btn {
-  background: var(--accent-color);
+  background: var(--nav-hover-color);
   color: var(--contrast-color);
-  border-color: var(--accent-color);
+  border-color: var(--nav-hover-color);
 }
 
 @media (max-width: 992px) {
@@ -2664,7 +2664,7 @@ section,
   margin: 0;
   width: 72px;
   height: 72px;
-  background: var(--accent-color);
+  background: var(--nav-hover-color);
   color: var(--contrast-color);
   border: 6px solid var(--contrast-color);
   border-radius: 50px;
