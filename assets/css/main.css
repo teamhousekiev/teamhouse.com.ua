@@ -1572,10 +1572,11 @@ section,
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
-  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
-  margin: 20px 0;
+  border-left: 3px solid color-mix(in srgb, var(--heading-color), transparent 70%);
+  margin: 10px 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   transition: 0.3s;
+  font-size: 20px;
 }
 
 .service-details .services-list a.active {
@@ -2736,3 +2737,18 @@ section,
 
 
 
+/* ---------------------------------------услуги */
+/* Контейнер для услуг */
+.containerService {
+  display: flex;
+  flex-direction: column;
+  height: 80vh; /* Занимает всю высоту экрана */
+  padding: 0px;
+}
+
+/* И iframe занимает всё доступное пространство */
+iframe {
+  flex-grow: 1; /* Заполняет оставшееся пространство */
+  width: 100%;
+  border: none; /* Убираем рамку */
+}

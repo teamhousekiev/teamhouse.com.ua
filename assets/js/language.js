@@ -182,8 +182,8 @@ addTranslation("M025",
     "Ensemble complet de services de construction et d'installation : de la construction de fondations et de maisons à l'aménagement de façades, terrasses, kiosques et maisons de jardin clé en main." // fr
 );
 addTranslation("M026", 
-    "Детальніше про нашу справу", // uk
     "Подробнее про нас", // ru
+    "Детальніше про нашу справу", // uk
     "More about our business", // en
     "Plus d'informations sur notre entreprise" // fr
 );
@@ -218,7 +218,7 @@ addTranslation("M031",
     "Peinture professionnelle des fenêtres et portes, mise à jour des clôtures, entretien des terrasses et des meubles de jardin, ainsi que réparation et peinture des escaliers." // fr
 );
 addTranslation("M032", 
-    "О реставрации окон", // ru
+    "О реставрации окон и дверей", // ru
     "Про реставрацію вікон", // uk
     "About window restoration", // en
     "À propos de la restauration des fenêtres" // fr
@@ -544,7 +544,7 @@ addTranslation("M082",
 
 
 addTranslation("M083", 
-    "Огорожи та тераси", // ru
+    "Фундаменти", // ru
     "Огорожі та тераси", // ua
     "Fences and terraces", // en
     "Clôtures et terrasses" // fr
@@ -1431,11 +1431,12 @@ addTranslation("M218",
     "À propos de la construction" // fr
 );
 addTranslation("M219", 
-    "Ограждения и террасы", // ru
-    "Огорожі та тераси", // ua
-    "Fences and terraces", // en
-    "Clôtures et terrasses" // fr
+    "Фундаменты", // ru
+    "Фундаменти", // ua
+    "Foundations", // en
+    "Fondations" // fr
 );
+
 
 addTranslation("M220", 
     "Вентиляционные фасады", // ru
@@ -1487,7 +1488,7 @@ addTranslation("M226",
 );
 
 addTranslation("M227", 
-    "Мы предлагаем полный спектр строительных услуг, используя самые современные материалы и технологии. Ваша оселя, терраса или коммерческий объект будут созданы с учетом самых высоких стандартов качества и энергоэффективности.", // ru
+    "Мы предлагаем полный спектр строительных услуг, используя самые современные материалы и технологии. Ваша дом, терраса или коммерческий объект будут созданы с учетом самых высоких стандартов качества и энергоэффективности.", // ru
     "Ми пропонуємо повний спектр будівельних послуг, використовуючи найсучасніші матеріали та технології. Ваша оселя, тераса чи комерційний об’єкт будуть створені з урахуванням найвищих стандартів якості та енергоефективності.", // ua
     "We offer a full range of construction services, using the latest materials and technologies. Your home, terrace, or commercial property will be created in accordance with the highest standards of quality and energy efficiency.", // en
     "Nous proposons une gamme complète de services de construction, en utilisant les matériaux et technologies les plus modernes. Votre maison, terrasse ou propriété commerciale sera créée conformément aux normes les plus élevées de qualité et d'efficacité énergétique." // fr
@@ -2789,6 +2790,145 @@ addTranslation("M424",
   "Guaranteed quality, reliability, and fast execution of work – your peace of mind is in safe hands.", // en  
   "Qualité garantie, fiabilité et exécution rapide des travaux – votre tranquillité d'esprit est entre de bonnes mains." // fr  
 );
+addTranslation("M425",  
+  "Гарантированное качество, надежность и быстрое выполнение работ – ваш покой в надежных руках.", // ru  
+  "Гарантована якість, надійність та швидке виконання робіт – ваш спокій у надійних руках.", // uk  
+  "Guaranteed quality, reliability, and fast execution of work – your peace of mind is in safe hands.", // en  
+  "Qualité garantie, fiabilité et exécution rapide des travaux – votre tranquillité d'esprit est entre de bonnes mains." // fr  
+);
+addTranslation("M426",  
+  "Производство клееного бруса", // ru  
+  "Виробництво клеєного брусу", // uk  
+  "Glued timber production", // en  
+  "Production de bois lamellé-collé" // fr  
+);  
+
+addTranslation("M427",  
+  "Изготовление соединений", // ru  
+  "Виготовлення з'єднань", // uk  
+  "Joint manufacturing", // en  
+  "Fabrication des assemblages" // fr  
+);  
+addTranslation("M428",  
+  "Реставрация крупногабаритных окон", // ru  
+  "Реставрація великогабарітних вікон", // uk  
+  "Restoration of large-sized windows", // en  
+  "Restauration de fenêtres de grande taille" // fr  
+);  
+
+addTranslation("M429",  
+  "Реставрация без демонтажа", // ru  
+  "Реставрація без демонтажу", // uk  
+  "Restoration without dismantling", // en  
+  "Restauration sans démontage" // fr  
+);  
+
+addTranslation("M430",  
+  "Дом 300 м²", // ru  
+  "Будинок 300 м²", // uk  
+  "House 300 m²", // en  
+  "Maison 300 m²" // fr  
+);  
+
+addTranslation("M431",  
+  "Фундамент и строительство дома 200мм", // ru  
+  "Фундамент та будівництво будинку 200мм", // uk  
+  "Foundation and house construction 200mm", // en  
+  "Fondations et construction de maison 200mm" // fr  
+);  
+addTranslation("M432",  
+  "Баня из клееного бруса 143 м²", // ru  
+  "Лазня з клеєного брусу 143 м²", // uk  
+  "Bathhouse made of glued timber 143 m²", // en  
+  "Bain en bois lamellé-collé 143 m²" // fr  
+);  
+
+addTranslation("M433",  
+  "Клееный брус 180 мм, стены, кровля", // ru  
+  "Клеєний брус 180 мм, стіни, покрівля", // uk  
+  "Glued timber 180 mm, walls, roof", // en  
+  "Bois lamellé-collé 180 mm, murs, toiture" // fr  
+);  
+addTranslation("M434",  
+  "Реставрация лестницы", // ru  
+  "Реставрація сходів", // uk  
+  "Staircase restoration", // en  
+  "Restauration d'escalier" // fr  
+);  
+
+addTranslation("M435",  
+  "Обновление краски и лака, устранение повреждений и скрипов", // ru  
+  "Оновлення фарби та лаку, усунення пошкоджень і скрипів", // uk  
+  "Coating renewal, damage and squeak elimination", // en  
+  "Renouvellement du revêtement, élimination des dommages et des grincements" // fr  
+);  
+addTranslation("M436",  
+  "Реставрация ограждений", // ru  
+  "Реставрація огорож", // uk  
+  "Fence restoration", // en  
+  "Restauration des clôtures" // fr  
+);  
+
+addTranslation("M437",  
+  "Обновление покрытия, ремонт, герметизация и покраска", // ru  
+  "Оновлення покриття, ремонт, герметизація та фарбування", // uk  
+  "Coating renewal, repair, sealing, and painting", // en  
+  "Renouvellement du revêtement, réparation, étanchéité et peinture" // fr  
+);  
+addTranslation("M438",  
+  "Дом-баня 350 м²", // ru  
+  "Будинок-лазня 350 м²", // uk  
+  "House-bathhouse 350 m²", // en  
+  "Maison-sauna 350 m²" // fr  
+);  
+
+addTranslation("M439",  
+  "Строительство дома из клееного бруса 200 мм", // ru  
+  "Будівництво будинку з клеєного брусу 200 мм", // uk  
+  "Construction of a house made of glued timber 200 mm", // en  
+  "Construction d'une maison en bois lamellé-collé 200 mm" // fr  
+);  
+addTranslation("M440",  
+  "Строительство фундамента", // ru  
+  "Будівництво фундаменту", // uk  
+  "Foundation construction", // en  
+  "Construction de fondation" // fr  
+);  
+
+addTranslation("M441",  
+  "Ленточный фундамент с плитой 150 мм", // ru  
+  "Ленточний фундамент із плитою 150 мм", // uk  
+  "Strip foundation with a 150 mm slab", // en  
+  "Fondation en bande avec une dalle de 150 mm" // fr  
+);  
+addTranslation("M442",  
+  "Реставрация уникальных старинных объектов", // ru  
+  "Реставрація унікальних старовинних об’єктів", // uk  
+  "Restoration of unique historical objects", // en  
+  "Restauration d'objets anciens uniques" // fr  
+);  
+
+addTranslation("M443",  
+  "Герметизация, обновление краски снаружи", // ru  
+  "Герметизація, оновлення фарби зовні", // uk  
+  "Sealing, exterior paint renewal", // en  
+  "Étanchéité, renouvellement de la peinture extérieure" // fr  
+);  
+addTranslation("M444",  
+  "Проектирование деревянных домов, визуализация", // ru  
+  "Проектування дерев'яних будинків, візуалізація", // uk  
+  "Design and visualization of wooden houses", // en  
+  "Conception et visualisation de maisons en bois" // fr  
+);  
+
+addTranslation("M445",  
+  "Баня из сруба и ландшафт", // ru  
+  "Лазня зі зрубу та ландшафт", // uk  
+  "Log sauna and landscape", // en  
+  "Sauna en rondins et paysage" // fr  
+);  
+
+
 
 
 
