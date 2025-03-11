@@ -24,7 +24,7 @@ addTranslation("OurWorks", "НАШИ РАБОТЫ", "НАШІ РОБОТИ", "OU
 addTranslation("Prices", "ЦЕНЫ", "ЦІНИ", "PRICES", "PRIX");
 addTranslation("AboutUs", "ПРО НАС", "ПРО НАС", "ABOUT US", "À PROPOS");
 addTranslation("Contacts", "КОНТАКТЫ", "КОНТАКТИ", "CONTACTS", "CONTACTS");
-addTranslation("Lang", "ЯЗЫК", "МОВА", "LANGUAGE", "LA LANGUE");
+addTranslation("Lang", "РУССКИЙ", "УКРАЇНСЬКА", "ENGLISH", "LE FRANÇAIS");
 addTranslation("M001", 
     "Твой дом в руках профессионалов", 
     "Твій дім наша справа", 
@@ -2927,7 +2927,19 @@ addTranslation("M445",
   "Log sauna and landscape", // en  
   "Sauna en rondins et paysage" // fr  
 );  
+addTranslation("M446",  
+  "Реставрация ограждений", // ru  
+  "Реставрація огорож", // uk  
+  "Fence restoration", // en  
+  "Restauration des clôtures" // fr  
+);  
 
+addTranslation("M447",  
+  "Обновление покрытия, ремонт, герметизация и покраска", // ru  
+  "Оновлення покриття, ремонт, герметизація та фарбування", // uk  
+  "Coating renewal, repair, sealing, and painting", // en  
+  "Renouvellement du revêtement, réparation, étanchéité et peinture" // fr  
+);  
 
 
 
