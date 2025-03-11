@@ -2752,3 +2752,31 @@ iframe {
   width: 100%;
   border: none; /* Убираем рамку */
 }
+
+
+
+/* --------------------------------------------running */
+.containerRun {
+  position: sticky;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: var(--accent-color);
+}
+
+.scrollingRun {
+  will-change: transform;
+  font-size: 22px;
+  animation: marquee 130s linear infinite;
+  display: inline-block;
+  padding-right: 10px;
+  
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to { 
+    transform: translateX(-100%);
+  }
+}
