@@ -64,6 +64,46 @@
   --contrast-color: #ffffff;
 }
 
+
+.theme-light-123 {
+  --background-color: #ffffff;
+  --nav-color: #444444;
+  --default-color: #444444;
+  --heading-color: #111111;
+  --accent-color: #fdd700;
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+
+  --nav-hover-color: #127df8;
+  --nav-mobile-background-color: #ffffff;
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-background-color-menu: rgba(255, 255, 255, 0.75);
+  --nav-dropdown-color: #444444;
+  --nav-dropdown-hover-color: #127df8; 
+
+  --nav-color-run:#f2d533;
+}
+.theme-dark-123 {
+  --background-color: #2a2c2d;
+  --nav-color: #fbfbfedb;
+  --default-color: #fbfbfedb;
+  --heading-color: #ffffff;
+  --accent-color: #e0bf02; 
+  --surface-color: #2a2c2d;; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #2a2c2d;
+
+  --nav-hover-color: #5ba5f9;
+  --nav-mobile-background-color: #2a2c2d;
+  --nav-dropdown-background-color: #2a2c2d;
+  --nav-dropdown-background-color-menu: rgba(255, 255, 255, 0.75);
+  --nav-dropdown-color: #d9d7d7; 
+  --nav-dropdown-hover-color: #5ba5f9;
+
+
+  --nav-color-run:#7b6900;
+}
+
+
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
@@ -207,9 +247,9 @@ h6 {
 }
 
 @media (max-width: 1200px) {
-  .header .logo {
+  /* .header .logo {
     order: 1;
-  }
+  } */
 
   .header .logo h1 {
     font-size: 24px;
@@ -2760,7 +2800,7 @@ iframe {
   position: sticky;
   overflow: hidden;
   white-space: nowrap;
-  background-color: var(--accent-color);
+  background-color: var(--nav-color-run);
 }
 
 .scrollingRun {
@@ -2778,5 +2818,107 @@ iframe {
   }
   to { 
     transform: translateX(-100%);
+  }
+}
+
+/* ----------------------------------------------- */
+
+.container-123 {
+  display: flex;
+  width: 40px;
+  height: 100%;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20vh;
+}
+.container-123 h1 {
+  color: var(--font-color-123);
+  font-family: sans-serif;
+}
+.container-123 button {
+  color: var(--font-color-123);
+  background: var(--color-primary-123);
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+}
+
+/* Переключатель */
+.switch-123 {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Скрываем стандартный чекбокс */
+.switch-123 input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Слайдер */
+.slider-123 {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider-123:before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  left: 0px;
+  bottom: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  transition: 0.4s;
+  box-shadow: 0 0px 15px #2020203d;
+  background: white url("https://i.ibb.co/FxzBYR9/night.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input:checked + .slider-123 {
+  background-color: #2196f3;
+}
+
+input:focus + .slider-123 {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider-123:before {
+  transform: translateX(24px);
+  background: white url("https://i.ibb.co/7JfqXxB/sunny.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Округлый стиль */
+.slider-123.round-123 {
+  border-radius: 34px;
+}
+
+.slider-123.round-123:before {
+  border-radius: 50%;
+}
+.themeChange {
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  .container-123 {
+ 
+   margin-right: 7vh;
   }
 }

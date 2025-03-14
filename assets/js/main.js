@@ -186,3 +186,34 @@ console.log("TEAM HOUSE BUILDING +38 093 752 74 77");
   window.addEventListener("load", initSwiper);
 
 })();
+
+
+
+
+
+// ---------------------------------------------------------Switcher
+// Функция для установки заданной темы/цветовой схемы
+function setTheme123(themeName) {
+  localStorage.setItem("theme-123", themeName);
+  document.documentElement.className = themeName;
+}
+
+// Функция для переключения между светлой и тёмной темой
+function toggleTheme123() {
+  if (localStorage.getItem("theme-123") === "theme-dark-123") {
+    setTheme123("theme-light-123");
+  } else {
+    setTheme123("theme-dark-123");
+  }
+}
+
+// Немедленно вызываемая функция для установки темы при загрузке страницы
+(function () {
+  if (localStorage.getItem("theme-123") === "theme-dark-123") {
+    setTheme123("theme-dark-123");
+    document.getElementById("slider-123").checked = false;
+  } else {
+    setTheme123("theme-light-123");
+    document.getElementById("slider-123").checked = true;
+  }
+})();
