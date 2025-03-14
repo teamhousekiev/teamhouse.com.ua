@@ -191,6 +191,16 @@ console.log("TEAM HOUSE BUILDING +38 093 752 74 77");
 
 
 
+
+if (typeof jQuery == "undefined") {
+  let script = document.createElement("script");
+  script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
+  script.onload = function() {
+      console.log("jQuery загружен динамически");
+  };
+  document.head.appendChild(script);
+}
+
 // ---------------------------------------------------------Switcher
 // Функция для установки заданной темы/цветовой схемы
 function setTheme123(themeName) {

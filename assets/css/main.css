@@ -88,7 +88,7 @@
   --nav-color: #fbfbfedb;
   --default-color: #fbfbfedb;
   --heading-color: #ffffff;
-  --accent-color: #e0bf02; 
+  --accent-color: #978103; 
   --surface-color: #2a2c2d;; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #2a2c2d;
 
@@ -96,7 +96,7 @@
   --nav-mobile-background-color: #2a2c2d;
   --nav-dropdown-background-color: #2a2c2d;
   --nav-dropdown-background-color-menu: rgba(255, 255, 255, 0.75);
-  --nav-dropdown-color: #444444;
+  --nav-dropdown-color: #fbfbfedb;
   --nav-dropdown-hover-color: #5ba5f9;
 
 
@@ -437,7 +437,7 @@ h6 {
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
-    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    background-color:  var(--accent-color);
   }
 
   .navmenu a i:hover,
