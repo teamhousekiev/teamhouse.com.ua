@@ -2348,28 +2348,28 @@ addTranslation("M356",
 );
 
 addTranslation("M357", 
-  "Клеёный брус для домов", // ru
+  "Клееный брус для домов", // ru
   "Клеєний брус для будинків", // uk
   "Glued timber for houses", // en
   "Bois collé pour maisons", // fr
 );
 
 addTranslation("M358", 
-  "Клеёные балки конструкционные", // ru
+  "Клееные балки конструкционные", // ru
   "Клеєні балки конструкційні", // uk
   "Glued structural beams", // en
   "Poutres collées pour structures", // fr
 );
 
 addTranslation("M359", 
-  "Клеёные балки на заказ", // ru
+  "Клееные балки на заказ", // ru
   "Клеєні балки на замовлення", // uk
   "Custom glued beams", // en
   "Poutres collées sur commande", // fr
 );
 
 addTranslation("M360", 
-  "Колонны, стропила клеёные", // ru
+  "Колонны, стропила Клееные", // ru
   "Стовпи, крокви клеєні", // uk
   "Glued posts, rafters", // en
   "Poteaux, chevrons collés", // fr

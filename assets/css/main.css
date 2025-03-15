@@ -62,6 +62,7 @@
   --accent-color: #ffffff;
   --surface-color: #127df8;
   --contrast-color: #ffffff;
+
 }
 
 
@@ -96,8 +97,9 @@
   --nav-mobile-background-color: #2a2c2d;
   --nav-dropdown-background-color: #2a2c2d;
   --nav-dropdown-background-color-menu: rgba(255, 255, 255, 0.75);
-  --nav-dropdown-color: #fbfbfedb;
-  --nav-dropdown-hover-color: #5ba5f9;
+  --nav-dropdown-color: #2a2c2d;
+  --nav-dropdown-hover-color: #978103;
+  --heading-color-drop:#ead292;
 
 
   --nav-color-run:#7b6900;
@@ -413,7 +415,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-dropdown-color);
+    color: var(--heading-color-drop);
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
