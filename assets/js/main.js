@@ -227,3 +227,107 @@ function toggleTheme123() {
     document.getElementById("slider-123").checked = true;
   }
 })();
+
+
+// ----------------------------------------------------------слайдер 
+document.addEventListener('DOMContentLoaded', function () {
+  // Обработчик клика по ссылке
+  document.querySelectorAll('.preview-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault(); // Отменяем стандартное поведение ссылки
+
+      // Получаем ID из data-id
+      const id = this.getAttribute('data-id');
+
+      // Загружаем изображения для слайдера на основе ID
+      const images = getSliderImagesById(id);
+
+      // Создаем слайдер
+      const slider = createSlider(images);
+
+      // Открываем слайдер в модальном окне
+      openSliderModal(slider);
+    });
+  });
+});
+
+// Функция для получения изображений по ID
+function getSliderImagesById(id) {
+  // Пример данных (замените на реальные данные)
+  const imageData = {
+    M049: [
+      'assets/img/slider/slide1.webp',
+      'assets/img/slider/slide2.webp',
+      'assets/img/slider/slide3.webp',
+    ],
+    M048: [
+      'assets/img/slider/slide4.webp',
+      'assets/img/slider/slide5.webp',
+      'assets/img/slider/slide6.webp',
+    ],
+    // Добавьте другие ID и их изображения
+  };
+
+  return imageData[id] || []; // Возвращаем массив изображений или пустой массив, если ID не найден
+}
+
+// Функция для создания слайдера
+function createSlider(images) {
+  const container = document.createElement('div');
+  container.classList.add('containerSlider');
+
+  const slidesList = document.createElement('ul');
+  slidesList.classList.add('slidesImage');
+
+  const thumbnailsList = document.createElement('ul');
+  thumbnailsList.classList.add('thumbnails');
+
+  images.forEach((image, index) => {
+    // Создаем слайд
+    const slideItem = document.createElement('li');
+    slideItem.id = `slide${index + 1}`;
+    const slideImage = document.createElement('img');
+    slideImage.src = image;
+    slideImage.alt = `Slide ${index + 1}`;
+    slideItem.appendChild(slideImage);
+    slidesList.appendChild(slideItem);
+
+    // Создаем миниатюру
+    const thumbnailItem = document.createElement('li');
+    const thumbnailLink = document.createElement('a');
+    thumbnailLink.href = `#slide${index + 1}`;
+    const thumbnailImage = document.createElement('img');
+    thumbnailImage.src = image;
+    thumbnailLink.appendChild(thumbnailImage);
+    thumbnailItem.appendChild(thumbnailLink);
+    thumbnailsList.appendChild(thumbnailItem);
+  });
+
+  container.appendChild(slidesList);
+  container.appendChild(thumbnailsList);
+
+  return container;
+}
+
+// Функция для открытия слайдера в модальном окне
+function openSliderModal(slider) {
+  // Создаем модальное окно
+  const modal = document.createElement('div');
+  modal.classList.add('slider-modal'); // Используем ваш класс для модального окна
+
+  // Добавляем слайдер в модальное окно
+  modal.appendChild(slider);
+
+  // Кнопка закрытия (используем ваш стиль)
+  const closeButton = document.createElement('button');
+  closeButton.classList.add('close-button'); // Используем ваш класс для кнопки закрытия
+  closeButton.innerText = 'Закрыть';
+  closeButton.addEventListener('click', () => {
+    document.body.removeChild(modal);
+  });
+
+  modal.appendChild(closeButton);
+
+  // Добавляем модальное окно на страницу
+  document.body.appendChild(modal);
+}

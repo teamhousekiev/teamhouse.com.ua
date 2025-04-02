@@ -1,0 +1,169 @@
+
+body{
+  margin: 0px;
+  max-height: 96px;
+  
+
+}
+
+.containerSlider {
+  display: flex;
+  justify-content: space-between;
+  transform: scale(1);
+  transform-origin: center;
+
+  max-height: 100vh;
+  width: 100%; /* Делаем ширину адаптивной */
+  flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку, если не помещаются */
+}
+
+
+.thumbnails {
+ 
+    display: flex;
+    flex-direction: column; /* По умолчанию элементы располагаются в колонку */
+    line-height: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+
+  li {
+    flex: auto;
+    
+  }
+
+  a {
+    display: block;
+  }
+
+  img {
+    width: 30vmin;
+    height: 20vmin;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+.slidesImage {
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 95vh;
+  position: relative; /* Добавляем относительное позиционирование для контейнера */
+}
+
+.slidesImage li {
+  width: 100%; /* Занимает всю ширину контейнера */
+  height: 100%; /* Занимает всю высоту контейнера */
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slidesImage img {
+  max-width: 100%; /* Ограничиваем ширину изображения шириной контейнера */
+  max-height: 100%; /* Ограничиваем высоту изображения высотой контейнера */
+  object-fit: contain; /* Сохраняем пропорции изображения, чтобы оно не выходило за пределы */
+  object-position: center; /* Центрируем изображение */
+}
+
+.slidesImage li:target {
+  z-index: 3;
+  -webkit-animation: slide 1s 1;
+}
+
+.slidesImage li:not(:target) {
+  -webkit-animation: hidden 1s 1;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes hidden {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    z-index: 2;
+  }
+}
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+
+  /* .containerSlider {
+    flex-direction: column;
+    align-items: stretch;
+    height: 67vh;
+
+  } */
+  .containerSlider {
+    display: flex;
+    flex-direction: column; /* элементы располагаются сверху вниз */
+    justify-content: flex-start; /* элементы выравниваются по верхнему краю */
+    gap: 0; /* убирает промежутки между элементами */
+    transform: scale(1);
+    transform-origin: center;
+    /* overflow: hidden; */
+    max-height: 100vh;
+    width: 100%;
+}
+
+
+
+.thumbnails {
+  flex-direction: row; /* Элементы располагаются в строку */
+  flex-wrap: nowrap; /* Запрещаем перенос на новую строку */
+  justify-content: flex-start; /* Выравниваем элементы по началу контейнера */
+  overflow-x: auto; /* Добавляем горизонтальную прокрутку, если элементы не помещаются */
+  gap: 10px; /* Промежутки между элементами */
+}
+
+.thumbnails li {
+  flex: 0 0 auto; /* Элементы не растягиваются и не сжимаются автоматически */
+}
+
+.thumbnails img {
+  width: 20vmin; /* Уменьшаем размер изображений */
+  height: 15vmin;
+  object-fit: cover; /* Сохраняем пропорции изображений */
+}
+
+  .slidesImage img {
+    max-height: 72vmin;
+  }
+  .sliderImg{
+    max-width: 50vh;
+  }
+  .slidesImage {
+   
+  
+    img {
+      height:99vmin;
+    
+    }
+  }
+}
+
+/* @media (max-width: 768px) {
+  .containerSlider {
+    transform: scale(0.8); 
+    flex-direction: column; 
+    align-items: center; 
+  }
+} */
+
+
+
+

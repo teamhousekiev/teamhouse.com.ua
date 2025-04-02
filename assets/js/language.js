@@ -2940,18 +2940,14 @@ addTranslation("M447",
   "Coating renewal, repair, sealing, and painting", // en  
   "Renouvellement du revêtement, réparation, étanchéité et peinture" // fr  
 );  
+
 addTranslation("M448",  
-  "ОТКРЫТО БРОНИРОВАНИЕ НА 2025 ГОД! 5% СКИДКИ НА ЗАКАЗ ДО 1 АПРЕЛЯ 2025 Г.! ТЕЛЕФОН/TELEGRAM: +380 93 752 74 77 УСПЕЙ ВОСПОЛЬЗОВАТЬСЯ ВЫГОДНЫМ ПРЕДЛОЖЕНИЕМ!", // ru  
-  "ВІДКРИТО БРОНЮВАННЯ НА 2025 РІК! 5% ЗНИЖКИ НА ЗАМОВЛЕННЯ ДО 1 КВІТНЯ 2025 Р.! ТЕЛЕФОН/TELEGRAM: +380 93 752 74 77 ВСТИГНИ СКОРИСТАТИСЯ ВИГІДНОЮ ПРОПОЗИЦІЄЮ!", // uk  
-  "BOOKING FOR 2025 IS OPEN! 5% DISCOUNT ON ORDERS UNTIL APRIL 1, 2025! PHONE/TELEGRAM: +380 93 752 74 77 HURRY UP TO TAKE ADVANTAGE OF THIS GREAT OFFER!", // en  
-  "RÉSERVATIONS OUVERTES POUR 2025! 5% DE RÉDUCTION SUR LES COMMANDES JUSQU'AU 1ER AVRIL 2025! TÉLÉPHONE/TELEGRAM: +380 93 752 74 77 DÉPÊCHEZ-VOUS DE PROFITER DE CETTE OFFRE AVANTAGEUSE!" // fr  
+  "ОТКРЫТО БРОНИРОВАНИЕ НА 2025 ГОД! 5% СКИДКИ НА ЗАКАЗ ДО 1 МАЯ 2025 Г.! ТЕЛЕФОН/TELEGRAM: +380 93 752 74 77 УСПЕЙ ВОСПОЛЬЗОВАТЬСЯ ВЫГОДНЫМ ПРЕДЛОЖЕНИЕМ!", // ru  
+  "ВІДКРИТО БРОНЮВАННЯ НА 2025 РІК! 5% ЗНИЖКИ НА ЗАМОВЛЕННЯ ДО 1 ТРАВНЯ 2025 Р.! ТЕЛЕФОН/TELEGRAM: +380 93 752 74 77 ВСТИГНИ СКОРИСТАТИСЯ ВИГІДНОЮ ПРОПОЗИЦІЄЮ!", // uk  
+  "BOOKING FOR 2025 IS OPEN! 5% DISCOUNT ON ORDERS UNTIL MAY 1, 2025! PHONE/TELEGRAM: +380 93 752 74 77 HURRY UP TO TAKE ADVANTAGE OF THIS GREAT OFFER!", // en  
+  "RÉSERVATIONS OUVERTES POUR 2025! 5% DE RÉDUCTION SUR LES COMMANDES JUSQU'AU 1ER MAI 2025! TÉLÉPHONE/TELEGRAM: +380 93 752 74 77 DÉPÊCHEZ-VOUS DE PROFITER DE CETTE OFFRE AVANTAGEUSE!" // fr  
 );
-addTranslation("M448",  
-  "ОТКРЫТО БРОНИРОВАНИЕ НА 2025 ГОД! 5% СКИДКИ НА ЗАКАЗ ДО 1 АПРЕЛЯ 2025 Г.! ТЕЛЕФОН/TELEGRAM: +380 93 752 74 77 УСПЕЙ ВОСПОЛЬЗОВАТЬСЯ ВЫГОДНЫМ ПРЕДЛОЖЕНИЕМ!", // ru  
-  "ВІДКРИТО БРОНЮВАННЯ НА 2025 РІК! 5% ЗНИЖКИ НА ЗАМОВЛЕННЯ ДО 1 КВІТНЯ 2025 Р.! ТЕЛЕФОН/TELEGRAM: +380 93 752 74 77 ВСТИГНИ СКОРИСТАТИСЯ ВИГІДНОЮ ПРОПОЗИЦІЄЮ!", // uk  
-  "BOOKING FOR 2025 IS OPEN! 5% DISCOUNT ON ORDERS UNTIL APRIL 1, 2025! PHONE/TELEGRAM: +380 93 752 74 77 HURRY UP TO TAKE ADVANTAGE OF THIS GREAT OFFER!", // en  
-  "RÉSERVATIONS OUVERTES POUR 2025! 5% DE RÉDUCTION SUR LES COMMANDES JUSQU'AU 1ER AVRIL 2025! TÉLÉPHONE/TELEGRAM: +380 93 752 74 77 DÉPÊCHEZ-VOUS DE PROFITER DE CETTE OFFRE AVANTAGEUSE!" // fr  
-);
+
 
 
 

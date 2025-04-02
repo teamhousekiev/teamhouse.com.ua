@@ -2043,7 +2043,7 @@
     autoplayVideos: true,
     autofocusVideos: true,
     descPosition: 'bottom',
-    width: '900px',
+    width: '861px',
     height: '506px',
     videosWidth: '960px',
     beforeSlideChange: null,
