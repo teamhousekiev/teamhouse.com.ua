@@ -13,15 +13,15 @@ body{
   transform-origin: center;
 
   max-height: 100vh;
-  width: 100%; /* Делаем ширину адаптивной */
-  flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку, если не помещаются */
+  width: 100%;
+  flex-wrap: wrap; 
 }
 
 
 .thumbnails {
  
     display: flex;
-    flex-direction: column; /* По умолчанию элементы располагаются в колонку */
+    flex-direction: column;
     line-height: 0;
     list-style: none;
     padding: 0;
@@ -51,12 +51,12 @@ body{
   padding: 0;
   margin: 0;
   max-height: 95vh;
-  position: relative; /* Добавляем относительное позиционирование для контейнера */
+  position: relative; 
 }
 
 .slidesImage li {
-  width: 100%; /* Занимает всю ширину контейнера */
-  height: 100%; /* Занимает всю высоту контейнера */
+  width: 100%; 
+  height: 100%;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -67,10 +67,10 @@ body{
 }
 
 .slidesImage img {
-  max-width: 100%; /* Ограничиваем ширину изображения шириной контейнера */
-  max-height: 100%; /* Ограничиваем высоту изображения высотой контейнера */
-  object-fit: contain; /* Сохраняем пропорции изображения, чтобы оно не выходило за пределы */
-  object-position: center; /* Центрируем изображение */
+  max-width: 100%; 
+  max-height: 100%;
+  object-fit: contain; 
+  object-position: center; 
 }
 
 .slidesImage li:target {
@@ -102,15 +102,9 @@ body{
 /* Медиа-запрос для мобильных устройств */
 @media (max-width: 768px) {
 
-  /* .containerSlider {
-    flex-direction: column;
-    align-items: stretch;
-    height: 67vh;
-
-  } */
   .containerSlider {
     display: flex;
-    flex-direction: column; /* элементы располагаются сверху вниз */
+    flex-direction: column;
     justify-content: flex-start; /* элементы выравниваются по верхнему краю */
     gap: 0; /* убирает промежутки между элементами */
     transform: scale(1);
@@ -155,15 +149,4 @@ body{
     }
   }
 }
-
-/* @media (max-width: 768px) {
-  .containerSlider {
-    transform: scale(0.8); 
-    flex-direction: column; 
-    align-items: center; 
-  }
-} */
-
-
-
 
